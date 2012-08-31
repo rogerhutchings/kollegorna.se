@@ -871,8 +871,6 @@ html[xmlns] .slides {
     list-style: none; }
   .home [role="header"] li {
     display: inline-block; }
-  .home [role="header"] li:first-child:after {
-    content: " – "; }
 
 .selected-projects h2 {
   text-align: center; }
@@ -907,3 +905,7 @@ html[xmlns] .slides {
     list-style: none; }
   .projects [role="header"] li {
     display: inline-block; }
+
+@media only screen and (min-width: 1024px) {
+  .project figure {
+    margin: 0 -100px; } }

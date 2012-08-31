@@ -13,10 +13,6 @@
   li {
     display: inline-block;
   }
-
-  li:first-child:after {
-    content: " – ";
-  }
 }
 
 [role="main"] {
