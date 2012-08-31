@@ -1,4 +1,7 @@
 /**
+ * Global design system
+ */
+/**
  * VARIABLES
  */
 /* Font weights */
@@ -749,6 +752,9 @@ ul.tags li a {
   color: #fff; }
 
 /** 5. UI COMPONENTS ---------- */
+/**
+ * UI Components
+ */
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
@@ -822,6 +828,9 @@ html[xmlns] .slides {
   .flex-control-paging .flex-active {
     background: #333; }
 
+/**
+ * Page regions
+ */
 .footer {
   padding: 8em 0 2em; }
   .footer ul {
@@ -844,6 +853,9 @@ html[xmlns] .slides {
     .footer li:nth-child(3n+1) {
       clear: both; } }
 
+/**
+ * Sections
+ */
 /**
  * Styles for home page
  */
@@ -882,3 +894,10 @@ html[xmlns] .slides {
       clear: none; }
     .colleagues li:nth-child(3n+1) {
       clear: both; } }
+
+.projects [role="header"] {
+  text-align: center; }
+  .projects [role="header"] ul {
+    list-style: none; }
+  .projects [role="header"] li {
+    display: inline-block; }

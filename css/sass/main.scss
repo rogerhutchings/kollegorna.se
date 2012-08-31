@@ -1,12 +1,25 @@
+/**
+ * Global design system
+ */
 @import 'base';
 @import 'globals';
 @import 'typography';
 @import 'forms';
 @import 'temp';
 
+/**
+ * UI Components
+ */
 @import 'app/components/flexslider';
 
+/**
+ * Page regions
+ */
 @import 'app/regions/footer';
 
+/**
+ * Sections
+ */
 @import 'app/sections/home';
+@import 'app/sections/projects';
 @import 'app/sections/posts';
