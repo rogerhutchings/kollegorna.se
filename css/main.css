@@ -857,8 +857,7 @@ html[xmlns] .slides {
       clear: both; } }
 
 .footer-map {
-  display: none;
-  height: 400px; }
+  display: none; }
 
 /**
  * Sections
