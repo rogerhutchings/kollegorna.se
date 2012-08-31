@@ -1,0 +1,40 @@
+
+.footer {
+  padding: 8em 0 2em;
+
+  ul {
+    @extend .clearfix;
+    list-style: none;
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    li {
+      float: left;
+      width: 50%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: both;
+    }
+
+    li li {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    li {
+      width: 33.333%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: none;
+    }
+
+    li:nth-child(3n+1) {
+      clear: both;
+    }
+  }
+}

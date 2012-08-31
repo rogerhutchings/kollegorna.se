@@ -1,0 +1,68 @@
+/**
+ * Styles for home page
+ */
+
+.home [role="header"] {
+  text-align: center;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li:first-child:after {
+    content: " – ";
+  }
+}
+
+.selected-projects {
+  h2 {
+    text-align: center;
+  }
+
+  .slides {
+    margin: 0 0 20px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin: 0 -100px;
+  }
+}
+
+.colleagues {
+  @extend .clearfix;
+  padding: 4em 0 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    li {
+      float: left;
+      width: 50%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    li {
+      width: 33.333%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: none;
+    }
+
+    li:nth-child(3n+1) {
+      clear: both;
+    }
+  }
+}

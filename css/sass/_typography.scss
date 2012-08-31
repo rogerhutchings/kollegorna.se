@@ -1,0 +1,390 @@
+
+/** 2. LINKS ---------- */
+
+a {
+  color: #27a2c4;
+  text-decoration: none;
+}
+
+a:active {
+  background: #000;
+  color: #000;
+}
+
+a:hover,
+a:active {
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link {
+  -webkit-tap-highlight-color: #33B4DA;
+}
+
+/** 3. HEADINGS ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.8em; /* 56px */
+  font-weight: 700;
+  letter-spacing: -0.0178em; /* 1px */
+  line-height: 1.0714; /* 60px */
+  margin: 0 0 0.4285em; /* 24px */
+}
+
+h2 {
+  font-size: 1.6em; /* 32px */
+  font-weight: 700;
+  letter-spacing: -0.0312em; /* 1px */
+  line-height: 1.1875; /* 38px */
+  margin: 0.375em 0; /* 12px */
+}
+
+h3 {
+  font-size: 1.2em; /* 24px */
+  line-height: 1.3333; /* 32px */
+  margin: .5em 0; /* 12px */
+}
+
+h4 {
+  margin: .6em 0 0.3em; /* 12px 0 6px */
+}
+
+h5 {
+  font-size: .7em; /* 14px */
+  line-height: 1.4285; /* 20px */
+  margin: .8571em 0; /* 12px */
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: .7em; /* 14px */
+  line-height: 1.4285; /* 20px */
+  margin: .8571em 0; /* 12px */
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #000;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  background: none;
+  color: #000;
+}
+
+/** 4. TEXT ---------- */
+
+p {
+  margin: 0 0 .6em; /* 0 0 12px */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: 1.5em 0; /* 30px */
+}
+
+blockquote {
+  border-left: 4px solid #000;
+  color: #666;
+  padding: .3em 0 .3em 1.2em; /* 6px 0 6px 24px */
+  margin: 0 0 1.2em; /* 0 0 24px */
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+q {
+  font-style: italic;
+}
+
+cite {
+  color: #000;
+  font-style: italic;
+}
+
+blockquote cite {
+  color: #888;
+}
+
+strong {
+  color: #000;
+  font-weight: 700;
+}
+
+em,
+dfn {
+  color: #000;
+  font-style: italic;
+}
+
+dfn {
+  font-weight: 700;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #222;
+}
+
+address {
+  display: block;
+  font-style: italic;
+  margin: 0 0 .6em; /* 0 0 12px */
+}
+
+del {
+  color: #888;
+  text-decoration: line-through;
+}
+
+mark {
+  background: #F2594B;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 0.15em; /* 3px */
+}
+
+ins {
+  background: #B5D5FF;
+  padding: 0 0.15em; /* 3px */
+  text-decoration: none;
+}
+
+pre {
+  padding: .6em; /* 12px */
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+code {
+  margin: .6em 0; /* 12px */
+}
+
+pre,
+code,
+tt,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+sup,
+sub {
+  line-height: 90%;
+}
+
+sub {
+  font-size: smaller;
+  vertical-align: sub;
+}
+
+sup {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+time {
+
+}
+
+small {
+  font-size: 0.7em; /* 14px */
+}
+
+kbd {
+  background: #ccc;
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  color: #666;
+  font: normal normal 0.8em/90% sans-serif; /* 16px/90% */
+  margin: 0 0.2em; /* 0 4px */
+  padding: 0.1em 0.3em; /* 2px 6px */
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+
+/** 5. LISTS ---------- */
+
+li ul,
+li ol {
+  margin: 0 0 0.6em 1.2em; /* 0 0 12px 24px */
+}
+
+ul,
+ol {
+  list-style: disc outside;
+  margin: 0 0 0.6em; /* 0 0 12px */
+  padding: 0;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  color: #000;
+  font-weight: 700;
+}
+
+dd {
+  margin:0 0 0.6em; /* 0 0 12px */
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+/** 6. MEDIA ---------- */
+
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Fluid images: http://unstoppablerobotninja.com/entry/fluid-images/ */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* Use clearfix on figure */
+figure:before, figure:after { content: ""; display: table; }
+figure:after { clear: both; }
+figure { *zoom: 1; }
+
+figure {
+  margin: 0 0 .6em; /* 0 0 12px */
+}
+
+figure img {
+  float: left;
+}
+
+figcaption {
+  clear: both;
+  color: #666;
+}
+
+/** 7. TABLES ---------- */
+
+table {
+  margin: 0 0 .6em; /* 0 0 12px */
+  width: 100%;
+}
+
+caption {
+  font-size: 1.2em; /* 24px */
+  font-weight: 700;
+  line-height: 1.3333; /* 32px */
+  text-align: left;
+}
+
+tbody {
+  border: 0;
+}
+
+tbody th {
+  border: 0;
+}
+
+thead th {
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+tfoot {
+  font-style: italic;
+}
+
+.logo {
+  font-family: "omnes-pro-1","omnes-pro-2",sans-serif;
+  font-weight: 900;
+}
+
+.title {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: $fw_bold;
+}

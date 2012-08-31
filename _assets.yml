@@ -1,0 +1,14 @@
+gzip_assets: off
+
+javascripts:
+  common:
+    - js/vendor/jquery-1.8.1.min.js
+    - js/vendor/flexslider/jquery.flexslider-min.js
+    - js/vendor/helper.js
+    - js/app/home.js
+    - js/main.js
+
+stylesheets:
+  common:
+    - css/vendor/normalize.css
+    - css/main.css
