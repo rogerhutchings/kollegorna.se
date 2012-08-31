@@ -33,6 +33,7 @@ html {
   background: $bg_color;
   color: $text_color;
   font: $fw_normal 100%/1.5 'Helvetica Neue', sans-serif; /* 16px */
+  overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
@@ -42,9 +43,7 @@ html {
 body {
   font-size: 1.125em; /* 18px */
   line-height: 1.6666; /* 30px */
-  margin: 0 auto;
   padding: 2.5em 0 0; /* 40px 20px */
-  max-width: 760px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -59,6 +58,11 @@ article:before,
 article:after { content: ""; display: table; }
 article:after { clear: both; }
 article { *zoom: 1; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 760px;
+}
 
 /** 2. USEFUL CLASSES ---------- */
 

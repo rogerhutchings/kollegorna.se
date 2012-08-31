@@ -3,6 +3,7 @@
  */
 
 .home [role="header"] {
+  @extend .wrapper;
   text-align: center;
 
   ul {
@@ -16,6 +17,10 @@
   li:first-child:after {
     content: " – ";
   }
+}
+
+[role="main"] {
+  @extend .wrapper;
 }
 
 .selected-projects {

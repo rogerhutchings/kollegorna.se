@@ -1,5 +1,6 @@
 
 .footer {
+  @extend .wrapper;
   padding: 8em 0 2em;
 
   ul {
@@ -37,4 +38,9 @@
       clear: both;
     }
   }
+}
+
+.footer-map {
+  display: none;
+  height: 400px;
 }

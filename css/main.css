@@ -37,6 +37,7 @@ html {
   color: #333333;
   font: 400 100%/1.5 "Helvetica Neue", sans-serif;
   /* 16px */
+  overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
@@ -47,10 +48,8 @@ body {
   /* 18px */
   line-height: 1.6666;
   /* 30px */
-  margin: 0 auto;
   padding: 2.5em 0 0;
-  /* 40px 20px */
-  max-width: 760px; }
+  /* 40px 20px */ }
 
 @media only screen and (max-width: 480px) {
   body {
@@ -70,6 +69,10 @@ article:after {
 
 article {
   *zoom: 1; }
+
+.wrapper, .footer, .home [role="header"], [role="main"] {
+  margin: 0 auto;
+  max-width: 760px; }
 
 /** 2. USEFUL CLASSES ---------- */
 /* For image replacement */
@@ -852,6 +855,10 @@ html[xmlns] .slides {
       clear: none; }
     .footer li:nth-child(3n+1) {
       clear: both; } }
+
+.footer-map {
+  display: none;
+  height: 400px; }
 
 /**
  * Sections

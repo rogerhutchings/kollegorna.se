@@ -17,6 +17,7 @@
 
   <meta name="viewport" content="width=device-width">
 
+  <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.css">
   <link rel="stylesheet" href="/assets/common.css">
 
   <script src="/js/vendor/modernizr.min.js"></script>
@@ -29,7 +30,7 @@
       <li>
         <h6>Adress</h6>
         <p>Kollegorna AB<br>c/o Happiness<br>Saltmätargatan 5<br>113 59 Stockholm</p>
-        <p><a href="#">Karta</a></p>
+        <p><a class="map-link" href="#footer-map" aria-hidden="true">Karta</a></p>
       </li>
       <li>
         <h6>Mail</h6>
@@ -51,6 +52,9 @@
     </ul>
   </footer>
 
+  <div id="footer-map" class="footer-map"></div>
+
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>
   <script src="/assets/common.js"></script>
 
   <!--<script>
