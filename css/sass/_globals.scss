@@ -32,7 +32,7 @@
 html {
   background: $bg_color;
   color: $text_color;
-  font: $fw_normal 100%/1.5 'Helvetica Neue', sans-serif; /* 16px */
+  font: $fw_normal 100%/1.5 $base_font; /* 16px */
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;

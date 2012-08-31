@@ -15,9 +15,11 @@
   }
 }
 
+/*
 [role="main"] {
   @extend .wrapper;
 }
+*/
 
 .selected-projects {
   h2 {
@@ -28,12 +30,15 @@
     margin: 0 0 20px;
   }
 
-  @media only screen and (min-width: 1024px) {
-    margin: 0 -100px;
+  img {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 
 .colleagues {
+  @extend .wrapper;
   @extend .clearfix;
   padding: 4em 0 0;
 

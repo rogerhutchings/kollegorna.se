@@ -33,9 +33,9 @@
  * Nimbus Sans Bold Italic (700)
  */
 html {
-  background: #cccccc;
-  color: #333333;
-  font: 400 100%/1.5 "Helvetica Neue", sans-serif;
+  background: #f0e9cd;
+  color: #5f5c4e;
+  font: 400 100%/1.5 "proxima-nova-1", "proxima-nova-2", sans-serif;
   /* 16px */
   overflow-x: hidden;
   overflow-y: scroll;
@@ -70,7 +70,7 @@ article:after {
 article {
   *zoom: 1; }
 
-.wrapper, .footer, .home [role="header"], [role="main"] {
+.wrapper, .footer, .home [role="header"], .colleagues {
   margin: 0 auto;
   max-width: 760px; }
 
@@ -134,7 +134,7 @@ article {
 
 /** 2. LINKS ---------- */
 a {
-  color: #27a2c4;
+  color: #dd6b12;
   text-decoration: none; }
 
 a:active {
@@ -147,9 +147,10 @@ a:active {
 
 a:focus,
 a:hover {
-  background: #000;
+  /*background: $link_color;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;*/
+  border-bottom: 2px solid #dd6b12; }
 
 a:link {
   -webkit-tap-highlight-color: #33B4DA; }
@@ -167,7 +168,6 @@ h6 {
 h1 {
   font-size: 2.8em;
   /* 56px */
-  font-weight: 700;
   letter-spacing: -0.0178em;
   /* 1px */
   line-height: 1.0714;
@@ -178,7 +178,6 @@ h1 {
 h2 {
   font-size: 1.6em;
   /* 32px */
-  font-weight: 700;
   letter-spacing: -0.0312em;
   /* 1px */
   line-height: 1.1875;
@@ -872,13 +871,19 @@ html[xmlns] .slides {
   .home [role="header"] li {
     display: inline-block; }
 
+/*
+[role="main"] {
+  @extend .wrapper;
+}
+*/
 .selected-projects h2 {
   text-align: center; }
 .selected-projects .slides {
   margin: 0 0 20px; }
-@media only screen and (min-width: 1024px) {
-  .selected-projects {
-    margin: 0 -100px; } }
+.selected-projects img {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto; }
 
 .colleagues {
   padding: 4em 0 0; }
