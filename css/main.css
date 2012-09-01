@@ -70,7 +70,7 @@ article:after {
 article {
   *zoom: 1; }
 
-.wrapper, .footer, .home [role="header"], .colleagues {
+.wrapper, .footer, .home [role="header"], .colleagues, .projects [role="header"], .project {
   margin: 0 auto;
   max-width: 760px; }
 

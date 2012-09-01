@@ -1,4 +1,5 @@
 .projects [role="header"] {
+  @extend .wrapper;
   text-align: center;
 
   ul {
@@ -11,6 +12,7 @@
 }
 
 .project {
+  @extend .wrapper;
 
   figure {
     @media only screen and (min-width: 1024px) {
