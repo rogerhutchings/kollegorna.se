@@ -18,9 +18,6 @@ a:active {
 
 a:focus,
 a:hover {
-  /*background: $link_color;
-  color: #fff;
-  text-decoration: none;*/
   border-bottom: 2px solid $link_color;
 }
 
@@ -36,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: $heading_color;
   font-weight: $fw_bold;
 }
 
@@ -72,9 +69,11 @@ h5 {
 }
 
 h6 {
+  color: $text_color;
   font-size: .7em; /* 14px */
   line-height: 1.4285; /* 20px */
-  margin: .8571em 0; /* 12px */
+  margin: .8571em 0 .4em; /* 12px */
+  text-transform: uppercase;
 }
 
 h1 a,
@@ -112,8 +111,7 @@ hr {
 }
 
 blockquote {
-  border-left: 4px solid #000;
-  color: #666;
+  border-left: 4px solid $heading_color;
   padding: .3em 0 .3em 1.2em; /* 6px 0 6px 24px */
   margin: 0 0 1.2em; /* 0 0 24px */
 }
@@ -140,7 +138,7 @@ q {
 }
 
 cite {
-  color: #000;
+  color: $heading_color;
   font-style: italic;
 }
 
@@ -149,18 +147,18 @@ blockquote cite {
 }
 
 strong {
-  color: #000;
-  font-weight: 700;
+  color: $heading_color;
+  font-weight: $fw_bold;
 }
 
 em,
 dfn {
-  color: #000;
+  color: $heading_color;
   font-style: italic;
 }
 
 dfn {
-  font-weight: 700;
+  font-weight: $fw_bold;
 }
 
 abbr,
@@ -280,8 +278,8 @@ dl {
 }
 
 dt {
-  color: #000;
-  font-weight: 700;
+  color: $heading_color;
+  font-weight: $fw_bold;
 }
 
 dd {
@@ -359,7 +357,7 @@ thead th {
 }
 
 th {
-  font-weight: 700;
+  font-weight: $fw_bold;
   text-align: left;
 }
 
@@ -378,12 +376,6 @@ tfoot {
 }
 
 .logo {
-  font-family: "omnes-pro-1","omnes-pro-2",sans-serif;
-  font-weight: 900;
-}
-
-.title {
-  color: #000;
-  font-size: 1.1em;
-  font-weight: $fw_bold;
+  font-family: $logo_font;
+  font-weight: $fw_black;
 }

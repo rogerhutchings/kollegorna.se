@@ -39,12 +39,18 @@
 
 .colleagues {
   @extend .wrapper;
-  @extend .clearfix;
   padding: 4em 0 0;
 
   ul {
+    @extend .clearfix;
+    background: #fff;
+    border-bottom: 1px solid #B7B19C;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #B7B19C;
+    color: #333333;
     list-style: none;
-    margin: 0;
+    margin: 0 -70px;
+    padding: 70px;
   }
 
   @media only screen and (min-width: 768px) {
@@ -70,5 +76,15 @@
     li:nth-child(3n+1) {
       clear: both;
     }
+  }
+
+  h3,
+  h4,
+  dt {
+    color: #333;
+  }
+
+  dt {
+    font-weight: $fw_normal;
   }
 }

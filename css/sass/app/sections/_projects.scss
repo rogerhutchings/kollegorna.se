@@ -11,12 +11,24 @@
   }
 }
 
-.project {
+.projects [role="main"] {
   @extend .wrapper;
+}
+
+.project {
+  @extend .clearfix;
+
+  background: #fff;
+  border-bottom: 1px solid #B7B19C;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #B7B19C;
+  color: #333333;
+  margin: 0 -70px 70px;
+  padding: 70px;
 
   figure {
     @media only screen and (min-width: 1024px) {
-      margin: 0 -100px;
+      margin: -70px -70px 70px;
     }
   }
 
