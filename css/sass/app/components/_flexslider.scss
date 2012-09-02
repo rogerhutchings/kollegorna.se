@@ -37,7 +37,7 @@ html[xmlns] .slides {display: block;}
   }
 
   a {
-    background: #888;
+    background: rgba(247, 121, 22, .7);
     border-radius: 50%;
     cursor: hand;
     cursor: pointer;
@@ -47,7 +47,11 @@ html[xmlns] .slides {display: block;}
     width: 20px;
   }
 
+  a:hover {
+    border: 0;
+  }
+
   .flex-active {
-    background: #333;
+    background: $link_color;
   }
 }

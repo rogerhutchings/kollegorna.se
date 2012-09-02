@@ -2,6 +2,10 @@
  * Styles for home page
  */
 
+.home .nav {
+  display: none;
+}
+
 .home [role="header"] {
   @extend .wrapper;
   text-align: center;
@@ -11,7 +15,7 @@
   }
 
   li {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -86,5 +90,66 @@
 
   dt {
     font-weight: $fw_normal;
+  }
+}
+
+.home [role="header"] {
+  min-height: 500px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.skills {
+  height: 320px;
+  position: absolute;
+  right: 0;
+  top: 170px;
+  width: 320px;
+}
+
+.circle {
+  background: rgba(247, 121, 22, .7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(247, 121, 22, 0.4);
+  color: rgba(255, 255, 255, .9);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: $fw_bold;
+  height: 160px;
+  line-height: 160px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 1px $link_color;
+  text-transform: uppercase;
+  width: 160px;
+}
+
+.circle:hover {
+  background: rgba(247, 121, 22, .9);
+  box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
+}
+
+.circle.design {
+  left: 80px;
+  top: 50px;
+}
+
+.circle.technology {
+  bottom: 0;
+  left: 15px;
+}
+
+.circle.strategy {
+  bottom: 0;
+  right: 15px;
+}
+
+.presentation {
+  padding: 20px 340px 0 0;
+  text-align: left;
+
+  a {
+    @extend .cta;
   }
 }

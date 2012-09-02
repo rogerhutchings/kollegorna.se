@@ -35,7 +35,7 @@
 html {
   background: #f0e9cd;
   color: #5f5c4e;
-  font: 400 100%/1.5 "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", sans-serif;
+  font: 400 100%/1.5 "ff-dagny-web-pro", sans-serif;
   /* 16px */
   overflow-x: hidden;
   overflow-y: scroll;
@@ -48,7 +48,7 @@ body {
   /* 18px */
   line-height: 1.6666;
   /* 30px */
-  padding: 2.5em 0 0;
+  padding: 0;
   /* 40px 20px */ }
 
 @media only screen and (max-width: 480px) {
@@ -122,14 +122,14 @@ article {
  * Credits:
  * http://nicolasgallagher.com/micro-clearfix-hack/
  */
-.clearfix, .footer ul, .colleagues ul, .project {
+.clearfix, .footer ul, .colleagues ul, .projects [role="header"], .project {
   zoom: 1; }
-  .clearfix:before, .footer ul:before, .colleagues ul:before, .project:before, .clearfix:after, .footer ul:after, .colleagues ul:after, .project:after {
+  .clearfix:before, .footer ul:before, .colleagues ul:before, .projects [role="header"]:before, .project:before, .clearfix:after, .footer ul:after, .colleagues ul:after, .projects [role="header"]:after, .project:after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden; }
-  .clearfix:after, .footer ul:after, .colleagues ul:after, .project:after {
+  .clearfix:after, .footer ul:after, .colleagues ul:after, .projects [role="header"]:after, .project:after {
     clear: both; }
 
 /** 2. LINKS ---------- */
@@ -151,6 +151,15 @@ a:hover {
 
 a:link {
   -webkit-tap-highlight-color: #33B4DA; }
+
+/**
+ * Call to action
+ */
+.cta, .presentation a, .our-projects li a {
+  border-bottom: 2px solid #f77916;
+  font-size: .8em;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 /** 3. HEADINGS ---------- */
 h1,
@@ -488,8 +497,21 @@ tfoot {
   font-style: italic; }
 
 .logo {
-  font-family: "omnes-pro-1", "omnes-pro-2", sans-serif;
-  font-weight: 900; }
+  color: #5f5c4e;
+  display: inline-block;
+  font: 900 72px/1.2 "omnes-pro", sans-serif;
+  margin: 80px 0 60px;
+  padding: 0 5px;
+  text-shadow: 1px 1px 0 #f0e9cd, 3px 3px 0 rgba(0, 0, 0, 0.3); }
+
+.logo:hover {
+  border: 0; }
+
+.logo span {
+  display: inline-block; }
+
+.logo span:nth-child(even) {
+  opacity: .95; }
 
 fieldset {
   border: 1px solid #ccc;
@@ -812,7 +834,7 @@ html[xmlns] .slides {
     display: inline-block;
     padding: 0 10px; }
   .flex-control-paging a {
-    background: #888;
+    background: rgba(247, 121, 22, 0.7);
     border-radius: 50%;
     cursor: hand;
     cursor: pointer;
@@ -820,12 +842,55 @@ html[xmlns] .slides {
     height: 20px;
     text-indent: -9999px;
     width: 20px; }
+  .flex-control-paging a:hover {
+    border: 0; }
   .flex-control-paging .flex-active {
-    background: #333; }
+    background: #f77916; }
 
 /**
  * Page regions
  */
+.nav {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  margin: 0 0 40px;
+  padding: 20px 0;
+  position: relative; }
+  .nav ul {
+    list-style: none;
+    text-align: right; }
+  .nav li {
+    display: inline-block;
+    padding: 0 10px; }
+  .nav li:last-child {
+    padding-right: 30px; }
+  .nav li a {
+    color: #403e35;
+    font-size: .7em;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .nav li a:hover {
+    color: #f77916; }
+
+.header-logo {
+  color: #5f5c4e;
+  display: inline-block;
+  font: 900 24px/1 "omnes-pro", sans-serif;
+  left: 30px;
+  margin: 0;
+  padding: 0 5px;
+  position: absolute;
+  text-shadow: 1px 1px 0 #f0e9cd, 3px 3px 0 rgba(0, 0, 0, 0.3);
+  top: 20px; }
+
+.header-logo:hover {
+  border: 0; }
+
+.header-logo span {
+  display: inline-block; }
+
+.header-logo span:nth-child(even) {
+  opacity: .95; }
+
 .footer {
   padding: 8em 0 2em; }
   .footer ul {
@@ -857,12 +922,15 @@ html[xmlns] .slides {
 /**
  * Styles for home page
  */
+.home .nav {
+  display: none; }
+
 .home [role="header"] {
   text-align: center; }
   .home [role="header"] ul {
     list-style: none; }
   .home [role="header"] li {
-    display: inline-block; }
+    display: block; }
 
 /*
 [role="main"] {
@@ -909,12 +977,80 @@ html[xmlns] .slides {
   .colleagues dt {
     font-weight: 400; }
 
+.home [role="header"] {
+  min-height: 500px;
+  margin-bottom: 80px;
+  position: relative; }
+
+.skills {
+  height: 320px;
+  position: absolute;
+  right: 0;
+  top: 170px;
+  width: 320px; }
+
+.circle {
+  background: rgba(247, 121, 22, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(247, 121, 22, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  height: 160px;
+  line-height: 160px;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 1px #f77916;
+  text-transform: uppercase;
+  width: 160px; }
+
+.circle:hover {
+  background: rgba(247, 121, 22, 0.9);
+  box-shadow: 0 0 10px rgba(247, 121, 22, 0.8); }
+
+.circle.design {
+  left: 80px;
+  top: 50px; }
+
+.circle.technology {
+  bottom: 0;
+  left: 15px; }
+
+.circle.strategy {
+  bottom: 0;
+  right: 15px; }
+
+.presentation {
+  padding: 20px 340px 0 0;
+  text-align: left; }
+
+.projects .nav-projects a {
+  background: #403e35;
+  border: 0;
+  color: #f0e9cd;
+  padding: 0 6px; }
+
 .projects [role="header"] {
-  text-align: center; }
-  .projects [role="header"] ul {
-    list-style: none; }
-  .projects [role="header"] li {
-    display: inline-block; }
+  margin-bottom: 40px; }
+  .projects [role="header"] h1 {
+    font-size: 2em;
+    text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .our-projects {
+    float: left;
+    width: 60%; } }
+.our-projects ul {
+  list-style: none; }
+.our-projects li {
+  display: block; }
+
+@media only screen and (min-width: 768px) {
+  .current-projects {
+    float: right;
+    width: 34%; } }
 
 .project {
   background: #fff;

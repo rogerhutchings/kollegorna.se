@@ -1,13 +1,45 @@
+.projects .nav-projects a {
+  background: $heading_color;
+  border: 0;
+  color: $bg_color;
+  padding: 0 6px;
+}
+
 .projects [role="header"] {
+  @extend .clearfix;
   @extend .wrapper;
-  text-align: center;
+
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+.our-projects {
+  @media only screen and (min-width: 768px) {
+    float: left;
+    width: 60%;
+  }
 
   ul {
     list-style: none;
   }
 
   li {
-    display: inline-block;
+    display: block;
+  }
+
+  li a {
+    @extend .cta;
+  }
+}
+
+.current-projects {
+  @media only screen and (min-width: 768px) {
+    float: right;
+    width: 34%;
   }
 }
 

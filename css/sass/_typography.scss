@@ -25,6 +25,17 @@ a:link {
   -webkit-tap-highlight-color: #33B4DA;
 }
 
+/**
+ * Call to action
+ */
+
+.cta {
+  border-bottom: 2px solid $link_color;
+  font-size: .8em;
+  font-weight: $fw_bold;
+  text-transform: uppercase;
+}
+
 /** 3. HEADINGS ---------- */
 
 h1,
@@ -376,6 +387,28 @@ tfoot {
 }
 
 .logo {
-  font-family: $logo_font;
-  font-weight: $fw_black;
+  color: $text_color;
+  display: inline-block;
+  font: $fw_black 72px/1.2 $logo_font;
+  margin: 80px 0 60px;
+  padding: 0 5px;
+  text-shadow:
+    1px 1px 0 #F0E9CD,
+    3px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.logo:hover {
+  border: 0;
+}
+
+.logo span {
+  display: inline-block;
+}
+
+.logo span:nth-child(odd) {
+
+}
+
+.logo span:nth-child(even) {
+  opacity: .95;
 }
