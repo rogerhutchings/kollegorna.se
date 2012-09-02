@@ -44,6 +44,10 @@
     text-align: center;
     text-shadow: 0 1px 1px $link_color;
     text-transform: uppercase;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     width: 160px;
   }
 

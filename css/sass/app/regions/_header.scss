@@ -34,7 +34,7 @@
 .header-logo {
   color: $text_color;
   display: inline-block;
-  font: $fw_black 24px/1 $logo_font;
+  font: $fw_black 30px/1 $logo_font;
   left: 30px;
   margin: 0;
   padding: 0 5px;
@@ -42,7 +42,7 @@
   text-shadow:
     1px 1px 0 #F0E9CD,
     3px 3px 0 rgba(0, 0, 0, .3);
-  top: 20px;
+  top: 17px;
 }
 
 .header-logo:hover {

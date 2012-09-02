@@ -44,6 +44,10 @@ html[xmlns] .slides {display: block;}
     display: inline-block;
     height: 20px;
     text-indent: -9999px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     width: 20px;
   }
 

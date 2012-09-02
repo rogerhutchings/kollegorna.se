@@ -841,6 +841,10 @@ html[xmlns] .slides {
     display: inline-block;
     height: 20px;
     text-indent: -9999px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     width: 20px; }
   .flex-control-paging a:hover {
     background: rgba(0, 0, 0, 0.3);
@@ -875,13 +879,13 @@ html[xmlns] .slides {
 .header-logo {
   color: #5f5c4e;
   display: inline-block;
-  font: 900 24px/1 "omnes-pro", sans-serif;
+  font: 900 30px/1 "omnes-pro", sans-serif;
   left: 30px;
   margin: 0;
   padding: 0 5px;
   position: absolute;
   text-shadow: 1px 1px 0 #f0e9cd, 3px 3px 0 rgba(0, 0, 0, 0.3);
-  top: 20px; }
+  top: 17px; }
 
 .header-logo:hover {
   border: 0; }
@@ -956,6 +960,10 @@ html[xmlns] .slides {
     text-align: center;
     text-shadow: 0 1px 1px #f77916;
     text-transform: uppercase;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     width: 160px; }
   .home [role="banner"] .circle:hover {
     background: rgba(247, 121, 22, 0.9);
