@@ -1,0 +1,72 @@
+.contact .nav-contact a {
+  background: $heading_color;
+  border: 0;
+  color: $bg_color;
+  padding: 0 6px;
+}
+
+.contact [role="banner"] {
+  @extend .wrapper;
+
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+.contact [role="main"] {
+  @extend .wrapper;
+}
+
+.colleagues {
+  background: #fff;
+  border-bottom: 1px solid #B7B19C;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #B7B19C;
+  color: #333;
+  padding: 4em 0 0;
+  margin: 0 -70px;
+  padding: 70px;
+
+  ul {
+    @extend .clearfix;
+    list-style: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    li {
+      float: left;
+      width: 50%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    li {
+      width: 33.333%;
+    }
+
+    li:nth-child(2n+1) {
+      clear: none;
+    }
+
+    li:nth-child(3n+1) {
+      clear: both;
+    }
+  }
+
+  h3,
+  h4,
+  dt {
+    color: #333;
+  }
+
+  dt {
+    font-weight: $fw_normal;
+  }
+}

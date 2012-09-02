@@ -33,11 +33,11 @@ html[xmlns] .slides {display: block;}
 
   li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 20px 10px 0;
   }
 
   a {
-    background: rgba(247, 121, 22, .7);
+    background: rgba(0, 0, 0, .2);
     border-radius: 50%;
     cursor: hand;
     cursor: pointer;
@@ -48,10 +48,11 @@ html[xmlns] .slides {display: block;}
   }
 
   a:hover {
+    background: rgba(0, 0, 0, .3);
     border: 0;
   }
 
-  .flex-active {
-    background: $link_color;
+  a.flex-active {
+    background: rgba(0, 0, 0, .4);
   }
 }
