@@ -866,7 +866,12 @@ html[xmlns] .slides {
   position: relative; }
   .nav ul {
     list-style: none;
-    text-align: right; }
+    opacity: .6;
+    text-align: right;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
   .nav li {
     display: inline-block;
     padding: 0 10px; }
@@ -880,6 +885,9 @@ html[xmlns] .slides {
   .nav li a:hover {
     color: #f77916; }
 
+.nav:hover ul {
+  opacity: 1; }
+
 .header-logo {
   color: #5f5c4e;
   display: inline-block;
@@ -890,15 +898,13 @@ html[xmlns] .slides {
   position: absolute;
   text-shadow: 1px 1px 0 #f0e9cd, 3px 3px 0 rgba(0, 0, 0, 0.3);
   top: 17px; }
+  .header-logo span {
+    display: inline-block; }
+  .header-logo span:nth-child(even) {
+    opacity: .95; }
 
 .header-logo:hover {
   border: 0; }
-
-.header-logo span {
-  display: inline-block; }
-
-.header-logo span:nth-child(even) {
-  opacity: .95; }
 
 .footer {
   padding: 8em 0 2em; }
