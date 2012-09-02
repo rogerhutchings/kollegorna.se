@@ -62,4 +62,13 @@ body_class: home
       </li>
     </ul>
   </article>
+
+  <article class="posts">
+    <h2 class="title">Bloggen</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li><time pubdate>{{ post.date | date_to_string }}</time> – <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
 </section>

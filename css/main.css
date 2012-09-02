@@ -70,7 +70,7 @@ article:after {
 article {
   *zoom: 1; }
 
-.wrapper, .footer, .home [role="banner"], .projects [role="banner"], .projects [role="main"], .contact [role="banner"], .contact [role="main"] {
+.wrapper, .footer, .home [role="banner"], .home .posts, .projects [role="banner"], .projects [role="main"], .blog-post [role="main"], .contact [role="banner"], .contact [role="main"] {
   margin: 0 auto;
   max-width: 760px; }
 
@@ -880,16 +880,19 @@ html[xmlns] .slides {
   .nav li a:hover {
     color: #f77916; }
 
+/*
 .no-touch .nav ul {
   opacity: .6;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+}
 
 .no-touch .nav:hover ul {
-  opacity: 1; }
-
+  opacity: 1;
+}
+*/
 .header-logo {
   color: #5f5c4e;
   display: inline-block;
@@ -1063,6 +1066,24 @@ html[xmlns] .slides {
   .project img {
     border-radius: 4px;
     display: block; }
+
+.blog-post .nav-blog a,
+.blog-post .nav-blog a:hover,
+.blog-post .nav-blog a:focus {
+  background: #403e35;
+  border: 0;
+  color: #f0e9cd;
+  padding: 0 6px; }
+
+.post {
+  background: #fff;
+  border-bottom: 1px solid #B7B19C;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #B7B19C;
+  color: #333;
+  padding: 4em 0 0;
+  margin: 0 -70px;
+  padding: 70px; }
 
 .contact .nav-contact a,
 .contact .nav-contact a:hover,
