@@ -1,4 +1,6 @@
-.contact .nav-contact a {
+.contact .nav-contact a,
+.contact .nav-contact a:hover,
+.contact .nav-contact a:focus {
   background: $heading_color;
   border: 0;
   color: $bg_color;

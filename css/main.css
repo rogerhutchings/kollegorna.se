@@ -161,6 +161,10 @@ a:link {
   font-weight: 700;
   text-transform: uppercase; }
 
+.cta:hover, .home [role="banner"] .presentation a:hover, .our-projects li a:hover {
+  border-color: #403e35;
+  color: #403e35; }
+
 /** 3. HEADINGS ---------- */
 h1,
 h2,
@@ -919,7 +923,8 @@ html[xmlns] .slides {
       clear: both; } }
 
 .footer-map {
-  display: none; }
+  display: none;
+  height: 450px; }
 
 /**
  * Sections
@@ -1008,7 +1013,9 @@ html[xmlns] .slides {
 .selected-projects strong {
   color: #fff; }
 
-.projects .nav-projects a {
+.projects .nav-projects a,
+.projects .nav-projects a:hover,
+.projects .nav-projects a:focus {
   background: #403e35;
   border: 0;
   color: #f0e9cd;
@@ -1045,8 +1052,13 @@ html[xmlns] .slides {
   @media only screen and (min-width: 1024px) {
     .project figure {
       margin: -70px -70px 70px; } }
+  .project img {
+    border-radius: 4px;
+    display: block; }
 
-.contact .nav-contact a {
+.contact .nav-contact a,
+.contact .nav-contact a:hover,
+.contact .nav-contact a:focus {
   background: #403e35;
   border: 0;
   color: #f0e9cd;

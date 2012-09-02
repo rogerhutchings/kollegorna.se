@@ -36,6 +36,11 @@ a:link {
   text-transform: uppercase;
 }
 
+.cta:hover {
+  border-color: $heading_color;
+  color: $heading_color;
+}
+
 /** 3. HEADINGS ---------- */
 
 h1,
