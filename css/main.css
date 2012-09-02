@@ -1024,6 +1024,9 @@ html[xmlns] .slides {
 .selected-projects strong {
   color: #fff; }
 
+.home .posts {
+  padding-top: 80px; }
+
 .projects .nav-projects a,
 .projects .nav-projects a:hover,
 .projects .nav-projects a:focus {
@@ -1082,8 +1085,11 @@ html[xmlns] .slides {
   box-shadow: 0 2px 4px #B7B19C;
   color: #333;
   padding: 4em 0 0;
-  margin: 0 -70px;
+  margin: 0 -70px 70px;
   padding: 70px; }
+
+.posts ul {
+  list-style: none; }
 
 .contact .nav-contact a,
 .contact .nav-contact a:hover,
