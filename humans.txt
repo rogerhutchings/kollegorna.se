@@ -4,7 +4,18 @@
   Twitter: @persand
   From: Stockholm, Sweden
 
+  Developer: Henrik Sjökvist
+  Contact: henrik [at] kollegorna.se
+  Twitter: @henrrrik
+  From: Stockholm, Sweden
+
+  Designer/Developer: Joakim Lundberg
+  Contact: jocke [at] kollegorna.se
+  Twitter: @jockelund
+  From: Stockholm, Sweden
+
 /* SITE */
-  Language: English
+  Language: Swedish
   Doctype: HTML5
   IDE: Sublime Text 2
+  Platform: Jekyll
