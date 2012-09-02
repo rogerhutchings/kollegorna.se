@@ -866,12 +866,7 @@ html[xmlns] .slides {
   position: relative; }
   .nav ul {
     list-style: none;
-    opacity: .6;
-    text-align: right;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
+    text-align: right; }
   .nav li {
     display: inline-block;
     padding: 0 10px; }
@@ -885,7 +880,14 @@ html[xmlns] .slides {
   .nav li a:hover {
     color: #f77916; }
 
-.nav:hover ul {
+.no-touch .nav ul {
+  opacity: .6;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.no-touch .nav:hover ul {
   opacity: 1; }
 
 .header-logo {
