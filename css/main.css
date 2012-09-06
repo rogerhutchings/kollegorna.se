@@ -1036,7 +1036,8 @@ html[xmlns] .slides {
   padding: 0 6px; }
 
 .projects [role="banner"] {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding: 60px 0; }
   .projects [role="banner"] h1 {
     font-size: 2em;
     text-transform: uppercase; }
