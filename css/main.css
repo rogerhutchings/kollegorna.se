@@ -53,11 +53,11 @@ body {
 
 @media only screen and (max-width: 480px) {
   body {
-    font-size: 0.875em;
+    /*font-size: 0.875em;*/
     /* 14px */
-    line-height: 1.4285;
+    /*line-height: 1.4285;*/
     /* 20px */
-    padding: 1.4285;
+    /*padding: 1.4285;*/
     /* 20px */ } }
 article:before,
 article:after {
