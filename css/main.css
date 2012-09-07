@@ -1125,6 +1125,8 @@ html[xmlns] .slides {
     border-radius: 50%; }
   .post time:before {
     content: " – "; }
+  .post #disqus_thread {
+    padding-top: 2em; }
 
 .posts ul {
   list-style: none; }
