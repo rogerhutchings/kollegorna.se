@@ -7,8 +7,9 @@ body_class: blog-post
     <header>
       <h1>{{ page.title }}</h1>
 
+      <span class="author">Av <a href="mailto:{{ page.author_email }}"><!--<img src="{{ page.author_email | to_gravatar }}?s=40" alt="{{ page.author }}"> -->{{ page.author }}</a></span>
       <time pubdate>{{ page.date | date_to_string }}</time>
-      <span class="author">av <a href="mailto:{{ page.author_email }}"><img src="{{ page.author_email | to_gravatar }}?s=60" alt="{{ page.author }}"> {{ page.author }}</a></span>
+
     </header>
 
     {{ content }}

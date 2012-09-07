@@ -509,7 +509,7 @@ tfoot {
 .logo {
   color: #5f5c4e;
   display: inline-block;
-  font: 900 72px/1.2 "omnes-pro", sans-serif;
+  font: 900 96px/1.2 "omnes-pro", sans-serif;
   margin: 80px 0 60px;
   padding: 0 5px;
   text-shadow: 1px 1px 0 #f0e9cd, 3px 3px 0 rgba(0, 0, 0, 0.3); }
@@ -1105,7 +1105,7 @@ html[xmlns] .slides {
   .post-summary h4 {
     margin: 0; }
   .post-summary time {
-    opacity: .7; }
+    color: #777; }
 
 .post {
   background: #fff;
@@ -1116,6 +1116,15 @@ html[xmlns] .slides {
   padding: 4em 0 0;
   margin: 0 -70px 70px;
   padding: 70px; }
+  .post header {
+    margin: 0 0 1em; }
+  .post .author,
+  .post time {
+    color: #777; }
+  .post .author img {
+    border-radius: 50%; }
+  .post time:before {
+    content: " – "; }
 
 .posts ul {
   list-style: none; }
