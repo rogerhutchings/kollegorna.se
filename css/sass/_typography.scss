@@ -7,8 +7,8 @@ a {
 }
 
 a:active {
-  background: #000;
-  color: #000;
+  border-bottom-color: $heading_color;
+  color: $heading_color;
 }
 
 a:hover,
@@ -101,14 +101,22 @@ h6 a {
   color: #000;
 }
 
+h4 a {
+  color: $link_color;
+}
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  background: none;
+  border: 0;
   color: #000;
+}
+
+h4 a:hover {
+  color: $heading_color;
 }
 
 /** 4. TEXT ---------- */

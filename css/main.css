@@ -70,7 +70,7 @@ article:after {
 article {
   *zoom: 1; }
 
-.wrapper, .footer, .home [role="banner"], .home .posts, .projects [role="banner"], .projects [role="main"], .blog-post [role="main"], .contact [role="banner"], .contact [role="main"] {
+.wrapper, .footer, .home [role="banner"], .home .posts, .projects [role="banner"], .projects [role="main"], .blog [role="banner"], .blog [role="main"], .blog-post [role="main"], .contact [role="banner"], .contact [role="main"] {
   margin: 0 auto;
   max-width: 760px; }
 
@@ -138,8 +138,8 @@ a {
   text-decoration: none; }
 
 a:active {
-  background: #000;
-  color: #000; }
+  border-bottom-color: #403e35;
+  color: #403e35; }
 
 a:hover,
 a:active {
@@ -234,14 +234,20 @@ h5 a,
 h6 a {
   color: #000; }
 
+h4 a {
+  color: #f77916; }
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  background: none;
+  border: 0;
   color: #000; }
+
+h4 a:hover {
+  color: #403e35; }
 
 /** 4. TEXT ---------- */
 p {
@@ -1067,6 +1073,9 @@ html[xmlns] .slides {
     border-radius: 4px;
     display: block; }
 
+.blog .nav-blog a,
+.blog .nav-blog a:hover,
+.blog .nav-blog a:focus,
 .blog-post .nav-blog a,
 .blog-post .nav-blog a:hover,
 .blog-post .nav-blog a:focus {
@@ -1074,6 +1083,29 @@ html[xmlns] .slides {
   border: 0;
   color: #f0e9cd;
   padding: 0 6px; }
+
+.blog [role="banner"] {
+  margin-bottom: 40px; }
+  .blog [role="banner"] h1 {
+    font-size: 2em;
+    text-transform: uppercase; }
+
+.blog [role="main"] .summaries {
+  background: #fff;
+  border-bottom: 1px solid #B7B19C;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #B7B19C;
+  color: #333;
+  padding: 4em 0 0;
+  margin: 0 -70px 70px;
+  padding: 70px; }
+
+.post-summary {
+  margin: 0 0 2em; }
+  .post-summary h4 {
+    margin: 0; }
+  .post-summary time {
+    opacity: .7; }
 
 .post {
   background: #fff;

@@ -8,9 +8,11 @@ body_class: blog
 
 <header role="banner">
   <h1>Blogg</h1>
+  <p><a href="#">Prenumerera med RSS</a></p>
 </header>
 
 <section role="main">
+  <div class="summaries">
   {% for post in site.posts %}
     <article class="post-summary">
       <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
@@ -20,4 +22,6 @@ body_class: blog
       </p>
     </article>
   {% endfor %}
+  </div>
+  <!-- / .summaries -->
 </section>

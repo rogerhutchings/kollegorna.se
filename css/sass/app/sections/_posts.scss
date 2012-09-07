@@ -1,3 +1,6 @@
+.blog .nav-blog a,
+.blog .nav-blog a:hover,
+.blog .nav-blog a:focus,
 .blog-post .nav-blog a,
 .blog-post .nav-blog a:hover,
 .blog-post .nav-blog a:focus {
@@ -7,9 +10,47 @@
   padding: 0 6px;
 }
 
+.blog [role="banner"] {
+  @extend .wrapper;
+
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
+
+.blog [role="main"] {
+  @extend .wrapper;
+
+  .summaries {
+    background: #fff;
+    border-bottom: 1px solid #B7B19C;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #B7B19C;
+    color: #333;
+    padding: 4em 0 0;
+    margin: 0 -70px 70px;
+    padding: 70px;
+  }
+}
+
 
 .blog-post [role="main"] {
   @extend .wrapper;
+}
+
+.post-summary {
+  margin: 0 0 2em;
+
+  h4 {
+    margin: 0;
+  }
+
+  time {
+    opacity: .7;
+  }
 }
 
 .post {
