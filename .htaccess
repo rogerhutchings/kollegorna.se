@@ -1,5 +1,7 @@
 
-# Redirect old blog posts from Drupal site
+# Redirect old URL:s from Drupal site
 Redirect 301 /blogg/lunchaihop /blogg/2011/11/lunchaihop/
 Redirect 301 /blogg/drupalcamp-stockholm-pa-lordag /blogg/2011/11/drupalcamp-stockholm-pa-lordag/
 Redirect 301 /blogg/sommarens-och-hostens-projekt /blogg/2011/11/sommarens-och-hostens-projekt/
+Redirect 301 /drupal7 /drupal/
+Redirect 301 /rss/blogg /feed.xml
