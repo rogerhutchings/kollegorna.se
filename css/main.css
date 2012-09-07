@@ -933,10 +933,6 @@ html[xmlns] .slides {
     .footer li:nth-child(3n+1) {
       clear: both; } }
 
-.footer-map {
-  display: none;
-  height: 450px; }
-
 /**
  * Sections
  */
@@ -1105,6 +1101,16 @@ html[xmlns] .slides {
   .contact [role="banner"] h1 {
     font-size: 2em;
     text-transform: uppercase; }
+
+.map {
+  background: #fff;
+  border-bottom: 1px solid #B7B19C;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px #B7B19C;
+  color: #333;
+  padding: 4em 0 0;
+  margin: 70px -70px 0;
+  padding: 70px; }
 
 .colleagues {
   background: #fff;

@@ -5,8 +5,10 @@ body_class: blog-post
 <section role="main">
   <article class="post">
     <header>
-      <time pubdate>{{ page.date | date_to_string }}</time>
       <h1>{{ page.title }}</h1>
+
+      <time pubdate>{{ page.date | date_to_string }}</time>
+      <span class="author">av <a href="mailto:{{ page.author_email }}"><img src="{{ page.author_email | to_gravatar }}?s=60" alt="{{ page.author }}"> {{ page.author }}</a></span>
     </header>
 
     {{ content }}
