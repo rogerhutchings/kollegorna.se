@@ -2,13 +2,17 @@
  * Styles for home page
  */
 
+.home {
+  border: 0;
+}
+
 .home .nav {
   display: none;
 }
 
 .home [role="banner"] {
   @extend .wrapper;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   min-height: 500px;
   position: relative;
   text-align: center;
@@ -25,7 +29,7 @@
     height: 320px;
     position: absolute;
     right: 0;
-    top: 170px;
+    top: 230px;
     width: 320px;
   }
 
@@ -54,26 +58,48 @@
   .circle:hover {
     background: rgba(247, 121, 22, .9);
     box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
+    height: 170px;
+    line-height: 170px;
+    width: 170px;
   }
 
   .circle.design {
     left: 80px;
     top: 50px;
+
+    &:hover {
+      left: 75px;
+      top: 45px;
+    }
   }
 
   .circle.technology {
     bottom: 0;
     left: 15px;
+
+    &:hover {
+      bottom: -5px;
+      left: 10px;
+    }
   }
 
   .circle.strategy {
     bottom: 0;
     right: 15px;
+
+    &:hover {
+      bottom: -5px;
+      right: 10px;
+    }
   }
 
   .presentation {
     padding: 20px 340px 0 0;
     text-align: left;
+
+    p:first-child {
+      font-size: 1.3em;
+    }
 
     a {
       @extend .cta;

@@ -14,4 +14,4 @@ javascripts:
 stylesheets:
   common:
     - css/vendor/normalize.css
-    - css/main.css
+    - css/stylesheets/main.css

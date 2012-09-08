@@ -19,6 +19,10 @@
     font-size: 2em;
     text-transform: uppercase;
   }
+
+  a {
+    @extend .cta;
+  }
 }
 
 .blog [role="main"] {
@@ -89,5 +93,9 @@
 
   ul {
     list-style: none;
+  }
+
+  time {
+    color: $heading_color;
   }
 }

@@ -34,6 +34,10 @@ a:link {
   font-size: .8em;
   font-weight: $fw_bold;
   text-transform: uppercase;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .cta:hover {
@@ -102,7 +106,7 @@ h6 a {
 }
 
 h4 a {
-  color: $link_color;
+  color: $heading_color;
 }
 
 h1 a:hover,
@@ -116,7 +120,7 @@ h6 a:hover {
 }
 
 h4 a:hover {
-  color: $heading_color;
+  color: $link_color;
 }
 
 /** 4. TEXT ---------- */
