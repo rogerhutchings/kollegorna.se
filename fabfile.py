@@ -13,6 +13,6 @@ def deploy(where=None):
   rsync_project(
     env.remote_dir,
     '_site/',
-    ['.git', '.git*', 'fabfile.py*', '.DS_Store'],
+    ['.git', '.git*', 'fabfile.py*', '.DS_Store', 'Users/'],
     True
   )
