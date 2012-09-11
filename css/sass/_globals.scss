@@ -20,19 +20,10 @@
   box-sizing: border-box;
 }
 
-/**
- * Typeface Nimbus Sans ('nimbus-sans') via Typekit
- *
- * Nimbus Sans Regular (400)
- * Nimbus Sans Regular Italic (400)
- * Nimbus Sans Bold (700)
- * Nimbus Sans Bold Italic (700)
- */
-
 html {
-  background: $bg_color;
-  color: $text_color;
-  font: $fw_normal 100%/1.5 $base_font; /* 16px */
+  background: $color-background;
+  color: $color-text;
+  font: $font-weight-normal 100%/1.5 $font; /* 16px */
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
@@ -45,14 +36,6 @@ body {
   font-size: 1.125em; /* 18px */
   line-height: 1.6666; /* 30px */
   padding: 0; /* 40px 20px */
-}
-
-@media only screen and (max-width: 480px) {
-  body {
-    /*font-size: 0.875em;*/ /* 14px */
-    /*line-height: 1.4285;*/ /* 20px */
-    /*padding: 1.4285;*/ /* 20px */
-  }
 }
 
 article:before,

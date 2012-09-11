@@ -1,9 +1,9 @@
 .projects .nav-projects a,
 .projects .nav-projects a:hover,
 .projects .nav-projects a:focus {
-  background: $heading_color;
+  background: $color-heading;
   border: 0;
-  color: $bg_color;
+  color: $color-background;
   padding: 0 6px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .our-projects {
-  @media only screen and (min-width: 768px) {
+  @include breakpoint($breakpoint-medium) {
     float: left;
     width: 60%;
   }
@@ -40,7 +40,7 @@
 }
 
 .current-projects {
-  @media only screen and (min-width: 768px) {
+  @include breakpoint($breakpoint-medium) {
     float: right;
     width: 34%;
   }
@@ -62,7 +62,7 @@
   padding: 70px;
 
   figure {
-    @media only screen and (min-width: 1024px) {
+    @include breakpoint($breakpoint-large) {
       margin: -70px -70px 70px;
     }
   }

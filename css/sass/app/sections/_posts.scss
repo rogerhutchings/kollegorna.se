@@ -4,9 +4,9 @@
 .blog-post .nav-blog a,
 .blog-post .nav-blog a:hover,
 .blog-post .nav-blog a:focus {
-  background: $heading_color;
+  background: $color-heading;
   border: 0;
-  color: $bg_color;
+  color: $color-background;
   padding: 0 6px;
 }
 
@@ -90,12 +90,11 @@
 }
 
 .posts {
-
   ul {
     list-style: none;
   }
 
   time {
-    color: $heading_color;
+    color: $color-heading;
   }
 }

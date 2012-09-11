@@ -1,9 +1,9 @@
 .contact .nav-contact a,
 .contact .nav-contact a:hover,
 .contact .nav-contact a:focus {
-  background: $heading_color;
+  background: $color-heading;
   border: 0;
-  color: $bg_color;
+  color: $color-background;
   padding: 0 6px;
 }
 
@@ -25,8 +25,8 @@
 .map {
   background: #fff;
   border-bottom: 1px solid #B7B19C;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px #B7B19C;
+  @include border-radius(4px);
+  @include box-shadow(0 2px 4px #B7B19C);
   color: #333;
   padding: 4em 0 0;
   margin: 70px -70px 0;
@@ -36,8 +36,8 @@
 .colleagues {
   background: #fff;
   border-bottom: 1px solid #B7B19C;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px #B7B19C;
+  @include border-radius(4px);
+  @include box-shadow(0 2px 4px #B7B19C);
   color: #333;
   padding: 4em 0 0;
   margin: 0 -70px;
@@ -48,7 +48,7 @@
     list-style: none;
   }
 
-  @media only screen and (min-width: 768px) {
+  @include breakpoint($breakpoint-medium) {
     li {
       float: left;
       width: 50%;
@@ -59,7 +59,7 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @include breakpoint($breakpoint-large) {
     li {
       width: 33.333%;
     }
@@ -80,6 +80,6 @@
   }
 
   dt {
-    font-weight: $fw_normal;
+    font-weight: $font-weight-normal;
   }
 }

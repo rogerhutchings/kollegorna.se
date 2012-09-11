@@ -20,42 +20,27 @@
   }
 
   li a {
-    border-radius: 2px;
-    color: $heading_color;
+    @include border-radius(2px);
+    color: $color-heading;
     font-size: .7em;
-    font-weight: $fw_bold;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
   }
 
   li a:hover {
-    color: $link_color;
+    color: $color-link;
   }
 }
-/*
-.no-touch .nav ul {
-  opacity: .6;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
 
-.no-touch .nav:hover ul {
-  opacity: 1;
-}
-*/
 .header-logo {
-  color: $text_color;
-  display: inline-block;
-  font: italic $fw_black 36px/1 $logo_font;
+  color: $color-text;
+  @include inline-block;
+  font: italic $font-weight-black 36px/1 $font-logo;
   left: 30px;
   margin: 0;
   padding: 0 5px;
   position: absolute;
-  text-shadow:
-    1px 1px 0 #F0E9CD,
-    2px 2px 0 rgba(0, 0, 0, .3);
-
+  @include text-shadow(1px 1px 0 #F0E9CD, 2px 2px 0 rgba(0, 0, 0, .3));
   top: 13px;
 
   span {

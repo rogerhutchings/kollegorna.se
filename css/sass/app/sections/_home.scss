@@ -40,13 +40,13 @@
     color: rgba(255, 255, 255, .9);
     display: inline-block;
     font-size: 18px;
-    font-weight: $fw_bold;
+    font-weight: $font-weight-bold;
     height: 160px;
     line-height: 160px;
     opacity: 1;
     position: absolute;
     text-align: center;
-    text-shadow: 0 1px 1px $link_color;
+    text-shadow: 0 1px 1px $color-link;
     text-transform: uppercase;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -135,7 +135,7 @@
     padding: 0 10px;
     position: absolute;
 
-    @media only screen and (min-width: 1024px) {
+    @include breakpoint($breakpoint-large) {
       max-width: 50%;
     }
   }

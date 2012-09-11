@@ -1,16 +1,32 @@
-/**
- * VARIABLES
- */
+@import 'compass';
 
-$bg_color: #F0E9CD;
-$link_color: #f77916;
-$text_color: #5F5C4E;
-$heading_color: #403e35;
+/** PLUGINS ---------- */
 
-$base_font: "ff-dagny-web-pro", sans-serif;
-$logo_font: "omnes-pro-i9", "omnes-pro", sans-serif;
+/** BREAKPOINT */
+@import 'breakpoint'; // https://github.com/canarymason/breakpoint
 
-/* Font weights */
-$fw_normal: 400;
-$fw_bold: 700;
-$fw_black: 900;
+/** VARIABLES ---------- */
+
+/** BREAKPOINTS */
+
+$breakpoint-smallest: '480px';
+$breakpoint-small: '600px';
+$breakpoint-medium: '780px';
+$breakpoint-large: '992px';
+
+/** COLORS */
+
+$color-background: #F0E9CD;
+$color-link: #f77916;
+$color-link-active: #403e35;
+$color-text: #5F5C4E;
+$color-heading: #403e35;
+
+/** FONTS */
+
+$font: "ff-dagny-web-pro", sans-serif;
+$font-logo: "omnes-pro-i9", "omnes-pro", sans-serif;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;

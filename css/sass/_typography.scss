@@ -2,13 +2,13 @@
 /** 2. LINKS ---------- */
 
 a {
-  color: $link_color;
+  color: $color-link;
   text-decoration: none;
 }
 
 a:active {
-  border-bottom-color: $heading_color;
-  color: $heading_color;
+  border-bottom-color: $color-link-active;
+  color: $color-link-active;
 }
 
 a:hover,
@@ -18,11 +18,11 @@ a:active {
 
 a:focus,
 a:hover {
-  border-bottom: 2px solid $link_color;
+  border-bottom: 2px solid $color-link;
 }
 
 a:link {
-  -webkit-tap-highlight-color: #33B4DA;
+  -webkit-tap-highlight-color: $color-link-active;
 }
 
 /**
@@ -30,9 +30,9 @@ a:link {
  */
 
 .cta {
-  border-bottom: 2px solid $link_color;
+  border-bottom: 2px solid $color-link;
   font-size: .8em;
-  font-weight: $fw_bold;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -41,8 +41,8 @@ a:link {
 }
 
 .cta:hover {
-  border-color: $heading_color;
-  color: $heading_color;
+  border-color: $color-heading;
+  color: $color-heading;
 }
 
 /** 3. HEADINGS ---------- */
@@ -53,8 +53,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: $heading_color;
-  font-weight: $fw_bold;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
 }
 
 h1 {
@@ -89,7 +89,7 @@ h5 {
 }
 
 h6 {
-  color: $text_color;
+  color: $color-text;
   font-size: .7em; /* 14px */
   line-height: 1.4285; /* 20px */
   margin: .8571em 0 .4em; /* 12px */
@@ -106,7 +106,7 @@ h6 a {
 }
 
 h4 a {
-  color: $heading_color;
+  color: $color-heading;
 }
 
 h1 a:hover,
@@ -120,7 +120,7 @@ h6 a:hover {
 }
 
 h4 a:hover {
-  color: $link_color;
+  color: $color-link;
 }
 
 /** 4. TEXT ---------- */
@@ -139,7 +139,7 @@ hr {
 }
 
 blockquote {
-  border-left: 4px solid $heading_color;
+  border-left: 4px solid $color-heading;
   padding: .3em 0 .3em 1.2em; /* 6px 0 6px 24px */
   margin: 0 0 1.2em; /* 0 0 24px */
 }
@@ -166,7 +166,7 @@ q {
 }
 
 cite {
-  color: $heading_color;
+  color: $color-heading;
   font-style: italic;
 }
 
@@ -175,18 +175,18 @@ blockquote cite {
 }
 
 strong {
-  color: $heading_color;
-  font-weight: $fw_bold;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
 }
 
 em,
 dfn {
-  color: $heading_color;
+  color: $color-heading;
   font-style: italic;
 }
 
 dfn {
-  font-weight: $fw_bold;
+  font-weight: $font-weight-bold;
 }
 
 abbr,
@@ -306,8 +306,8 @@ dl {
 }
 
 dt {
-  color: $heading_color;
-  font-weight: $fw_bold;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
 }
 
 dd {
@@ -385,7 +385,7 @@ thead th {
 }
 
 th {
-  font-weight: $fw_bold;
+  font-weight: $font-weight-bold;
   text-align: left;
 }
 
@@ -404,14 +404,12 @@ tfoot {
 }
 
 .logo {
-  color: $text_color;
+  color: $color-text;
   display: inline-block;
-  font: italic $fw_black 96px/1.2 $logo_font;
+  font: italic $font-weight-black 96px/1.2 $font-logo;
   margin: 80px 0 60px;
   padding: 0 5px;
-  text-shadow:
-    1px 1px 0 #F0E9CD,
-    3px 3px 0 rgba(0, 0, 0, .3);
+  @include text-shadow(1px 1px 0 #F0E9CD, 3px 3px 0 rgba(0, 0, 0, .3));
 }
 
 .logo:hover {
@@ -422,10 +420,6 @@ tfoot {
   display: inline-block;
 }
 
-.logo span:nth-child(odd) {
-
-}
-
 .logo span:nth-child(even) {
-  opacity: .95;
+  @include opacity(0.95);
 }
