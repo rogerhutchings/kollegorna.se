@@ -1189,7 +1189,7 @@ html[xmlns] .slides {
   padding: 0 10px;
   position: absolute;
 }
-@media (992px) {
+@media (min-width: 992px) {
   /* line 127, ../sass/app/sections/_home.scss */
   .selected-projects figcaption {
     max-width: 50%;
@@ -1230,7 +1230,7 @@ html[xmlns] .slides {
   text-transform: uppercase;
 }
 
-@media (780px) {
+@media (min-width: 780px) {
   /* line 23, ../sass/app/sections/_projects.scss */
   .our-projects {
     float: left;
@@ -1246,7 +1246,7 @@ html[xmlns] .slides {
   display: block;
 }
 
-@media (780px) {
+@media (min-width: 780px) {
   /* line 42, ../sass/app/sections/_projects.scss */
   .current-projects {
     float: right;
@@ -1264,7 +1264,7 @@ html[xmlns] .slides {
   margin: 0 -70px 70px;
   padding: 70px;
 }
-@media (992px) {
+@media (min-width: 992px) {
   /* line 64, ../sass/app/sections/_projects.scss */
   .project figure {
     margin: -70px -70px 70px;
@@ -1425,7 +1425,7 @@ html[xmlns] .slides {
 .colleagues ul {
   list-style: none;
 }
-@media (780px) {
+@media (min-width: 780px) {
   /* line 52, ../sass/app/sections/_contact.scss */
   .colleagues li {
     float: left;
@@ -1436,7 +1436,7 @@ html[xmlns] .slides {
     clear: both;
   }
 }
-@media (992px) {
+@media (min-width: 992px) {
   /* line 63, ../sass/app/sections/_contact.scss */
   .colleagues li {
     width: 33.333%;

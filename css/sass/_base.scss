@@ -3,16 +3,16 @@
 /** PLUGINS ---------- */
 
 /** BREAKPOINT */
-@import 'breakpoint'; // https://github.com/canarymason/breakpoint
+@import 'breakpoint'; // https://github.com/canarymason/breakpoint;
 
 /** VARIABLES ---------- */
 
 /** BREAKPOINTS */
 
-$breakpoint-smallest: '480px';
-$breakpoint-small: '600px';
-$breakpoint-medium: '780px';
-$breakpoint-large: '992px';
+$breakpoint-smallest: 'min-width: 480px';
+$breakpoint-small: 'min-width: 600px';
+$breakpoint-medium: 'min-width: 780px';
+$breakpoint-large: 'min-width: 992px';
 
 /** COLORS */
 
