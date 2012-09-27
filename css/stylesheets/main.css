@@ -1339,29 +1339,38 @@ html[xmlns] .slides {
 .post header {
   margin: 0 0 1em;
 }
-/* line 75, ../sass/app/sections/_posts.scss */
+/* line 74, ../sass/app/sections/_posts.scss */
+.post .right {
+  float: right;
+  margin: 0 0 0 2em;
+}
+/* line 79, ../sass/app/sections/_posts.scss */
+.post .clear {
+  clear: both;
+}
+/* line 84, ../sass/app/sections/_posts.scss */
 .post .author,
 .post time {
   color: #777;
 }
-/* line 79, ../sass/app/sections/_posts.scss */
+/* line 88, ../sass/app/sections/_posts.scss */
 .post .author img {
   border-radius: 50%;
 }
-/* line 83, ../sass/app/sections/_posts.scss */
+/* line 92, ../sass/app/sections/_posts.scss */
 .post time:before {
   content: " – ";
 }
-/* line 87, ../sass/app/sections/_posts.scss */
+/* line 96, ../sass/app/sections/_posts.scss */
 .post #disqus_thread {
   padding-top: 2em;
 }
 
-/* line 93, ../sass/app/sections/_posts.scss */
+/* line 102, ../sass/app/sections/_posts.scss */
 .posts ul {
   list-style: none;
 }
-/* line 97, ../sass/app/sections/_posts.scss */
+/* line 106, ../sass/app/sections/_posts.scss */
 .posts time {
   color: #403e35;
 }

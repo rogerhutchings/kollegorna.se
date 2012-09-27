@@ -71,6 +71,15 @@
     margin: 0 0 1em;
   }
 
+  .right {
+    float: right;
+    margin: 0 0 0 2em;
+  }
+
+  .clear {
+    clear: both;
+  }
+
   .author,
   time {
     color: #777;

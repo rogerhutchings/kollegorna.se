@@ -6,6 +6,10 @@ comments: true
 <section role="main">
   <article class="post">
     <header>
+      {% if page.top_image %}
+      <figure class="top-image"><img src="{{ page.top_image }}" alt="{{ page.top_image_alt }}"></figure>
+      {% endif %}
+
       <h1>{{ page.title }}</h1>
 
       <span class="author">Av <a href="mailto:{{ page.author_email }}"><!--<img src="{{ page.author_email | to_gravatar }}?s=40" alt="{{ page.author }}"> -->{{ page.author }}</a></span>
