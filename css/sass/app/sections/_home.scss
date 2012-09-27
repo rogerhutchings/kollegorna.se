@@ -10,12 +10,44 @@
   display: none;
 }
 
+
+.logo {
+  color: $color-text;
+  display: inline-block;
+  font: italic $font-weight-black 48px/1.2 $font-logo;
+  margin: 20px 0 0;
+  padding: 0 5px;
+  @include text-shadow(1px 1px 0 #F0E9CD, 3px 3px 0 rgba(0, 0, 0, .3));
+
+  &:hover {
+    border: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    font: italic $font-weight-black 96px/1.2 $font-logo;
+    margin: 80px 0 60px;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  span:nth-child(even) {
+    @include opacity(0.95);
+  }
+}
+
+
 .home [role="banner"] {
   @extend .wrapper;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   min-height: 500px;
   position: relative;
   text-align: center;
+
+  @media only screen and ($breakpoint-medium) {
+    margin-bottom: 120px;
+  }
 
   ul {
     list-style: none;
@@ -26,11 +58,24 @@
   }
 
   .skills {
-    height: 320px;
-    position: absolute;
-    right: 0;
-    top: 230px;
-    width: 320px;
+    height: 200px;
+    margin: 0 auto 25px;
+    position: relative;
+    width: 200px;
+
+    @media only screen and ($breakpoint-smallest) {
+      height: 240px;
+      width: 240px;
+    }
+
+    @media only screen and ($breakpoint-medium) {
+      height: 320px;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 230px;
+      width: 320px;
+    }
   }
 
   .circle {
@@ -39,10 +84,10 @@
     box-shadow: 0 0 10px rgba(247, 121, 22, 0.4);
     color: rgba(255, 255, 255, .9);
     display: inline-block;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: $font-weight-bold;
-    height: 160px;
-    line-height: 160px;
+    height: 50%;
+    line-height: 100%;
     opacity: 1;
     position: absolute;
     text-align: center;
@@ -52,53 +97,92 @@
     -o-transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    width: 160px;
+    width: 50%;
+
+    @media only screen and ($breakpoint-medium) {
+      font-size: 18px;
+      height: 160px;
+      line-height: 160px;
+      width: 160px;
+    }
+
+    span {
+      display: inline-block;
+      padding-top: 45%;
+
+      @media only screen and ($breakpoint-medium) {
+        padding: 0;
+      }
+    }
   }
 
   .circle:hover {
     background: rgba(247, 121, 22, .9);
     box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
-    height: 170px;
-    line-height: 170px;
-    width: 170px;
+
+    @media only screen and ($breakpoint-medium) {
+      height: 170px;
+      line-height: 170px;
+      width: 170px;
+    }
   }
 
   .circle.design {
-    left: 80px;
-    top: 50px;
+    left: 25%;
+    top: 15%;
 
-    &:hover {
-      left: 75px;
-      top: 45px;
+    @media only screen and ($breakpoint-medium) {
+      left: 80px;
+      top: 50px;
+
+      &:hover {
+        left: 75px;
+        top: 45px;
+      }
     }
   }
 
   .circle.technology {
     bottom: 0;
-    left: 15px;
+    left: 4.5%;
 
-    &:hover {
-      bottom: -5px;
-      left: 10px;
+    @media only screen and ($breakpoint-medium) {
+      left: 15px;
+
+      &:hover {
+        bottom: -5px;
+        left: 10px;
+      }
     }
   }
 
   .circle.strategy {
     bottom: 0;
-    right: 15px;
+    right: 4.5%;
 
-    &:hover {
-      bottom: -5px;
-      right: 10px;
+    @media only screen and ($breakpoint-medium) {
+      right: 15px;
+
+      &:hover {
+        bottom: -5px;
+        right: 10px;
+      }
     }
   }
 
   .presentation {
-    padding: 20px 340px 0 0;
     text-align: left;
+
+    @media only screen and ($breakpoint-medium) {
+      padding: 20px 340px 0 0;
+    }
 
     p:first-child {
       font-size: 1.3em;
+    }
+
+    li {
+      margin-bottom: .5em;
     }
 
     a {
@@ -114,7 +198,9 @@
   }
 
   .slides {
-    margin: 0 0 20px;
+    @media only screen and ($breakpoint-medium) {
+      margin: 0 0 20px;
+    }
   }
 
   figure {
@@ -126,17 +212,34 @@
 
   figcaption {
     background: rgba(0, 0, 0, .87);
-    bottom: 20px;
+    bottom: 0;
     color: #fff;
-    display: inline-block;
+    display: block;
     margin-right: 20px;
-    left: 20px;
+    left: 0;
     opacity: .8;
     padding: 0 10px;
     position: absolute;
+    width: 100%;
 
-    @include breakpoint($breakpoint-large) {
+    @media only screen and ($breakpoint-medium) {
+      bottom: 20px;
+      display: inline-block;
+      left: 20px;
+    }
+
+    @media only screen and ($breakpoint-large) {
       max-width: 50%;
+    }
+
+    span {
+      display: inline-block;
+      text-indent: -9999px;
+
+      @media only screen and ($breakpoint-medium) {
+        display: inline;
+        text-indent: normal;
+      }
     }
   }
 
@@ -151,6 +254,9 @@
 
 .home .posts {
   @extend .wrapper;
+  padding-top: 20px;
 
-  padding-top: 80px;
+  @media only screen and ($breakpoint-medium) {
+    padding-top: 80px;
+  }
 }

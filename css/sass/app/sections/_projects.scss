@@ -10,9 +10,12 @@
 .projects [role="banner"] {
   @extend .clearfix;
   @extend .wrapper;
+  margin-bottom: 20px;
 
-  margin-bottom: 40px;
-  padding: 60px 0;
+  @media only screen and ($breakpoint-medium) {
+    margin-bottom: 40px;
+    padding: 60px 0;
+  }
 
   h1 {
     font-size: 2em;
@@ -40,8 +43,11 @@
 }
 
 .current-projects {
+  margin: 0 0 20px;
+
   @include breakpoint($breakpoint-medium) {
     float: right;
+    margin-bottom: 0;
     width: 34%;
   }
 }
@@ -58,10 +64,21 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px #B7B19C;
   color: #333333;
-  margin: 0 -70px 70px;
-  padding: 70px;
+  margin: 0 -20px 20px;
+  padding: 20px;
+
+  @media only screen and ($breakpoint-medium) {
+    margin: 0 -70px 70px;
+    padding: 70px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
 
   figure {
+    margin: -20px -20px 20px;
+
     @include breakpoint($breakpoint-large) {
       margin: -70px -70px 70px;
     }

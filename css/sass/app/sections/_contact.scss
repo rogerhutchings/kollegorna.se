@@ -9,8 +9,11 @@
 
 .contact [role="banner"] {
   @extend .wrapper;
+  margin-bottom: 20px;
 
-  margin-bottom: 40px;
+  @media only screen and ($breakpoint-medium) {
+    margin-bottom: 40px;
+  }
 
   h1 {
     font-size: 2em;
@@ -22,17 +25,6 @@
   @extend .wrapper;
 }
 
-.map {
-  background: #fff;
-  border-bottom: 1px solid #B7B19C;
-  @include border-radius(4px);
-  @include box-shadow(0 2px 4px #B7B19C);
-  color: #333;
-  padding: 4em 0 0;
-  margin: 70px -70px 0;
-  padding: 70px;
-}
-
 .colleagues {
   background: #fff;
   border-bottom: 1px solid #B7B19C;
@@ -40,8 +32,13 @@
   @include box-shadow(0 2px 4px #B7B19C);
   color: #333;
   padding: 4em 0 0;
-  margin: 0 -70px;
-  padding: 70px;
+  margin: 0 -20px 20px;
+  padding: 20px;
+
+  @media only screen and ($breakpoint-medium) {
+    margin: 0 -70px 70px;
+    padding: 70px;
+  }
 
   ul {
     @extend .clearfix;
@@ -81,5 +78,18 @@
 
   dt {
     font-weight: $font-weight-normal;
+  }
+}
+
+.map {
+  @media only screen and ($breakpoint-medium) {
+    background: #fff;
+    border-bottom: 1px solid #B7B19C;
+    @include border-radius(4px);
+    @include box-shadow(0 2px 4px #B7B19C);
+    color: #333;
+    padding: 4em 0 0;
+    margin: 70px -70px 0;
+    padding: 70px;
   }
 }

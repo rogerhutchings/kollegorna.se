@@ -58,10 +58,16 @@ h6 {
 }
 
 h1 {
-  font-size: 2.8em; /* 56px */
-  letter-spacing: -0.0178em; /* 1px */
-  line-height: 1.0714; /* 60px */
-  margin: 0 0 0.4285em; /* 24px */
+  font-size: 1.8em;
+  line-height: 1.2;
+  margin: 0 0 .5em;
+
+  @media only screen and ($breakpoint-medium) {
+    font-size: 2.8em; /* 56px */
+    letter-spacing: -0.0178em; /* 1px */
+    line-height: 1.0714; /* 60px */
+    margin: 0 0 0.4285em; /* 24px */
+  }
 }
 
 h2 {
@@ -292,9 +298,13 @@ li ol {
 
 ul,
 ol {
-  list-style: disc outside;
+  list-style: disc inside;
   margin: 0 0 0.6em; /* 0 0 12px */
   padding: 0;
+
+  @media only screen and ($breakpoint-medium) {
+    list-style: disc outside;
+  }
 }
 
 ol {
@@ -401,25 +411,4 @@ td img {
 
 tfoot {
   font-style: italic;
-}
-
-.logo {
-  color: $color-text;
-  display: inline-block;
-  font: italic $font-weight-black 96px/1.2 $font-logo;
-  margin: 80px 0 60px;
-  padding: 0 5px;
-  @include text-shadow(1px 1px 0 #F0E9CD, 3px 3px 0 rgba(0, 0, 0, .3));
-}
-
-.logo:hover {
-  border: 0;
-}
-
-.logo span {
-  display: inline-block;
-}
-
-.logo span:nth-child(even) {
-  @include opacity(0.95);
 }
