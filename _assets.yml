@@ -6,6 +6,7 @@ javascripts:
     - js/vendor/jquery.lazyload.min.js
     - js/vendor/flexslider/jquery.flexslider-min.js
     - js/vendor/jquery.lettering-0.6.1.min.js
+    - js/vendor/jquery.fitvids.js
     - js/vendor/helper.js
     - js/app/sections/home.js
     - js/app/sections/projects.js
