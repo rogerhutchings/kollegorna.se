@@ -2,50 +2,43 @@
 .footer {
   @extend .wrapper;
   padding: 2em 0 20px;
-
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium-2) {
     padding: 8em 0 2em;
-  }
-
-  @media only screen and (max-width: 768px) {
-    h6 {
-      font-size: .9em;
-    }
   }
 
   ul {
     @extend .clearfix;
     list-style: none;
     margin: 0;
+    @include breakpoint($breakpoint-medium) {
+      li {
+        float: left;
+        width: 50%;
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+        li {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+    @include breakpoint($breakpoint-largest) {
+      li {
+        width: 33.333%;
+        &:nth-child(2n+1) {
+          clear: none;
+        }
+        &:nth-child(3n+1) {
+          clear: both;
+        }
+      }
+    }
   }
 
-  @media only screen and (min-width: 768px) {
-    li {
-      float: left;
-      width: 50%;
-    }
-
-    li:nth-child(2n+1) {
-      clear: both;
-    }
-
-    li li {
-      float: none;
-      width: 100%;
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    li {
-      width: 33.333%;
-    }
-
-    li:nth-child(2n+1) {
-      clear: none;
-    }
-
-    li:nth-child(3n+1) {
-      clear: both;
+  @include breakpoint($breakpoint-max-width-medium-2) {
+    h6 {
+      font-size: .9em;
     }
   }
 

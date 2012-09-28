@@ -1,66 +1,51 @@
-.blog .nav-blog a,
-.blog .nav-blog a:hover,
-.blog .nav-blog a:focus,
-.blog-post .nav-blog a,
-.blog-post .nav-blog a:hover,
-.blog-post .nav-blog a:focus {
-  background: $color-heading;
-  border: 0;
-  color: $color-background;
-  padding: 0 6px;
-}
-
-.blog [role="banner"] {
-  @extend .wrapper;
-
-  margin-bottom: 40px;
-
-  h1 {
-    font-size: 2em;
-    text-transform: uppercase;
-  }
-
-  a {
-    @extend .cta;
-  }
-}
-
-.blog [role="main"] {
-  @extend .wrapper;
-
-  .summaries {
-    background: #fff;
-    border-bottom: 1px solid #B7B19C;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px #B7B19C;
-    color: #333;
-    padding: 4em 0 0;
-    margin: 0 -20px 20px;
-    padding: 20px;
-
-    @media only screen and ($breakpoint-medium) {
-      margin: 0 -70px 70px;
-      padding: 70px;
+.blog,
+.blog-post { 
+  .nav-blog {
+    a,
+    a:hover,
+    a:focus {
+      background: $color-heading;
+      border: 0;
+      color: $color-background;
+      padding: 0 6px;
     }
   }
 }
 
-
+.blog [role="banner"],
+.blog [role="main"],
 .blog-post [role="main"] {
   @extend .wrapper;
 }
 
+.blog {
+  [role="banner"] {
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+
+    a {
+      @extend .cta;
+    }
+  }
+
+  [role="main"] .summaries {
+    @include box;
+  }
+}
+
 .post-summary {
   margin: 0 0 15px;
-
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium) {
     margin: 0 0 2em;
   }
 
   h4 {
     margin: 0;
-
-    @media only screen and (max-width: 768px) {
+    @include breakpoint($breakpoint-max-width-medium) {
       font-size: 1.2em;
       margin-bottom: .15em;
     }
@@ -72,53 +57,33 @@
 }
 
 .post {
-  background: #fff;
-  border-bottom: 1px solid #B7B19C;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px #B7B19C;
-  color: #333;
-  margin: 0 -20px 20px;
-  padding: 20px;
-
-  @media only screen and ($breakpoint-medium) {
-    margin: 0 -70px 70px;
-    padding: 70px;
-  }
-
+  @include box;
   header {
     margin: 0 0 1em;
   }
-
   .top-image {
     margin: 0 0 1em;
-
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       margin: 0 0 2em;
     }
   }
-
   .right {
     float: right;
     margin: 0 0 0 2em;
   }
-
   .clear {
     clear: both;
   }
-
   .author,
   time {
     color: #777;
   }
-
   .author img {
     border-radius: 50%;
   }
-
   time:before {
     content: " – ";
   }
-
   #disqus_thread {
     padding-top: 2em;
   }
@@ -127,28 +92,23 @@
 .posts {
   ul {
     list-style: none;
-  }
-
-  li {
-    margin: 0 0 .5em;
-  }
-
-  time {
-    color: $color-heading;
-    display: block;
-  }
-
-  @media only screen and ($breakpoint-medium) {
     li {
-      margin: 0;
+      margin: 0 0 .5em;
     }
-
     time {
-      display: inline;
+      color: $color-heading;
+      display: block;
     }
-
-    time:after {
-      content: " – ";
+    @include breakpoint($breakpoint-medium) {
+      li {
+        margin: 0;
+      }
+      time {
+        display: inline;
+        &:after {
+          content: " – ";
+        }
+      }
     }
   }
 }

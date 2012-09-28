@@ -9,10 +9,14 @@
 
 /** BREAKPOINTS */
 
-$breakpoint-smallest: 'min-width: 480px';
-$breakpoint-small: 'min-width: 600px';
-$breakpoint-medium: 'min-width: 780px';
-$breakpoint-large: 'min-width: 992px';
+$breakpoint-smallest: 480px;
+$breakpoint-small: 600px;
+$breakpoint-medium: 768px;
+$breakpoint-medium-2: 780px;
+$breakpoint-large: 992px;
+$breakpoint-largest: 1024px;
+$breakpoint-max-width-medium: max-width 768px;
+$breakpoint-max-width-medium-2: max-width 780px;
 
 /** COLORS */
 
@@ -20,7 +24,9 @@ $color-background: #F0E9CD;
 $color-link: #f77916;
 $color-link-active: #403e35;
 $color-text: #5F5C4E;
+$color-black-text: #333;
 $color-heading: #403e35;
+$color-box-shadow: #B7B19C;
 
 /** FONTS */
 
@@ -30,3 +36,24 @@ $font-logo: "omnes-pro-i9", "omnes-pro", sans-serif;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
+
+/** MIXINS */
+@mixin box {
+  @include border-radius(4px);
+  @include box-shadow(0 2px 4px $color-box-shadow);
+  background: #fff;
+  border-bottom: 1px solid $color-box-shadow;
+  color: #333;
+  padding: 4em 0 0;
+  margin: 0 -20px 20px;
+  padding: 20px;
+
+  @include breakpoint($breakpoint-medium) {
+    margin: 0 -70px 70px;
+    padding: 70px;
+  }
+}
+
+@mixin global-transition {
+  @include transition-duration(0.4s);
+}

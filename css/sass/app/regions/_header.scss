@@ -1,34 +1,31 @@
+
 .header-logo {
+  @include text-shadow(1px 1px 0 $color-background, 2px 2px 0 rgba(0, 0, 0, .3));
   color: $color-text;
   display: block;
   font: italic $font-weight-black 42px/1 $font-logo;
   margin: 0 0 15px;
-  padding: 20px 5px 0;
+  padding: 15px 5px 0;
   text-align: center;
-  @include text-shadow(1px 1px 0 #F0E9CD, 2px 2px 0 rgba(0, 0, 0, .3));
-
-
-  @media only screen and ($breakpoint-medium) {
+  &:hover {
+    border: 0;
+  }
+  @include breakpoint($breakpoint-medium) {
     @include inline-block;
     left: 30px;
     margin: 0;
     padding: 0 5px;
     position: absolute;
     text-align: left;
-    top: 13px;
+    top: 8px;
   }
 
   span {
-    display: inline-block;
+    @include inline-block;
+    &:nth-child(even) {
+      opacity: .95;
+    }
   }
-
-  span:nth-child(even) {
-    opacity: .95;
-  }
-}
-
-.header-logo:hover {
-  border: 0;
 }
 
 .nav {
@@ -40,35 +37,29 @@
   ul {
     list-style: none;
     text-align: center;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      a {
+        @include border-radius(2px);
+        color: $color-heading;
+        font-size: .7em;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        &:hover {
+          color: $color-link;
+        }
+      }
+    }
   }
-
-  li {
-    display: inline-block;
-    padding: 0 10px;
-  }
-
-  li a {
-    @include border-radius(2px);
-    color: $color-heading;
-    font-size: .7em;
-    font-weight: $font-weight-bold;
-    text-transform: uppercase;
-  }
-
-  li a:hover {
-    color: $color-link;
-  }
-
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium) {
     margin: 0 0 40px;
     padding: 20px 0;
-
     ul {
       text-align: right;
-    }
-
-    li:last-child {
-      padding-right: 30px;
+      li:last-child {
+        padding-right: 30px;
+      }
     }
   }
 }

@@ -4,36 +4,32 @@
 
 .home {
   border: 0;
+  .nav {
+    display: none;
+  }
 }
-
-.home .nav {
-  display: none;
-}
-
 
 .logo {
-  color: $color-text;
-  display: inline-block;
-  font: italic $font-weight-black 48px/1.2 $font-logo;
-  margin: 20px 0 0;
-  padding: 0 5px;
+  @include inline-block;
   @include text-shadow(1px 1px 0 #F0E9CD, 3px 3px 0 rgba(0, 0, 0, .3));
-
+  color: $color-text;
+  font: italic $font-weight-black 48px/1.2 $font-logo;
+  margin: 15px 0 0;
+  padding: 0 5px;
   &:hover {
     border: 0;
   }
 
-  @media only screen and (min-width: 768px) {
-    font: italic $font-weight-black 96px/1.2 $font-logo;
-    margin: 80px 0 60px;
-  }
-
   span {
-    display: inline-block;
+    @include inline-block;
+    &:nth-child(even) {
+      @include opacity(0.95);
+    }
   }
 
-  span:nth-child(even) {
-    @include opacity(0.95);
+  @include breakpoint($breakpoint-medium) {
+    font: italic $font-weight-black 96px/1.2 $font-logo;
+    margin: 67px 0 60px;
   }
 }
 
@@ -44,17 +40,15 @@
   min-height: 500px;
   position: relative;
   text-align: center;
-
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium) {
     margin-bottom: 120px;
   }
 
   ul {
     list-style: none;
-  }
-
-  li {
-    display: block;
+    li {
+      display: block;
+    }
   }
 
   .skills {
@@ -63,12 +57,12 @@
     position: relative;
     width: 200px;
 
-    @media only screen and ($breakpoint-smallest) {
+    @include breakpoint($breakpoint-smallest) {
       height: 240px;
       width: 240px;
     }
 
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       height: 320px;
       margin: 0;
       position: absolute;
@@ -79,6 +73,7 @@
   }
 
   .circle {
+    @include global-transition;
     background: rgba(247, 121, 22, .7);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(247, 121, 22, 0.4);
@@ -93,13 +88,52 @@
     text-align: center;
     text-shadow: 0 1px 1px $color-link;
     text-transform: uppercase;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
     width: 50%;
+    &:hover {
+      background: rgba(247, 121, 22, .9);
+      box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
+      @include breakpoint($breakpoint-medium) {
+        height: 170px;
+        line-height: 170px;
+        width: 170px;
+      }
+    }
+    &.design {
+      left: 25%;
+      top: 15%;
+      @include breakpoint($breakpoint-medium) {
+        left: 80px;
+        top: 50px;
+        &:hover {
+          left: 75px;
+          top: 45px;
+        }
+      }
+    }
+    &.technology {
+      bottom: 0;
+      left: 4.5%;
+      @include breakpoint($breakpoint-medium) {
+        left: 15px;
+        &:hover {
+          bottom: -5px;
+          left: 10px;
+        }
+      }
+    }
+    &.strategy {
+      bottom: 0;
+      right: 4.5%;
+      @include breakpoint($breakpoint-medium) {
+        right: 15px;
+        &:hover {
+          bottom: -5px;
+          right: 10px;
+        }
+      }
+    }
 
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       font-size: 18px;
       height: 160px;
       line-height: 160px;
@@ -107,65 +141,11 @@
     }
 
     span {
-      display: inline-block;
+      @include inline-block;
       padding-top: 45%;
 
-      @media only screen and ($breakpoint-medium) {
+      @include breakpoint($breakpoint-medium) {
         padding: 0;
-      }
-    }
-  }
-
-  .circle:hover {
-    background: rgba(247, 121, 22, .9);
-    box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
-
-    @media only screen and ($breakpoint-medium) {
-      height: 170px;
-      line-height: 170px;
-      width: 170px;
-    }
-  }
-
-  .circle.design {
-    left: 25%;
-    top: 15%;
-
-    @media only screen and ($breakpoint-medium) {
-      left: 80px;
-      top: 50px;
-
-      &:hover {
-        left: 75px;
-        top: 45px;
-      }
-    }
-  }
-
-  .circle.technology {
-    bottom: 0;
-    left: 4.5%;
-
-    @media only screen and ($breakpoint-medium) {
-      left: 15px;
-
-      &:hover {
-        bottom: -5px;
-        left: 10px;
-      }
-    }
-  }
-
-  .circle.strategy {
-    bottom: 0;
-    right: 4.5%;
-
-    @media only screen and ($breakpoint-medium) {
-      right: 15px;
-
-      &:hover {
-        bottom: -5px;
-        right: 10px;
       }
     }
   }
@@ -173,7 +153,7 @@
   .presentation {
     text-align: left;
 
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       padding: 20px 340px 0 0;
     }
 
@@ -183,10 +163,9 @@
 
     li {
       margin-bottom: .5em;
-    }
-
-    a {
-      @extend .cta;
+      a {
+        @extend .cta;
+      }
     }
   }
 
@@ -198,7 +177,7 @@
   }
 
   .slides {
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       margin: 0 0 20px;
     }
   }
@@ -222,21 +201,21 @@
     position: absolute;
     width: 100%;
 
-    @media only screen and ($breakpoint-medium) {
+    @include breakpoint($breakpoint-medium) {
       bottom: 20px;
       display: inline-block;
       left: 20px;
     }
 
-    @media only screen and ($breakpoint-large) {
+    @include breakpoint($breakpoint-large) {
       max-width: 50%;
     }
 
     span {
-      display: inline-block;
+      @include inline-block;
       text-indent: -9999px;
 
-      @media only screen and ($breakpoint-medium) {
+      @include breakpoint($breakpoint-medium) {
         display: inline;
         text-indent: normal;
       }
@@ -255,8 +234,7 @@
 .home .posts {
   @extend .wrapper;
   padding-top: 20px;
-
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium) {
     padding-top: 80px;
   }
 }

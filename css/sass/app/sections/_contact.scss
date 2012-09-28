@@ -1,93 +1,73 @@
-.contact .nav-contact a,
-.contact .nav-contact a:hover,
-.contact .nav-contact a:focus {
-  background: $color-heading;
-  border: 0;
-  color: $color-background;
-  padding: 0 6px;
-}
-
-.contact [role="banner"] {
-  @extend .wrapper;
-  margin-bottom: 20px;
-
-  @media only screen and ($breakpoint-medium) {
-    margin-bottom: 40px;
+.contact {
+  .nav-contact {
+    a,
+    a:hover,
+    a:focus {
+      background: $color-heading;
+      border: 0;
+      color: $color-background;
+      padding: 0 6px;
+    }
   }
-
-  h1 {
-    font-size: 2em;
-    text-transform: uppercase;
+  [role="main"],
+  [role="banner"] {
+    @extend .wrapper;
   }
-}
-
-.contact [role="main"] {
-  @extend .wrapper;
+  [role="banner"] {
+    margin-bottom: 20px;
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    @include breakpoint($breakpoint-medium) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .colleagues {
-  background: #fff;
-  border-bottom: 1px solid #B7B19C;
-  @include border-radius(4px);
-  @include box-shadow(0 2px 4px #B7B19C);
-  color: #333;
-  padding: 4em 0 0;
-  margin: 0 -20px 20px;
-  padding: 20px;
-
-  @media only screen and ($breakpoint-medium) {
-    margin: 0 -70px 70px;
-    padding: 70px;
-  }
-
+  @include box;
   ul {
     @extend .clearfix;
     list-style: none;
-  }
-
-  @include breakpoint($breakpoint-medium) {
-    li {
-      float: left;
-      width: 50%;
+    @include breakpoint($breakpoint-medium) {
+      li {
+        float: left;
+        width: 50%;
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
     }
-
-    li:nth-child(2n+1) {
-      clear: both;
-    }
-  }
-
-  @include breakpoint($breakpoint-large) {
-    li {
-      width: 33.333%;
-    }
-
-    li:nth-child(2n+1) {
-      clear: none;
-    }
-
-    li:nth-child(3n+1) {
-      clear: both;
+    @include breakpoint($breakpoint-large) {
+      li {
+        width: 33.333%;
+        &:nth-child(2n+1) {
+          clear: none;
+        }
+        &:nth-child(3n+1) {
+          clear: both;
+        }
+      }
     }
   }
-
   h3,
   h4,
   dt {
-    color: #333;
+    color: $color-black-text;
   }
-
   dt {
     font-weight: $font-weight-normal;
   }
 }
 
 .map {
-  @media only screen and ($breakpoint-medium) {
-    background: #fff;
-    border-bottom: 1px solid #B7B19C;
+  @include breakpoint($breakpoint-medium) {
     @include border-radius(4px);
-    @include box-shadow(0 2px 4px #B7B19C);
-    color: #333;
+    @include box-shadow(0 2px 4px $color-box-shadow);
+    background: #fff;
+    border-bottom: 1px solid $color-box-shadow;
+    color: $color-black-text;
     padding: 4em 0 0;
     margin: 70px -70px 0;
     padding: 70px;

@@ -37,7 +37,7 @@ body {
   line-height: 1.333; /* 30px */
   padding: 0 20px;
 
-  @media only screen and ($breakpoint-medium) {
+  @include breakpoint($breakpoint-medium) {
     font-size: 1.125em; /* 18px */
     line-height: 1.6666; /* 30px */
     padding: 0; /* 40px 20px */

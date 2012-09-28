@@ -1,25 +1,32 @@
-.projects .nav-projects a,
-.projects .nav-projects a:hover,
-.projects .nav-projects a:focus {
-  background: $color-heading;
-  border: 0;
-  color: $color-background;
-  padding: 0 6px;
-}
-
-.projects [role="banner"] {
-  @extend .clearfix;
-  @extend .wrapper;
-  margin-bottom: 20px;
-
-  @media only screen and ($breakpoint-medium) {
-    margin-bottom: 40px;
-    padding: 60px 0;
+.projects {
+  .nav-projects {
+    a,
+    a:hover,
+    a:focus {
+      background: $color-heading;
+      border: 0;
+      color: $color-background;
+      padding: 0 6px;
+    }
   }
 
-  h1 {
-    font-size: 2em;
-    text-transform: uppercase;
+  [role="banner"],
+  [role="main"] {
+    @extend .wrapper;
+  }
+
+  [role="banner"] {
+    @extend .clearfix;
+    margin-bottom: 20px;
+    @include breakpoint($breakpoint-medium) {
+      margin-bottom: 40px;
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -31,20 +38,17 @@
 
   ul {
     list-style: none;
-  }
-
-  li {
-    display: block;
-  }
-
-  li a {
-    @extend .cta;
+    li {
+      display: block;
+      a {
+        @extend .cta;
+      }
+    }
   }
 }
 
 .current-projects {
   margin: 0 0 20px;
-
   @include breakpoint($breakpoint-medium) {
     float: right;
     margin-bottom: 0;
@@ -52,25 +56,9 @@
   }
 }
 
-.projects [role="main"] {
-  @extend .wrapper;
-}
-
 .project {
   @extend .clearfix;
-
-  background: #fff;
-  border-bottom: 1px solid #B7B19C;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px #B7B19C;
-  color: #333333;
-  margin: 0 -20px 20px;
-  padding: 20px;
-
-  @media only screen and ($breakpoint-medium) {
-    margin: 0 -70px 70px;
-    padding: 70px;
-  }
+  @include box;
 
   h1 {
     font-size: 1.4em;
@@ -78,7 +66,6 @@
 
   figure {
     margin: -20px -20px 20px;
-
     @include breakpoint($breakpoint-large) {
       margin: -70px -70px 70px;
     }
@@ -88,5 +75,4 @@
     border-radius: 4px;
     display: block;
   }
-
 }
