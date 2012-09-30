@@ -1,3 +1,3 @@
 require 'breakpoint'
 
-output_style = :compressed
+# output_style = :compressed
