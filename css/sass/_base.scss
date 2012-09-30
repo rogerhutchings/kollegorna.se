@@ -1,13 +1,13 @@
 @import 'compass';
 
-/** PLUGINS ---------- */
+// PLUGINS ----------
 
-/** BREAKPOINT */
+// Breakpoint
 @import 'breakpoint'; // https://github.com/canarymason/breakpoint;
 
-/** VARIABLES ---------- */
+// VARIABLES ----------
 
-/** BREAKPOINTS */
+// Breakpoints
 
 $breakpoint-smallest: 480px;
 $breakpoint-small: 600px;
@@ -18,7 +18,7 @@ $breakpoint-largest: 1024px;
 $breakpoint-max-width-medium: max-width 768px;
 $breakpoint-max-width-medium-2: max-width 780px;
 
-/** COLORS */
+// Colors
 
 $color-background: #F0E9CD;
 $color-link: #f77916;
@@ -28,7 +28,7 @@ $color-black-text: #333;
 $color-heading: #403e35;
 $color-box-shadow: #B7B19C;
 
-/** FONTS */
+// Fonts
 
 $font: "ff-dagny-web-pro", sans-serif;
 $font-logo: "omnes-pro-i9", "omnes-pro", sans-serif;
@@ -37,7 +37,8 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
-/** MIXINS */
+// MIXINS ----------
+
 @mixin box {
   @include border-radius(4px);
   @include box-shadow(0 2px 4px $color-box-shadow);

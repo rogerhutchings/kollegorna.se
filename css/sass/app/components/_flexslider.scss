@@ -30,15 +30,15 @@ html[xmlns] .slides {display: block;}
 
 .flex-control-paging {
   text-align: center;
-  
+
   li {
     @include inline-block;
     padding: 20px 10px 0;
     a {
+      @include border-radius(50%);
       @include global-transition;
       @include inline-block;
       background: rgba(0, 0, 0, .2);
-      border-radius: 50%;
       cursor: hand;
       cursor: pointer;
       height: 20px;
