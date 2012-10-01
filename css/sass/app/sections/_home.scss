@@ -27,7 +27,7 @@
     }
   }
 
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     font: italic $font-weight-black 96px/1.2 $font-logo;
     margin: 67px 0 60px;
   }
@@ -40,7 +40,7 @@
   min-height: 500px;
   position: relative;
   text-align: center;
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     margin-bottom: 120px;
   }
 
@@ -57,12 +57,12 @@
     position: relative;
     width: 200px;
 
-    @include breakpoint($breakpoint-smallest) {
+    @include respond-to(smallest) {
       height: 240px;
       width: 240px;
     }
 
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       height: 320px;
       margin: 0;
       position: absolute;
@@ -92,7 +92,7 @@
     &:hover {
       background: rgba(247, 121, 22, .9);
       box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         height: 170px;
         line-height: 170px;
         width: 170px;
@@ -101,7 +101,7 @@
     &.design {
       left: 25%;
       top: 15%;
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         left: 80px;
         top: 50px;
         &:hover {
@@ -113,7 +113,7 @@
     &.technology {
       bottom: 0;
       left: 4.5%;
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         left: 15px;
         &:hover {
           bottom: -5px;
@@ -124,7 +124,7 @@
     &.strategy {
       bottom: 0;
       right: 4.5%;
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         right: 15px;
         &:hover {
           bottom: -5px;
@@ -133,7 +133,7 @@
       }
     }
 
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       font-size: 18px;
       height: 160px;
       line-height: 160px;
@@ -144,7 +144,7 @@
       @include inline-block;
       padding-top: 45%;
 
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         padding: 0;
       }
     }
@@ -153,7 +153,7 @@
   .presentation {
     text-align: left;
 
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       padding: 20px 340px 0 0;
     }
 
@@ -177,7 +177,7 @@
   }
 
   .slides {
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       margin: 0 0 20px;
     }
   }
@@ -201,13 +201,13 @@
     position: absolute;
     width: 100%;
 
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       bottom: 20px;
       display: inline-block;
       left: 20px;
     }
 
-    @include breakpoint($breakpoint-large) {
+    @include respond-to(large) {
       max-width: 50%;
     }
 
@@ -215,7 +215,7 @@
       @include inline-block;
       text-indent: -9999px;
 
-      @include breakpoint($breakpoint-medium) {
+      @include respond-to(medium) {
         display: inline;
         text-indent: normal;
       }
@@ -234,7 +234,7 @@
 .home .posts {
   @extend .wrapper;
   padding-top: 20px;
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     padding-top: 80px;
   }
 }

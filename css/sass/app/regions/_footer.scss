@@ -2,7 +2,7 @@
 .footer {
   @extend .wrapper;
   padding: 2em 0 20px;
-  @include breakpoint($breakpoint-medium-2) {
+  @include respond-to(medium-2) {
     padding: 8em 0 2em;
   }
 
@@ -10,7 +10,7 @@
     @extend .clearfix;
     list-style: none;
     margin: 0;
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       li {
         float: left;
         width: 50%;
@@ -23,7 +23,7 @@
         }
       }
     }
-    @include breakpoint($breakpoint-largest) {
+    @include respond-to(largest) {
       li {
         width: 33.333%;
         &:nth-child(2n+1) {
@@ -36,7 +36,7 @@
     }
   }
 
-  @include breakpoint($breakpoint-max-width-medium-2) {
+  @include respond-to(max-width-medium-2) {
     h6 {
       font-size: .9em;
     }

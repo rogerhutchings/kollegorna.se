@@ -39,13 +39,13 @@
 
 .post-summary {
   margin: 0 0 15px;
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     margin: 0 0 2em;
   }
 
   h4 {
     margin: 0;
-    @include breakpoint($breakpoint-max-width-medium) {
+    @include respond-to(max-width-medium) {
       font-size: 1.2em;
       margin-bottom: .15em;
     }
@@ -63,7 +63,7 @@
   }
   .top-image {
     margin: 0 0 1em;
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       margin: 0 0 2em;
     }
   }
@@ -99,7 +99,7 @@
       color: $color-heading;
       display: block;
     }
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       li {
         margin: 0;
       }
