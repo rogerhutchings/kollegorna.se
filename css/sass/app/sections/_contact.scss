@@ -19,7 +19,7 @@
       font-size: 2em;
       text-transform: uppercase;
     }
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       margin-bottom: 40px;
     }
   }
@@ -30,7 +30,7 @@
   ul {
     @extend .clearfix;
     list-style: none;
-    @include breakpoint($breakpoint-medium) {
+    @include respond-to(medium) {
       li {
         float: left;
         width: 50%;
@@ -39,7 +39,7 @@
         }
       }
     }
-    @include breakpoint($breakpoint-large) {
+    @include respond-to(large) {
       li {
         width: 33.333%;
         &:nth-child(2n+1) {
@@ -62,7 +62,7 @@
 }
 
 .map {
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     @include border-radius(4px);
     @include box-shadow(0 2px 4px $color-box-shadow);
     background: #fff;

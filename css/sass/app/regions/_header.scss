@@ -10,7 +10,7 @@
   &:hover {
     border: 0;
   }
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     @include inline-block;
     left: 30px;
     margin: 0;
@@ -52,7 +52,7 @@
       }
     }
   }
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     margin: 0 0 40px;
     padding: 20px 0;
     ul {

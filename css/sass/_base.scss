@@ -2,21 +2,47 @@
 
 // PLUGINS ----------
 
-// Breakpoint
-@import 'breakpoint'; // https://github.com/canarymason/breakpoint;
-
 // VARIABLES ----------
 
 // Breakpoints
 
-$breakpoint-smallest: 480px;
-$breakpoint-small: 600px;
-$breakpoint-medium: 768px;
-$breakpoint-medium-2: 780px;
-$breakpoint-large: 992px;
-$breakpoint-largest: 1024px;
-$breakpoint-max-width-medium: max-width 768px;
-$breakpoint-max-width-medium-2: max-width 780px;
+
+@mixin respond-to($point) {
+  @if $point == smallest {
+    @media (max-width: 480px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 600px) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == medium-2 {
+    @media (max-width: 780px)  { @content; }
+  }
+  @else if $point ==  large {
+    @media (max-width: 992px)  { @content; }
+  }
+  @else if $point == largest {
+    @media (max-width: 1024px)  { @content; }
+  }
+  @else if $point == max-width-medium {
+    @media (max-width: 768px)  { @content; }
+  }
+  @else if $point == max-width-medium-2 {
+    @media (max-width: 780px)  { @content; }
+  }
+}
+
+
+// $breakpoint-smallest: 480px;
+// $breakpoint-small: 600px;
+// $breakpoint-medium: 768px;
+// $breakpoint-medium-2: 780px;
+// $breakpoint-large: 992px;
+// $breakpoint-largest: 1024px;
+// $breakpoint-max-width-medium: max-width 768px;
+// $breakpoint-max-width-medium-2: max-width 780px;
 
 // Colors
 
@@ -49,7 +75,7 @@ $font-weight-black: 900;
   margin: 0 -20px 20px;
   padding: 20px;
 
-  @include breakpoint($breakpoint-medium) {
+  @include respond-to(medium) {
     margin: 0 -70px 70px;
     padding: 70px;
   }
