@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Global styles
  * This file contains the global styling for .
@@ -13,14 +12,14 @@
 /**
  * Box sizing border box
  */
-/* line 17, ../sass/_globals.scss */
+/* line 17, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 23, ../sass/_globals.scss */
+/* line 23, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 html {
   background: #f0e9cd;
   color: #5f5c4e;
@@ -33,7 +32,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 34, ../sass/_globals.scss */
+/* line 34, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 body {
   border-top: 10px solid rgba(0, 0, 0, 0.15);
   font-size: 1em;
@@ -42,8 +41,8 @@ body {
   /* 30px */
   padding: 0 20px;
 }
-@media (max-width: 768px) {
-  /* line 34, ../sass/_globals.scss */
+@media (min-width: 768px) {
+  /* line 34, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
   body {
     font-size: 1.125em;
     /* 18px */
@@ -54,24 +53,24 @@ body {
   }
 }
 
-/* line 49, ../sass/_globals.scss */
+/* line 49, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 article:before,
 article:after {
   content: "";
   display: table;
 }
 
-/* line 50, ../sass/_globals.scss */
+/* line 50, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 article:after {
   clear: both;
 }
 
-/* line 51, ../sass/_globals.scss */
+/* line 51, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 article {
   *zoom: 1;
 }
 
-/* line 53, ../sass/_globals.scss */
+/* line 53, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .wrapper, .footer, .home [role="banner"], .home .posts, .projects [role="banner"],
 .projects [role="main"], .blog [role="banner"],
 .blog [role="main"],
@@ -83,7 +82,7 @@ article {
 
 /** 2. USEFUL CLASSES ---------- */
 /* For image replacement */
-/* line 61, ../sass/_globals.scss */
+/* line 61, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -95,7 +94,7 @@ article {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 65, ../sass/_globals.scss */
+/* line 65, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -103,7 +102,7 @@ article {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 69, ../sass/_globals.scss */
+/* line 69, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -116,7 +115,7 @@ article {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 72, ../sass/_globals.scss */
+/* line 72, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -128,7 +127,7 @@ article {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 75, ../sass/_globals.scss */
+/* line 75, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .invisible {
   visibility: hidden;
 }
@@ -139,42 +138,42 @@ article {
  * Credits:
  * http://nicolasgallagher.com/micro-clearfix-hack/
  */
-/* line 84, ../sass/_globals.scss */
+/* line 84, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .clearfix, .footer ul, .projects [role="banner"], .project, .colleagues ul {
   zoom: 1;
 }
-/* line 86, ../sass/_globals.scss */
+/* line 86, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .clearfix:before, .footer ul:before, .projects [role="banner"]:before, .project:before, .colleagues ul:before, .clearfix:after, .footer ul:after, .projects [role="banner"]:after, .project:after, .colleagues ul:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-/* line 92, ../sass/_globals.scss */
+/* line 92, /Users/per/Sites/kollegorna.se/css/sass/_globals.scss */
 .clearfix:after, .footer ul:after, .projects [role="banner"]:after, .project:after, .colleagues ul:after {
   clear: both;
 }
 
 /** 2. LINKS ---------- */
-/* line 4, ../sass/_typography.scss */
+/* line 4, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 a {
   color: #f77916;
   text-decoration: none;
 }
-/* line 7, ../sass/_typography.scss */
+/* line 7, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 a:active {
   border-bottom-color: #403e35;
   color: #403e35;
 }
-/* line 12, ../sass/_typography.scss */
+/* line 12, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 a:hover, a:active {
   outline: none;
 }
-/* line 16, ../sass/_typography.scss */
+/* line 16, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 a:focus, a:hover {
   border-bottom: 2px solid #f77916;
 }
-/* line 19, ../sass/_typography.scss */
+/* line 19, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 a:link {
   -webkit-tap-highlight-color: #403e35;
 }
@@ -182,7 +181,7 @@ a:link {
 /**
  * Call to action
  */
-/* line 28, ../sass/_typography.scss */
+/* line 28, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 .cta, .home [role="banner"] .presentation li a, .our-projects ul li a, .blog [role="banner"] a {
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -193,14 +192,14 @@ a:link {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 34, ../sass/_typography.scss */
+/* line 34, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 .cta:hover, .home [role="banner"] .presentation li a:hover, .our-projects ul li a:hover, .blog [role="banner"] a:hover {
   border-color: #403e35;
   color: #403e35;
 }
 
 /** 3. HEADINGS ---------- */
-/* line 47, ../sass/_typography.scss */
+/* line 47, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h1,
 h2,
 h3,
@@ -210,7 +209,7 @@ h6 {
   color: #403e35;
   font-weight: 700;
 }
-/* line 50, ../sass/_typography.scss */
+/* line 50, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h1 a,
 h2 a,
 h3 a,
@@ -219,7 +218,7 @@ h5 a,
 h6 a {
   color: #000;
 }
-/* line 52, ../sass/_typography.scss */
+/* line 52, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -230,14 +229,14 @@ h6 a:hover {
   color: #000;
 }
 
-/* line 59, ../sass/_typography.scss */
+/* line 59, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h1 {
   font-size: 1.8em;
   line-height: 1.2;
   margin: 0 0 .5em;
 }
-@media (max-width: 768px) {
-  /* line 59, ../sass/_typography.scss */
+@media (min-width: 768px) {
+  /* line 59, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
   h1 {
     font-size: 2.8em;
     /* 56px */
@@ -250,7 +249,7 @@ h1 {
   }
 }
 
-/* line 72, ../sass/_typography.scss */
+/* line 72, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h2 {
   font-size: 1.6em;
   /* 32px */
@@ -262,7 +261,7 @@ h2 {
   /* 12px */
 }
 
-/* line 79, ../sass/_typography.scss */
+/* line 79, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h3 {
   font-size: 1.2em;
   /* 24px */
@@ -272,21 +271,21 @@ h3 {
   /* 12px */
 }
 
-/* line 85, ../sass/_typography.scss */
+/* line 85, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h4 {
   margin: .6em 0 0.3em;
   /* 12px 0 6px */
 }
-/* line 87, ../sass/_typography.scss */
+/* line 87, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h4 a {
   color: #403e35;
 }
-/* line 89, ../sass/_typography.scss */
+/* line 89, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h4 a:hover {
   color: #f77916;
 }
 
-/* line 95, ../sass/_typography.scss */
+/* line 95, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h5 {
   font-size: .7em;
   /* 14px */
@@ -297,7 +296,7 @@ h5 {
   text-transform: uppercase;
 }
 
-/* line 102, ../sass/_typography.scss */
+/* line 102, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 h6 {
   color: #5f5c4e;
   font-size: .7em;
@@ -310,13 +309,13 @@ h6 {
 }
 
 /** 4. TEXT ---------- */
-/* line 112, ../sass/_typography.scss */
+/* line 112, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 p {
   margin: 0 0 .6em;
   /* 0 0 12px */
 }
 
-/* line 116, ../sass/_typography.scss */
+/* line 116, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #ccc;
@@ -327,7 +326,7 @@ hr {
   /* 30px */
 }
 
-/* line 125, ../sass/_typography.scss */
+/* line 125, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 blockquote {
   border-left: 4px solid #403e35;
   padding: .3em 0 .3em 1.2em;
@@ -336,12 +335,12 @@ blockquote {
   /* 0 0 24px */
 }
 
-/* line 132, ../sass/_typography.scss */
+/* line 132, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
-/* line 135, ../sass/_typography.scss */
+/* line 135, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 blockquote:before, blockquote:after,
 q:before,
 q:after {
@@ -349,52 +348,52 @@ q:after {
   content: none;
 }
 
-/* line 141, ../sass/_typography.scss */
+/* line 141, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 blockquote p:last-child {
   margin-bottom: 0;
 }
 
-/* line 145, ../sass/_typography.scss */
+/* line 145, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 q {
   font-style: italic;
 }
 
-/* line 149, ../sass/_typography.scss */
+/* line 149, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 cite {
   color: #403e35;
   font-style: italic;
 }
 
-/* line 154, ../sass/_typography.scss */
+/* line 154, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 blockquote cite {
   color: #888;
 }
 
-/* line 158, ../sass/_typography.scss */
+/* line 158, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 strong {
   color: #403e35;
   font-weight: 700;
 }
 
-/* line 164, ../sass/_typography.scss */
+/* line 164, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 em,
 dfn {
   color: #403e35;
   font-style: italic;
 }
 
-/* line 169, ../sass/_typography.scss */
+/* line 169, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 dfn {
   font-weight: 700;
 }
 
-/* line 174, ../sass/_typography.scss */
+/* line 174, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 abbr,
 acronym {
   border-bottom: 1px dotted #222;
 }
 
-/* line 178, ../sass/_typography.scss */
+/* line 178, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 address {
   display: block;
   font-style: italic;
@@ -402,13 +401,13 @@ address {
   /* 0 0 12px */
 }
 
-/* line 184, ../sass/_typography.scss */
+/* line 184, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 del {
   color: #888;
   text-decoration: line-through;
 }
 
-/* line 189, ../sass/_typography.scss */
+/* line 189, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 mark {
   background: #F2594B;
   color: #fff;
@@ -417,7 +416,7 @@ mark {
   /* 3px */
 }
 
-/* line 196, ../sass/_typography.scss */
+/* line 196, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 ins {
   background: #B5D5FF;
   padding: 0 0.15em;
@@ -425,7 +424,7 @@ ins {
   text-decoration: none;
 }
 
-/* line 202, ../sass/_typography.scss */
+/* line 202, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 pre {
   padding: .6em;
   /* 12px */
@@ -435,13 +434,13 @@ pre {
   word-wrap: break-word;
 }
 
-/* line 210, ../sass/_typography.scss */
+/* line 210, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 code {
   margin: .6em 0;
   /* 12px */
 }
 
-/* line 218, ../sass/_typography.scss */
+/* line 218, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 pre,
 code,
 tt,
@@ -450,31 +449,31 @@ samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 223, ../sass/_typography.scss */
+/* line 223, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 sup,
 sub {
   line-height: 90%;
 }
 
-/* line 227, ../sass/_typography.scss */
+/* line 227, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 sub {
   font-size: smaller;
   vertical-align: sub;
 }
 
-/* line 232, ../sass/_typography.scss */
+/* line 232, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 sup {
   font-size: smaller;
   vertical-align: super;
 }
 
-/* line 241, ../sass/_typography.scss */
+/* line 241, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 small {
   font-size: 0.7em;
   /* 14px */
 }
 
-/* line 245, ../sass/_typography.scss */
+/* line 245, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 kbd {
   background: #ccc;
   border: 1px solid #acacac;
@@ -488,14 +487,14 @@ kbd {
   /* 2px 6px */
 }
 
-/* line 255, ../sass/_typography.scss */
+/* line 255, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 ::-moz-selection {
   background: #000;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 261, ../sass/_typography.scss */
+/* line 261, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 ::selection {
   background: #000;
   color: #fff;
@@ -503,14 +502,14 @@ kbd {
 }
 
 /** 5. LISTS ---------- */
-/* line 270, ../sass/_typography.scss */
+/* line 270, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 li ul,
 li ol {
   margin: 0 0 0.6em 1.2em;
   /* 0 0 12px 24px */
 }
 
-/* line 275, ../sass/_typography.scss */
+/* line 275, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 ul,
 ol {
   list-style: disc inside;
@@ -518,37 +517,37 @@ ol {
   /* 0 0 12px */
   padding: 0;
 }
-@media (max-width: 768px) {
-  /* line 275, ../sass/_typography.scss */
+@media (min-width: 768px) {
+  /* line 275, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
   ul,
   ol {
     list-style: disc outside;
   }
 }
 
-/* line 285, ../sass/_typography.scss */
+/* line 285, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 ol {
   list-style: decimal inside;
 }
 
-/* line 289, ../sass/_typography.scss */
+/* line 289, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 dl {
   margin: 0;
 }
 
-/* line 293, ../sass/_typography.scss */
+/* line 293, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 dt {
   color: #403e35;
   font-weight: 700;
 }
 
-/* line 298, ../sass/_typography.scss */
+/* line 298, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 dd {
   margin: 0 0 0.6em;
   /* 0 0 12px */
 }
 
-/* line 303, ../sass/_typography.scss */
+/* line 303, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -557,24 +556,24 @@ nav ol {
 }
 
 /** 6. MEDIA ---------- */
-/* line 311, ../sass/_typography.scss */
+/* line 311, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 312, ../sass/_typography.scss */
+/* line 312, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 313, ../sass/_typography.scss */
+/* line 313, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 [hidden] {
   display: none;
 }
 
-/* line 315, ../sass/_typography.scss */
+/* line 315, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -582,7 +581,7 @@ img {
 }
 
 /* Fluid images: http://unstoppablerobotninja.com/entry/fluid-images/ */
-/* line 324, ../sass/_typography.scss */
+/* line 324, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 img,
 object,
 embed {
@@ -590,48 +589,48 @@ embed {
 }
 
 /* Use clearfix on figure */
-/* line 329, ../sass/_typography.scss */
+/* line 329, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figure:before, figure:after {
   content: "";
   display: table;
 }
 
-/* line 330, ../sass/_typography.scss */
+/* line 330, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figure:after {
   clear: both;
 }
 
-/* line 331, ../sass/_typography.scss */
+/* line 331, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figure {
   *zoom: 1;
 }
 
-/* line 333, ../sass/_typography.scss */
+/* line 333, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figure {
   margin: 0 0 .6em;
   /* 0 0 12px */
 }
 
-/* line 337, ../sass/_typography.scss */
+/* line 337, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figure img {
   float: left;
 }
 
-/* line 341, ../sass/_typography.scss */
+/* line 341, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 figcaption {
   clear: both;
   color: #666;
 }
 
 /** 7. TABLES ---------- */
-/* line 348, ../sass/_typography.scss */
+/* line 348, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 table {
   margin: 0 0 .6em;
   /* 0 0 12px */
   width: 100%;
 }
 
-/* line 353, ../sass/_typography.scss */
+/* line 353, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 caption {
   font-size: 1.2em;
   /* 24px */
@@ -641,45 +640,45 @@ caption {
   text-align: left;
 }
 
-/* line 360, ../sass/_typography.scss */
+/* line 360, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 tbody {
   border: 0;
 }
 
-/* line 364, ../sass/_typography.scss */
+/* line 364, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 tbody th {
   border: 0;
 }
 
-/* line 368, ../sass/_typography.scss */
+/* line 368, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 thead th {
   text-align: left;
 }
 
-/* line 372, ../sass/_typography.scss */
+/* line 372, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 th {
   font-weight: 700;
   text-align: left;
 }
 
-/* line 378, ../sass/_typography.scss */
+/* line 378, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 th,
 td {
   padding: 0;
 }
 
-/* line 383, ../sass/_typography.scss */
+/* line 383, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 td,
 td img {
   vertical-align: top;
 }
 
-/* line 387, ../sass/_typography.scss */
+/* line 387, /Users/per/Sites/kollegorna.se/css/sass/_typography.scss */
 tfoot {
   font-style: italic;
 }
 
-/* line 2, ../sass/_forms.scss */
+/* line 2, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 fieldset {
   border: 1px solid #ccc;
   border-bottom-width: 2px;
@@ -690,12 +689,12 @@ fieldset {
   padding: 1.2em;
   /* 24px */
 }
-/* line 9, ../sass/_forms.scss */
+/* line 9, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 fieldset fieldset {
   margin-bottom: 1.2em;
 }
 
-/* line 14, ../sass/_forms.scss */
+/* line 14, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 legend {
   font-size: 1.2em;
   /* 24px */
@@ -706,14 +705,14 @@ legend {
   padding: 0 .8em;
 }
 
-/* line 22, ../sass/_forms.scss */
+/* line 22, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 label {
   display: block;
   font-weight: 700;
   margin: 0;
 }
 
-/* line 30, ../sass/_forms.scss */
+/* line 30, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 input,
 textarea,
 select {
@@ -729,7 +728,7 @@ select {
   padding: 0.3em;
   /* 6px */
 }
-/* line 39, ../sass/_forms.scss */
+/* line 39, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 input:focus,
 textarea:focus,
 select:focus {
@@ -737,7 +736,7 @@ select:focus {
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 46, ../sass/_forms.scss */
+/* line 46, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 input[type=radio],
 input[type=checkbox] {
   border: 0;
@@ -745,13 +744,13 @@ input[type=checkbox] {
   padding: 0;
 }
 
-/* line 52, ../sass/_forms.scss */
+/* line 52, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 button {
   overflow: visible;
   width: auto;
 }
 
-/* line 58, ../sass/_forms.scss */
+/* line 58, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 button,
 input[type=submit] {
   -webkit-transition-duration: 0.4s;
@@ -777,7 +776,7 @@ input[type=submit] {
   text-align: center;
   vertical-align: baseline;
 }
-/* line 76, ../sass/_forms.scss */
+/* line 76, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 button:hover, button:focus,
 input[type=submit]:hover,
 input[type=submit]:focus {
@@ -785,20 +784,20 @@ input[type=submit]:focus {
   box-shadow: inset 0 0 1px #1e94b2, 0 2px 4px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
-/* line 81, ../sass/_forms.scss */
+/* line 81, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 button:active,
 input[type=submit]:active {
   position: relative;
   top: 1px;
 }
 
-/* line 87, ../sass/_forms.scss */
+/* line 87, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 textarea {
   background: #FFF;
   overflow: auto;
 }
 
-/* line 92, ../sass/_forms.scss */
+/* line 92, /Users/per/Sites/kollegorna.se/css/sass/_forms.scss */
 optgroup {
   font-family: inherit;
   font-style: normal;
@@ -806,7 +805,7 @@ optgroup {
 }
 
 /* Browser Resets */
-/* line 5, ../sass/app/components/_flexslider.scss */
+/* line 5, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -814,7 +813,7 @@ optgroup {
   outline: none;
 }
 
-/* line 8, ../sass/app/components/_flexslider.scss */
+/* line 8, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -825,32 +824,32 @@ optgroup {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 12, ../sass/app/components/_flexslider.scss */
+/* line 12, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flexslider {
   margin: 0;
   padding: 0;
 }
 
-/* line 13, ../sass/app/components/_flexslider.scss */
+/* line 13, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 14, ../sass/app/components/_flexslider.scss */
+/* line 14, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 15, ../sass/app/components/_flexslider.scss */
+/* line 15, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 18, ../sass/app/components/_flexslider.scss */
+/* line 18, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .slides:after {
   content: ".";
   display: block;
@@ -860,12 +859,12 @@ optgroup {
   height: 0;
 }
 
-/* line 19, ../sass/app/components/_flexslider.scss */
+/* line 19, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 20, ../sass/app/components/_flexslider.scss */
+/* line 20, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 * html .slides {
   height: 1%;
 }
@@ -873,7 +872,7 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 25, ../sass/app/components/_flexslider.scss */
+/* line 25, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .no-js .slides > li:first-child {
   display: block;
 }
@@ -881,11 +880,11 @@ html[xmlns] .slides {
 /**
  * Kollegorna theme
  */
-/* line 31, ../sass/app/components/_flexslider.scss */
+/* line 31, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-control-paging {
   text-align: center;
 }
-/* line 34, ../sass/app/components/_flexslider.scss */
+/* line 34, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-control-paging li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -895,7 +894,7 @@ html[xmlns] .slides {
   *display: inline;
   padding: 20px 10px 0;
 }
-/* line 37, ../sass/app/components/_flexslider.scss */
+/* line 37, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-control-paging li a {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -919,17 +918,17 @@ html[xmlns] .slides {
   text-indent: -9999px;
   width: 20px;
 }
-/* line 47, ../sass/app/components/_flexslider.scss */
+/* line 47, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-control-paging li a:hover {
   background: rgba(0, 0, 0, 0.3);
   border: 0;
 }
-/* line 51, ../sass/app/components/_flexslider.scss */
+/* line 51, /Users/per/Sites/kollegorna.se/css/sass/app/components/_flexslider.scss */
 .flex-control-paging li a.flex-active {
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 2, ../sass/app/regions/_header.scss */
+/* line 2, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .header-logo {
   text-shadow: 1px 1px 0 #f0e9cd, 2px 2px 0 rgba(0, 0, 0, 0.3);
   color: #5f5c4e;
@@ -939,12 +938,12 @@ html[xmlns] .slides {
   padding: 15px 5px 0;
   text-align: center;
 }
-/* line 10, ../sass/app/regions/_header.scss */
+/* line 10, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .header-logo:hover {
   border: 0;
 }
-@media (max-width: 768px) {
-  /* line 2, ../sass/app/regions/_header.scss */
+@media (min-width: 768px) {
+  /* line 2, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
   .header-logo {
     display: -moz-inline-stack;
     display: inline-block;
@@ -960,7 +959,7 @@ html[xmlns] .slides {
     top: 8px;
   }
 }
-/* line 23, ../sass/app/regions/_header.scss */
+/* line 23, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .header-logo span {
   display: -moz-inline-stack;
   display: inline-block;
@@ -969,29 +968,29 @@ html[xmlns] .slides {
   zoom: 1;
   *display: inline;
 }
-/* line 25, ../sass/app/regions/_header.scss */
+/* line 25, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .header-logo span:nth-child(even) {
   opacity: .95;
 }
 
-/* line 31, ../sass/app/regions/_header.scss */
+/* line 31, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 -20px 20px;
   padding: 0 0 20px;
   position: relative;
 }
-/* line 37, ../sass/app/regions/_header.scss */
+/* line 37, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .nav ul {
   list-style: none;
   text-align: center;
 }
-/* line 40, ../sass/app/regions/_header.scss */
+/* line 40, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .nav ul li {
   display: inline-block;
   padding: 0 10px;
 }
-/* line 43, ../sass/app/regions/_header.scss */
+/* line 43, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .nav ul li a {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1003,78 +1002,78 @@ html[xmlns] .slides {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 49, ../sass/app/regions/_header.scss */
+/* line 49, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
 .nav ul li a:hover {
   color: #f77916;
 }
-@media (max-width: 768px) {
-  /* line 31, ../sass/app/regions/_header.scss */
+@media (min-width: 768px) {
+  /* line 31, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
   .nav {
     margin: 0 0 40px;
     padding: 20px 0;
   }
-  /* line 58, ../sass/app/regions/_header.scss */
+  /* line 58, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
   .nav ul {
     text-align: right;
   }
-  /* line 60, ../sass/app/regions/_header.scss */
+  /* line 60, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_header.scss */
   .nav ul li:last-child {
     padding-right: 30px;
   }
 }
 
-/* line 2, ../sass/app/regions/_footer.scss */
+/* line 2, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
 .footer {
   padding: 2em 0 20px;
 }
-@media (max-width: 780px) {
-  /* line 2, ../sass/app/regions/_footer.scss */
+@media (min-width: 780px) {
+  /* line 2, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer {
     padding: 8em 0 2em;
   }
 }
-/* line 9, ../sass/app/regions/_footer.scss */
+/* line 9, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
 .footer ul {
   list-style: none;
   margin: 0;
 }
-@media (max-width: 768px) {
-  /* line 14, ../sass/app/regions/_footer.scss */
+@media (min-width: 768px) {
+  /* line 14, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li {
     float: left;
     width: 50%;
   }
-  /* line 17, ../sass/app/regions/_footer.scss */
+  /* line 17, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li:nth-child(2n+1) {
     clear: both;
   }
-  /* line 20, ../sass/app/regions/_footer.scss */
+  /* line 20, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li li {
     float: none;
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
-  /* line 27, ../sass/app/regions/_footer.scss */
+@media (min-width: 1024px) {
+  /* line 27, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li {
     width: 33.333%;
   }
-  /* line 29, ../sass/app/regions/_footer.scss */
+  /* line 29, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li:nth-child(2n+1) {
     clear: none;
   }
-  /* line 32, ../sass/app/regions/_footer.scss */
+  /* line 32, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer ul li:nth-child(3n+1) {
     clear: both;
   }
 }
 @media (max-width: 780px) {
-  /* line 40, ../sass/app/regions/_footer.scss */
+  /* line 40, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
   .footer h6 {
     font-size: .9em;
   }
 }
-/* line 45, ../sass/app/regions/_footer.scss */
+/* line 45, /Users/per/Sites/kollegorna.se/css/sass/app/regions/_footer.scss */
 .footer .license {
   margin: 0;
   padding: 2em 0 0;
@@ -1083,16 +1082,16 @@ html[xmlns] .slides {
 /**
  * Styles for home page
  */
-/* line 5, ../sass/app/sections/_home.scss */
+/* line 5, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home {
   border: 0;
 }
-/* line 7, ../sass/app/sections/_home.scss */
+/* line 7, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home .nav {
   display: none;
 }
 
-/* line 12, ../sass/app/sections/_home.scss */
+/* line 12, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .logo {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1106,11 +1105,11 @@ html[xmlns] .slides {
   margin: 15px 0 0;
   padding: 0 5px;
 }
-/* line 19, ../sass/app/sections/_home.scss */
+/* line 19, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .logo:hover {
   border: 0;
 }
-/* line 23, ../sass/app/sections/_home.scss */
+/* line 23, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .logo span {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1119,56 +1118,56 @@ html[xmlns] .slides {
   zoom: 1;
   *display: inline;
 }
-/* line 25, ../sass/app/sections/_home.scss */
+/* line 25, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .logo span:nth-child(even) {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
   opacity: 0.95;
 }
-@media (max-width: 768px) {
-  /* line 12, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 12, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .logo {
     font: italic 900 96px/1.2 "omnes-pro-i9", "omnes-pro", sans-serif;
     margin: 67px 0 60px;
   }
 }
 
-/* line 37, ../sass/app/sections/_home.scss */
+/* line 37, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] {
   margin-bottom: 30px;
   min-height: 500px;
   position: relative;
   text-align: center;
 }
-@media (max-width: 768px) {
-  /* line 37, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 37, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] {
     margin-bottom: 120px;
   }
 }
-/* line 47, ../sass/app/sections/_home.scss */
+/* line 47, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] ul {
   list-style: none;
 }
-/* line 49, ../sass/app/sections/_home.scss */
+/* line 49, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] ul li {
   display: block;
 }
-/* line 54, ../sass/app/sections/_home.scss */
+/* line 54, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .skills {
   height: 200px;
   margin: 0 auto 25px;
   position: relative;
   width: 200px;
 }
-@media (max-width: 480px) {
-  /* line 54, ../sass/app/sections/_home.scss */
+@media (min-width: 480px) {
+  /* line 54, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .skills {
     height: 240px;
     width: 240px;
   }
 }
-@media (max-width: 768px) {
-  /* line 54, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 54, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .skills {
     height: 320px;
     margin: 0;
@@ -1178,7 +1177,7 @@ html[xmlns] .slides {
     width: 320px;
   }
 }
-/* line 75, ../sass/app/sections/_home.scss */
+/* line 75, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle {
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -1200,70 +1199,70 @@ html[xmlns] .slides {
   text-transform: uppercase;
   width: 50%;
 }
-/* line 92, ../sass/app/sections/_home.scss */
+/* line 92, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle:hover {
   background: rgba(247, 121, 22, 0.9);
   box-shadow: 0 0 10px rgba(247, 121, 22, 0.8);
 }
-@media (max-width: 768px) {
-  /* line 92, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 92, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle:hover {
     height: 170px;
     line-height: 170px;
     width: 170px;
   }
 }
-/* line 101, ../sass/app/sections/_home.scss */
+/* line 101, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle.design {
   left: 25%;
   top: 15%;
 }
-@media (max-width: 768px) {
-  /* line 101, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 101, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.design {
     left: 80px;
     top: 50px;
   }
-  /* line 107, ../sass/app/sections/_home.scss */
+  /* line 107, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.design:hover {
     left: 75px;
     top: 45px;
   }
 }
-/* line 113, ../sass/app/sections/_home.scss */
+/* line 113, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle.technology {
   bottom: 0;
   left: 4.5%;
 }
-@media (max-width: 768px) {
-  /* line 113, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 113, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.technology {
     left: 15px;
   }
-  /* line 118, ../sass/app/sections/_home.scss */
+  /* line 118, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.technology:hover {
     bottom: -5px;
     left: 10px;
   }
 }
-/* line 124, ../sass/app/sections/_home.scss */
+/* line 124, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle.strategy {
   bottom: 0;
   right: 4.5%;
 }
-@media (max-width: 768px) {
-  /* line 124, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 124, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.strategy {
     right: 15px;
   }
-  /* line 129, ../sass/app/sections/_home.scss */
+  /* line 129, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle.strategy:hover {
     bottom: -5px;
     right: 10px;
   }
 }
-@media (max-width: 768px) {
-  /* line 75, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 75, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle {
     font-size: 18px;
     height: 160px;
@@ -1271,7 +1270,7 @@ html[xmlns] .slides {
     width: 160px;
   }
 }
-/* line 143, ../sass/app/sections/_home.scss */
+/* line 143, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .circle span {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1281,49 +1280,49 @@ html[xmlns] .slides {
   *display: inline;
   padding-top: 45%;
 }
-@media (max-width: 768px) {
-  /* line 143, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 143, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .circle span {
     padding: 0;
   }
 }
-/* line 153, ../sass/app/sections/_home.scss */
+/* line 153, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .presentation {
   text-align: left;
 }
-@media (max-width: 768px) {
-  /* line 153, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 153, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home [role="banner"] .presentation {
     padding: 20px 340px 0 0;
   }
 }
-/* line 160, ../sass/app/sections/_home.scss */
+/* line 160, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .presentation p:first-child {
   font-size: 1.3em;
 }
-/* line 164, ../sass/app/sections/_home.scss */
+/* line 164, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home [role="banner"] .presentation li {
   margin-bottom: .5em;
 }
 
-/* line 175, ../sass/app/sections/_home.scss */
+/* line 175, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects h2 {
   text-align: center;
 }
-@media (max-width: 768px) {
-  /* line 179, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 179, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .selected-projects .slides {
     margin: 0 0 20px;
   }
 }
-/* line 185, ../sass/app/sections/_home.scss */
+/* line 185, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects figure {
   display: block;
   max-width: 900px;
   margin: 0 auto;
   position: relative;
 }
-/* line 192, ../sass/app/sections/_home.scss */
+/* line 192, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects figcaption {
   background: rgba(0, 0, 0, 0.87);
   bottom: 0;
@@ -1336,21 +1335,21 @@ html[xmlns] .slides {
   position: absolute;
   width: 100%;
 }
-@media (max-width: 768px) {
-  /* line 192, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 192, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .selected-projects figcaption {
     bottom: 20px;
     display: inline-block;
     left: 20px;
   }
 }
-@media (max-width: 992px) {
-  /* line 192, ../sass/app/sections/_home.scss */
+@media (min-width: 992px) {
+  /* line 192, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .selected-projects figcaption {
     max-width: 50%;
   }
 }
-/* line 214, ../sass/app/sections/_home.scss */
+/* line 214, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects figcaption span {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1360,34 +1359,34 @@ html[xmlns] .slides {
   *display: inline;
   text-indent: -9999px;
 }
-@media (max-width: 768px) {
-  /* line 214, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 214, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .selected-projects figcaption span {
     display: inline;
     text-indent: normal;
   }
 }
-/* line 225, ../sass/app/sections/_home.scss */
+/* line 225, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects img {
   display: block;
 }
-/* line 229, ../sass/app/sections/_home.scss */
+/* line 229, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .selected-projects strong {
   color: #fff;
 }
 
-/* line 234, ../sass/app/sections/_home.scss */
+/* line 234, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
 .home .posts {
   padding-top: 20px;
 }
-@media (max-width: 768px) {
-  /* line 234, ../sass/app/sections/_home.scss */
+@media (min-width: 768px) {
+  /* line 234, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_home.scss */
   .home .posts {
     padding-top: 80px;
   }
 }
 
-/* line 5, ../sass/app/sections/_projects.scss */
+/* line 5, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .projects .nav-projects a,
 .projects .nav-projects a:hover,
 .projects .nav-projects a:focus {
@@ -1396,45 +1395,45 @@ html[xmlns] .slides {
   color: #f0e9cd;
   padding: 0 6px;
 }
-/* line 18, ../sass/app/sections/_projects.scss */
+/* line 18, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .projects [role="banner"] {
   margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  /* line 18, ../sass/app/sections/_projects.scss */
+@media (min-width: 768px) {
+  /* line 18, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
   .projects [role="banner"] {
     margin-bottom: 40px;
     padding: 60px 0;
   }
 }
-/* line 26, ../sass/app/sections/_projects.scss */
+/* line 26, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .projects [role="banner"] h1 {
   font-size: 2em;
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  /* line 33, ../sass/app/sections/_projects.scss */
+@media (min-width: 768px) {
+  /* line 33, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
   .our-projects {
     float: left;
     width: 60%;
   }
 }
-/* line 39, ../sass/app/sections/_projects.scss */
+/* line 39, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .our-projects ul {
   list-style: none;
 }
-/* line 41, ../sass/app/sections/_projects.scss */
+/* line 41, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .our-projects ul li {
   display: block;
 }
 
-/* line 50, ../sass/app/sections/_projects.scss */
+/* line 50, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .current-projects {
   margin: 0 0 20px;
 }
-@media (max-width: 768px) {
-  /* line 50, ../sass/app/sections/_projects.scss */
+@media (min-width: 768px) {
+  /* line 50, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
   .current-projects {
     float: right;
     margin-bottom: 0;
@@ -1442,7 +1441,7 @@ html[xmlns] .slides {
   }
 }
 
-/* line 59, ../sass/app/sections/_projects.scss */
+/* line 59, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .project {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1459,34 +1458,34 @@ html[xmlns] .slides {
   margin: 0 -20px 20px;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  /* line 59, ../sass/app/sections/_projects.scss */
+@media (min-width: 768px) {
+  /* line 59, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
   .project {
     margin: 0 -70px 70px;
     padding: 70px;
   }
 }
-/* line 63, ../sass/app/sections/_projects.scss */
+/* line 63, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .project h1 {
   font-size: 1.4em;
 }
-/* line 67, ../sass/app/sections/_projects.scss */
+/* line 67, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .project figure {
   margin: -20px -20px 20px;
 }
-@media (max-width: 992px) {
-  /* line 67, ../sass/app/sections/_projects.scss */
+@media (min-width: 992px) {
+  /* line 67, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
   .project figure {
     margin: -70px -70px 70px;
   }
 }
-/* line 74, ../sass/app/sections/_projects.scss */
+/* line 74, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_projects.scss */
 .project img {
   border-radius: 4px;
   display: block;
 }
 
-/* line 6, ../sass/app/sections/_posts.scss */
+/* line 6, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .blog .nav-blog a,
 .blog .nav-blog a:hover,
 .blog .nav-blog a:focus,
@@ -1499,16 +1498,16 @@ html[xmlns] .slides {
   padding: 0 6px;
 }
 
-/* line 22, ../sass/app/sections/_posts.scss */
+/* line 22, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .blog [role="banner"] {
   margin-bottom: 40px;
 }
-/* line 25, ../sass/app/sections/_posts.scss */
+/* line 25, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .blog [role="banner"] h1 {
   font-size: 2em;
   text-transform: uppercase;
 }
-/* line 35, ../sass/app/sections/_posts.scss */
+/* line 35, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .blog [role="main"] .summaries {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1525,41 +1524,41 @@ html[xmlns] .slides {
   margin: 0 -20px 20px;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  /* line 35, ../sass/app/sections/_posts.scss */
+@media (min-width: 768px) {
+  /* line 35, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .blog [role="main"] .summaries {
     margin: 0 -70px 70px;
     padding: 70px;
   }
 }
 
-/* line 40, ../sass/app/sections/_posts.scss */
+/* line 40, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post-summary {
   margin: 0 0 15px;
 }
-@media (max-width: 768px) {
-  /* line 40, ../sass/app/sections/_posts.scss */
+@media (min-width: 768px) {
+  /* line 40, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .post-summary {
     margin: 0 0 2em;
   }
 }
-/* line 46, ../sass/app/sections/_posts.scss */
+/* line 46, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post-summary h4 {
   margin: 0;
 }
 @media (max-width: 768px) {
-  /* line 46, ../sass/app/sections/_posts.scss */
+  /* line 46, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .post-summary h4 {
     font-size: 1.2em;
     margin-bottom: .15em;
   }
 }
-/* line 54, ../sass/app/sections/_posts.scss */
+/* line 54, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post-summary time {
   color: #777;
 }
 
-/* line 59, ../sass/app/sections/_posts.scss */
+/* line 59, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1576,83 +1575,83 @@ html[xmlns] .slides {
   margin: 0 -20px 20px;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  /* line 59, ../sass/app/sections/_posts.scss */
+@media (min-width: 768px) {
+  /* line 59, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .post {
     margin: 0 -70px 70px;
     padding: 70px;
   }
 }
-/* line 61, ../sass/app/sections/_posts.scss */
+/* line 61, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post header {
   margin: 0 0 1em;
 }
-/* line 64, ../sass/app/sections/_posts.scss */
+/* line 64, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post .top-image {
   margin: 0 0 1em;
 }
-@media (max-width: 768px) {
-  /* line 64, ../sass/app/sections/_posts.scss */
+@media (min-width: 768px) {
+  /* line 64, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .post .top-image {
     margin: 0 0 2em;
   }
 }
-/* line 70, ../sass/app/sections/_posts.scss */
+/* line 70, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post .right {
   float: right;
   margin: 0 0 0 2em;
 }
-/* line 74, ../sass/app/sections/_posts.scss */
+/* line 74, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post .clear {
   clear: both;
 }
-/* line 78, ../sass/app/sections/_posts.scss */
+/* line 78, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post .author,
 .post time {
   color: #777;
 }
-/* line 81, ../sass/app/sections/_posts.scss */
+/* line 81, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post .author img {
   border-radius: 50%;
 }
-/* line 84, ../sass/app/sections/_posts.scss */
+/* line 84, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post time:before {
   content: " – ";
 }
-/* line 87, ../sass/app/sections/_posts.scss */
+/* line 87, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .post #disqus_thread {
   padding-top: 2em;
 }
 
-/* line 93, ../sass/app/sections/_posts.scss */
+/* line 93, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .posts ul {
   list-style: none;
 }
-/* line 95, ../sass/app/sections/_posts.scss */
+/* line 95, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .posts ul li {
   margin: 0 0 .5em;
 }
-/* line 98, ../sass/app/sections/_posts.scss */
+/* line 98, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
 .posts ul time {
   color: #403e35;
   display: block;
 }
-@media (max-width: 768px) {
-  /* line 103, ../sass/app/sections/_posts.scss */
+@media (min-width: 768px) {
+  /* line 103, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .posts ul li {
     margin: 0;
   }
-  /* line 106, ../sass/app/sections/_posts.scss */
+  /* line 106, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .posts ul time {
     display: inline;
   }
-  /* line 108, ../sass/app/sections/_posts.scss */
+  /* line 108, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_posts.scss */
   .posts ul time:after {
     content: " – ";
   }
 }
 
-/* line 5, ../sass/app/sections/_contact.scss */
+/* line 5, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .contact .nav-contact a,
 .contact .nav-contact a:hover,
 .contact .nav-contact a:focus {
@@ -1661,23 +1660,23 @@ html[xmlns] .slides {
   color: #f0e9cd;
   padding: 0 6px;
 }
-/* line 16, ../sass/app/sections/_contact.scss */
+/* line 16, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .contact [role="banner"] {
   margin-bottom: 20px;
 }
-/* line 18, ../sass/app/sections/_contact.scss */
+/* line 18, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .contact [role="banner"] h1 {
   font-size: 2em;
   text-transform: uppercase;
 }
-@media (max-width: 768px) {
-  /* line 16, ../sass/app/sections/_contact.scss */
+@media (min-width: 768px) {
+  /* line 16, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .contact [role="banner"] {
     margin-bottom: 40px;
   }
 }
 
-/* line 28, ../sass/app/sections/_contact.scss */
+/* line 28, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .colleagues {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1694,55 +1693,55 @@ html[xmlns] .slides {
   margin: 0 -20px 20px;
   padding: 20px;
 }
-@media (max-width: 768px) {
-  /* line 28, ../sass/app/sections/_contact.scss */
+@media (min-width: 768px) {
+  /* line 28, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues {
     margin: 0 -70px 70px;
     padding: 70px;
   }
 }
-/* line 30, ../sass/app/sections/_contact.scss */
+/* line 30, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .colleagues ul {
   list-style: none;
 }
-@media (max-width: 768px) {
-  /* line 34, ../sass/app/sections/_contact.scss */
+@media (min-width: 768px) {
+  /* line 34, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues ul li {
     float: left;
     width: 50%;
   }
-  /* line 37, ../sass/app/sections/_contact.scss */
+  /* line 37, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues ul li:nth-child(2n+1) {
     clear: both;
   }
 }
-@media (max-width: 992px) {
-  /* line 43, ../sass/app/sections/_contact.scss */
+@media (min-width: 992px) {
+  /* line 43, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues ul li {
     width: 33.333%;
   }
-  /* line 45, ../sass/app/sections/_contact.scss */
+  /* line 45, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues ul li:nth-child(2n+1) {
     clear: none;
   }
-  /* line 48, ../sass/app/sections/_contact.scss */
+  /* line 48, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .colleagues ul li:nth-child(3n+1) {
     clear: both;
   }
 }
-/* line 56, ../sass/app/sections/_contact.scss */
+/* line 56, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .colleagues h3,
 .colleagues h4,
 .colleagues dt {
   color: #333333;
 }
-/* line 59, ../sass/app/sections/_contact.scss */
+/* line 59, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
 .colleagues dt {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  /* line 64, ../sass/app/sections/_contact.scss */
+@media (min-width: 768px) {
+  /* line 64, /Users/per/Sites/kollegorna.se/css/sass/app/sections/_contact.scss */
   .map {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
