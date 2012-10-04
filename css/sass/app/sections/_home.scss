@@ -212,7 +212,7 @@
     }
 
     span {
-      @include inline-block;
+      display: inline-block;
       text-indent: -9999px;
 
       @include respond-to(medium) {
