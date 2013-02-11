@@ -27,13 +27,12 @@
       @include opacity(0.95);
     }
   }
-
+  @include respond-to(small) {
+    font: italic $font-weight-black 48px/1.2 $font-logo;
+  }
   @include respond-to(medium) {
     font: italic $font-weight-black 96px/1.2 $font-logo;
     margin: 67px 0 60px;
-  }
-  @include respond-to(small) {
-    font: italic $font-weight-black 48px/1.2 $font-logo;
   }
 }
 
