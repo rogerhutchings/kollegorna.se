@@ -79,7 +79,7 @@ h2 {
 h3 {
   font-size: 1.2em; /* 24px */
   line-height: 1.3333; /* 32px */
-  margin: .5em 0; /* 12px */
+  margin: .5em 0 .8em; /* 12px */
 }
 
 h4 {
@@ -110,7 +110,7 @@ h6 {
 /** 4. TEXT ---------- */
 
 p {
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 1.2em; /* 0 0 24px */
 }
 
 hr {
@@ -331,7 +331,7 @@ figure:after { clear: both; }
 figure { *zoom: 1; }
 
 figure {
-  margin: 0 0 .6em; /* 0 0 12px */
+  margin: 0 0 1.2em; /* 0 0 24px */
 }
 
 figure img {
