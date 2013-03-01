@@ -9,6 +9,27 @@
   }
 }
 
+.scream-something-loud {
+  background: rgba(247, 121, 22, .7);
+  border-bottom: 5px solid $color-link;
+  color: rgba(255, 255, 255, .9);
+
+  font-weight: $font-weight-bold;
+  padding: 15px 0;
+  text-align: center;
+  text-shadow: 0 1px 1px $color-link;
+  text-transform: uppercase;
+
+  a {
+    color: #fff;
+  }
+
+  p {
+    @extend .wrapper;
+    margin-bottom: 0;
+  }
+}
+
 .logo {
   @include inline-block;
   @include text-shadow(1px 1px 0 #F0E9CD, 3px 3px 0 rgba(0, 0, 0, .3));

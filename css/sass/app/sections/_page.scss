@@ -1,0 +1,35 @@
+
+.page {
+  .nav-work-here {
+    a,
+    a:hover,
+    a:focus {
+      background: $color-heading;
+      border: 0;
+      color: $color-background;
+      padding: 0 6px;
+    }
+  }
+  [role="main"],
+  [role="banner"] {
+    @extend .wrapper;
+  }
+  [role="banner"] {
+    margin-bottom: 20px;
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    @include respond-to(medium) {
+      margin-bottom: 40px;
+    }
+  }
+
+  h2 {
+    padding: 1em 0 .5em;
+  }
+
+  article {
+    @include box;
+  }
+}
