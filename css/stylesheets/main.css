@@ -1440,16 +1440,11 @@ html[xmlns] .slides {
 }
 /* line 32, ../sass/app/sections/_page.scss */
 .page article {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c;
   -moz-box-shadow: 0 2px 4px #b7b19c;
   box-shadow: 0 2px 4px #b7b19c;
   background: #fff;
-  border-bottom: 1px solid #b7b19c;
+  border-radius: 4px;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
@@ -1520,16 +1515,11 @@ html[xmlns] .slides {
 
 /* line 59, ../sass/app/sections/_projects.scss */
 .project {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c;
   -moz-box-shadow: 0 2px 4px #b7b19c;
   box-shadow: 0 2px 4px #b7b19c;
   background: #fff;
-  border-bottom: 1px solid #b7b19c;
+  border-radius: 4px;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
@@ -1586,16 +1576,11 @@ html[xmlns] .slides {
 }
 /* line 35, ../sass/app/sections/_posts.scss */
 .blog [role="main"] .summaries {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c;
   -moz-box-shadow: 0 2px 4px #b7b19c;
   box-shadow: 0 2px 4px #b7b19c;
   background: #fff;
-  border-bottom: 1px solid #b7b19c;
+  border-radius: 4px;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
@@ -1637,16 +1622,11 @@ html[xmlns] .slides {
 
 /* line 59, ../sass/app/sections/_posts.scss */
 .post {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c;
   -moz-box-shadow: 0 2px 4px #b7b19c;
   box-shadow: 0 2px 4px #b7b19c;
   background: #fff;
-  border-bottom: 1px solid #b7b19c;
+  border-radius: 4px;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
@@ -1755,16 +1735,11 @@ html[xmlns] .slides {
 
 /* line 28, ../sass/app/sections/_contact.scss */
 .colleagues {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c;
   -moz-box-shadow: 0 2px 4px #b7b19c;
   box-shadow: 0 2px 4px #b7b19c;
   background: #fff;
-  border-bottom: 1px solid #b7b19c;
+  border-radius: 4px;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
