@@ -1,5 +1,6 @@
 
 .footer {
+  clear: both;
   @extend .wrapper;
   padding: 2em 0 20px;
   @include respond-to(medium-2) {
