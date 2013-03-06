@@ -30,66 +30,114 @@ body_class: home
   </div>
 </header>
 
-<section role="main">
-  <article class="selected-projects">
-    <ul class="slides">
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/nojesguiden-badge.jpg">
-            <figcaption><strong>Nöjesguiden.</strong> <span>Vinnare av Årets Tidskrift Digitala Medier 2012.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/presentermotfattigdom.jpg">
-            <figcaption><strong>Presenter mot fattigdom.</strong> <span>Responsiv e-handel.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/trafiklab.jpg">
-            <figcaption><strong>Trafiklab.</strong> <span>Prisbelönt initiativ för öppen traﬁkdata.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/green-sweden.jpg">
-            <figcaption><strong>Green Sweden.</strong> <span>Katalogtjänst för svenska miljöföretag av IDG-publikationen MiljöAktuellt.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/vattenfall-fiskevatten.jpg">
-            <figcaption><strong>Vattenfall Fiskevatten.</strong> <span>Sportfiskeinformation från Vattenfalls kraftverk.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-      <li>
-        <a href="/projekt">
-          <figure>
-            <img src="/images/projects/cause-of-death-woman.jpg">
-            <figcaption><strong>Cause of Death: Woman.</strong> <span>En journalistisk granskning av våld mot kvinnor världen över.</span></figcaption>
-          </figure>
-        </a>
-      </li>
-    </ul>
+<section class="the-grid" role="main">
+  <article>
+    <a href="/jobb/">
+      <img src="/images/the-grid/work-here.jpg" alt="">
+      <h2>Jobba här</h2>
+      <div class="box">
+        <h1>Vi söker utvecklare</h1>
+        <p>Egen stapler är bara en av många fördelar…</p>
+      </div>
+    </a>
   </article>
 
-  <article class="posts">
-    <h2 class="title">Bloggen</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li><time pubdate>{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+  <article>
+    <a href="http://spring2013.drupalcamp.se">
+      <img src="/images/the-grid/drupalcamp.jpg" alt="">
+      <h2>Vi ses på…</h2>
+      <div class="box">
+        <h1>DrupalCamp Stockholm</h1>
+        <p>Vi är med och organiserar.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2012/10/presentermotfattigdom/">
+      <img src="/images/the-grid/pmf.jpg" alt="">
+      <h2>Release</h2>
+      <div class="box">
+        <h1>Bekämpa fattigdomen</h1>
+        <p>Get bort en omtänksam present.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2012/11/nojesguiden-arets-tidskrift-digitala-medier/">
+      <img src="/images/the-grid/nojesguiden-badge2.jpg" alt="">
+      <h2>Pris!</h2>
+      <div class="box">
+        <h1>Årets Tidskrift Digitala Medier 2012</h1>
+        <p>Fint pris till Nöjesguiden!</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2013/02/laddanernu-swedishlifesciences/">
+      <img src="/images/the-grid/lsg.jpg" alt="">
+      <h2>Release</h2>
+      <div class="box">
+        <h1>The Swedish Life Science Industry Guide</h1>
+        <p>Databas över svenska Life Science-företag.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2013/02/laddanernu-swedishlifesciences/">
+      <img src="/images/the-grid/laddaner.jpg" alt="">
+      <h2>Release</h2>
+      <div class="box">
+        <h1>LaddaNer.nu</h1>
+        <p>Program- och ebokstips från PC För Alla.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2013/01/nojesguiden-topp100-hederspris/">
+      <img src="/images/the-grid/topp100-2012.jpg" alt="">
+      <h2>Pris!</h2>
+      <div class="box">
+        <h1>Nöjesguiden prisad</h1>
+        <p>Vinnare av juryns hederspris.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/projekt#codw">
+      <img src="/images/the-grid/codw.jpg" alt="">
+      <h2>Projekt</h2>
+      <div class="box">
+        <h1>150 reportage från hela världen</h1>
+        <p>Journalistisk granskning av våld mot kvinnor.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/projekt#trafiklab">
+      <img src="/images/the-grid/trafiklab.jpg" alt="">
+      <h2>Projekt</h2>
+      <div class="box">
+        <h1>Trafiklab</h1>
+        <p>Prisbelönt intiativ för öppen trafikdata.</p>
+      </div>
+    </a>
+  </article>
+
+  <article>
+    <a href="/blogg/2013/02/salembeta/">
+      <img src="/images/the-grid/salembeta.jpg" alt="">
+      <h2>Release</h2>
+      <div class="box">
+        <h1>Salem Beta</h1>
+        <p>Kampanjsajt åt Paradox Interactive.</p>
+      </div>
+    </a>
   </article>
 </section>
