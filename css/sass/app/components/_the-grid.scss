@@ -53,12 +53,19 @@
  */
 
 .the-grid {
+  padding: 0 20px;
   margin-bottom: 20px;
 
   article {
     text-align: center;
   }
 
+  a {
+    @include border-radius(10px);
+    //box-shadow: inset 0 0 60px rgba(0, 0, 0, .15);
+  }
+
+  a,
   img,
   h2,
   .box {
@@ -107,11 +114,17 @@
   }
 
   .no-touch & article {
+
+    a:hover {
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, .3);
+    }
+
     &:hover img {
       opacity: 1;
     }
 
     h2 {
+      @include border-radius(10px 0 10px 0);
       top: -500px;
     }
 
@@ -120,6 +133,7 @@
     }
 
     .box {
+      @include border-radius(0 0 10px 10px);
       bottom: -500px;
     }
 
