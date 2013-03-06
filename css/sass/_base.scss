@@ -53,6 +53,7 @@ $color-text: #5B5541;
 $color-black-text: #333;
 $color-heading: #403e35;
 $color-box-shadow: #B7B19C;
+$color-grey-contrast: #ececda;
 
 // Fonts
 
@@ -67,9 +68,10 @@ $font-weight-black: 900;
 
 @mixin box {
   @include border-radius(4px);
-  @include box-shadow(0 2px 4px $color-box-shadow);
+  @include box-shadow(0 2px 4px $color-box-shadow, inset 0 0 80px $color-grey-contrast);
   background: #fff;
   border-bottom: 1px solid $color-box-shadow;
+  border-top: 1px solid $color-grey-contrast;
   color: #333;
   padding: 4em 0 0;
   margin: 0 -20px 20px;
