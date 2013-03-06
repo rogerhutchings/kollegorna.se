@@ -946,10 +946,15 @@ html[xmlns] .slides {
  *
  * A lapptäcke of stuff in square cells!
  */
-/* line 10, ../sass/app/components/_the-grid.scss */
+/* line 7, ../sass/app/components/_the-grid.scss */
+.the-grid {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+/* line 12, ../sass/app/components/_the-grid.scss */
 .the-grid article {
   float: left;
-  margin: 0;
+  margin: 0 0 20px;
   overflow: hidden;
   padding: 0;
   position: relative;
@@ -957,39 +962,47 @@ html[xmlns] .slides {
   width: 100%;
   height: auto;
 }
-/* line 20, ../sass/app/components/_the-grid.scss */
+/* line 22, ../sass/app/components/_the-grid.scss */
 .the-grid article a {
   border: 0;
   display: block;
 }
-@media (min-width: 500px) {
-  /* line 10, ../sass/app/components/_the-grid.scss */
+@media (min-width: 480px) {
+  /* line 12, ../sass/app/components/_the-grid.scss */
   .the-grid article {
+    margin: 0;
     padding-bottom: 50%;
     width: 50%;
   }
-  /* line 29, ../sass/app/components/_the-grid.scss */
+  /* line 32, ../sass/app/components/_the-grid.scss */
   .the-grid article a {
     max-width: 100%;
     position: absolute;
   }
 }
-@media (min-width: 800px) {
-  /* line 10, ../sass/app/components/_the-grid.scss */
+@media (min-width: 660px) {
+  /* line 12, ../sass/app/components/_the-grid.scss */
   .the-grid article {
     padding-bottom: 33%;
     width: 33%;
   }
 }
-@media (min-width: 1200px) {
-  /* line 10, ../sass/app/components/_the-grid.scss */
+@media (min-width: 800px) {
+  /* line 12, ../sass/app/components/_the-grid.scss */
   .the-grid article {
     padding-bottom: 25%;
     width: 25%;
   }
 }
+@media (min-width: 1200px) {
+  /* line 12, ../sass/app/components/_the-grid.scss */
+  .the-grid article {
+    padding-bottom: 20%;
+    width: 20%;
+  }
+}
 @media (min-width: 1600px) {
-  /* line 10, ../sass/app/components/_the-grid.scss */
+  /* line 12, ../sass/app/components/_the-grid.scss */
   .the-grid article {
     padding-bottom: 20%;
     width: 20%;
@@ -999,12 +1012,17 @@ html[xmlns] .slides {
 /**
  * The Grid - Style
  */
-/* line 56, ../sass/app/components/_the-grid.scss */
+/* line 64, ../sass/app/components/_the-grid.scss */
 .the-grid {
-  padding: 0 20px;
   margin-bottom: 20px;
 }
-/* line 60, ../sass/app/components/_the-grid.scss */
+@media (min-width: 660px) {
+  /* line 64, ../sass/app/components/_the-grid.scss */
+  .the-grid {
+    padding: 0 20px;
+  }
+}
+/* line 71, ../sass/app/components/_the-grid.scss */
 .the-grid article {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1020,11 +1038,11 @@ html[xmlns] .slides {
   color: #333;
   text-align: center;
 }
-/* line 65, ../sass/app/components/_the-grid.scss */
+/* line 76, ../sass/app/components/_the-grid.scss */
 .the-grid a {
   margin: 0;
 }
-/* line 73, ../sass/app/components/_the-grid.scss */
+/* line 84, ../sass/app/components/_the-grid.scss */
 .the-grid a,
 .the-grid img,
 .the-grid h2,
@@ -1034,16 +1052,21 @@ html[xmlns] .slides {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 80, ../sass/app/components/_the-grid.scss */
+/* line 91, ../sass/app/components/_the-grid.scss */
 .the-grid h1 {
   color: #fff;
   font-size: 1em;
   margin: 0;
   line-height: 1.5;
 }
-/* line 87, ../sass/app/components/_the-grid.scss */
+/* line 98, ../sass/app/components/_the-grid.scss */
 .the-grid h2 {
-  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  -ms-border-radius: 4px 0 4px 0;
+  -o-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+  background: #f77916;
   color: #fff;
   font-size: .8em;
   display: inline-block;
@@ -1055,42 +1078,42 @@ html[xmlns] .slides {
   text-transform: uppercase;
   top: 0;
 }
-/* line 101, ../sass/app/components/_the-grid.scss */
+/* line 113, ../sass/app/components/_the-grid.scss */
 .the-grid .box {
-  background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  color: #fff;
-  padding: 15px 10px;
-  position: absolute;
-  width: 100%;
-}
-/* line 110, ../sass/app/components/_the-grid.scss */
-.the-grid .box p:last-child {
-  margin: 0;
-}
-/* line 117, ../sass/app/components/_the-grid.scss */
-.no-touch .the-grid article h2 {
-  -webkit-border-radius: 4px 0 4px 0;
-  -moz-border-radius: 4px 0 4px 0;
-  -ms-border-radius: 4px 0 4px 0;
-  -o-border-radius: 4px 0 4px 0;
-  border-radius: 4px 0 4px 0;
-  top: -500px;
-}
-/* line 122, ../sass/app/components/_the-grid.scss */
-.no-touch .the-grid article:hover h2 {
-  top: 0;
-}
-/* line 126, ../sass/app/components/_the-grid.scss */
-.no-touch .the-grid article .box {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   -ms-border-radius: 0 0 4px 4px;
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
-  bottom: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  color: #fff;
+  font-size: 1em;
+  padding: 15px 10px;
+  position: absolute;
+  width: 100%;
+}
+/* line 124, ../sass/app/components/_the-grid.scss */
+.the-grid .box p:last-child {
+  margin: 0;
 }
 /* line 131, ../sass/app/components/_the-grid.scss */
+.touch .the-grid article p {
+  display: none;
+}
+/* line 137, ../sass/app/components/_the-grid.scss */
+.no-touch .the-grid article h2 {
+  top: -500px;
+}
+/* line 141, ../sass/app/components/_the-grid.scss */
+.no-touch .the-grid article:hover h2 {
+  top: 0;
+}
+/* line 145, ../sass/app/components/_the-grid.scss */
+.no-touch .the-grid article .box {
+  bottom: -500px;
+}
+/* line 149, ../sass/app/components/_the-grid.scss */
 .no-touch .the-grid article:hover .box {
   bottom: 0;
 }
