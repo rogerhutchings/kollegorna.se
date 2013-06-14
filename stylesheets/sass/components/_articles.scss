@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Default styles for articles
+// -----------------------------------------------------------------------------
+
+.article {
+
+}
+.article--divided {
+  border-bottom: 2px solid $ds-color-border;
+  padding-bottom: ($ds-margin*2);
+}
+
+.article__section {
+  margin-bottom: ($ds-margin*2);
+}
+.article__section--divided {
+  border-bottom: 1px solid $ds-color-border;
+  padding-bottom: ($ds-margin*2);
+}

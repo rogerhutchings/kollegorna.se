@@ -1,0 +1,30 @@
+
+/*
+.navigation {
+  @include clearfix;
+  border-top: 5px solid #000;
+  float: right;
+  padding: 10px 1px 40px;
+
+  a {
+    @extend small;
+    color: $ds-color-text;
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+
+    &:hover {
+      //border-bottom: 1px solid $ds-color-text;
+    }
+  }
+}
+
+.navigation-items {
+  display: inline-block;
+  //padding-right: ($ds-margin*4);
+
+  a:last-child {
+    margin-right: 0;
+  }
+}
+*/

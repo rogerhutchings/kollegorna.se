@@ -1,0 +1,119 @@
+.blog,
+.blog-post {
+  .nav-blog {
+    a,
+    a:hover,
+    a:focus {
+      background: $ds-color-heading;
+      border: 0;
+      color: $ds-color-background;
+      padding: 4px 6px 2px;
+    }
+  }
+}
+
+.blog [role="banner"],
+.blog [role="main"],
+.blog-post [role="main"] {
+  @extend %ds-wrapper;
+}
+
+.blog {
+  [role="banner"] {
+    margin-bottom: 40px;
+    padding-top: 40px;
+
+    @include breakpoint($ds-breakpoint-tablet) {
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+
+    a {
+      @extend .cta;
+    }
+  }
+
+  [role="main"] .summaries {
+    @include ds-box;
+  }
+}
+
+.post-summary {
+  margin: 0 0 15px;
+  @include breakpoint($ds-breakpoint-tablet) {
+    margin: 0 0 2em;
+  }
+
+  h4 {
+    margin: 0;
+    @include breakpoint($ds-breakpoint-laptop) {
+      font-size: 1.2em;
+      margin-bottom: .15em;
+    }
+  }
+
+  time {
+    color: #777;
+  }
+}
+
+.post {
+  @include ds-box;
+  header {
+    margin: 0 0 1em;
+  }
+  .top-image {
+    margin: 0 0 1em;
+    @include breakpoint($ds-breakpoint-tablet) {
+      margin: 0 0 2em;
+    }
+  }
+  .right {
+    float: right;
+    margin: 0 0 0 2em;
+  }
+  .clear {
+    clear: both;
+  }
+  .author,
+  time {
+    color: #777;
+  }
+  .author img {
+    border-radius: 50%;
+  }
+  time:before {
+    content: " – ";
+  }
+  #disqus_thread {
+    padding-top: 2em;
+  }
+}
+
+.posts {
+  ul {
+    list-style: none;
+    li {
+      margin: 0 0 .5em;
+    }
+    time {
+      color: $ds-color-heading;
+      display: block;
+    }
+    @include breakpoint($ds-breakpoint-tablet) {
+      li {
+        margin: 0;
+      }
+      time {
+        display: inline;
+        &:after {
+          content: " – ";
+        }
+      }
+    }
+  }
+}
