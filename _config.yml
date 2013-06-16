@@ -1,4 +1,2 @@
 permalink: /blogg/:year/:month/:title/
 url: http://www.kollegorna.se
-
-pygments: true
