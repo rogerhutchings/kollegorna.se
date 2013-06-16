@@ -6,35 +6,55 @@ $(function() {
 
   $('.post').fitVids();
 
+  function showNav() {
+    $('.navigation').addClass('navigation-expanded');
+    $('.navigation').removeClass('navigation-box-shadow');
+    $('.navigation-toggle').addClass('navigation-toggle-active');
+    $('.navigation-toggle').removeClass('navigation-toggle-inactive');
+    $('.navigation-contents').slideDown('fast');
+    $('.page-overlay').fadeIn('fast');
+  }
 
-  $(".navigation-toggle").hover(
-    function () {
-      $('.navigation').addClass('navigation-expanded');
-      $('.navigation').removeClass('navigation-box-shadow');
-      $(this).addClass('navigation-toggle-active');
-      $('.navigation-contents').slideDown('fast', function() {
+  function hideNav() {
+    $('.navigation').removeClass('navigation-expanded');
+    $('.navigation-contents').slideUp('fast', function() {
+      $('.navigation-toggle').addClass('navigation-toggle-inactive');
+      $('.navigation-toggle').removeClass('navigation-toggle-active');
+      $('.navigation').addClass('navigation-box-shadow');
+      $('.page-overlay').fadeOut('fast');
+    });
+  }
 
-      });
-      $('.page-overlay').fadeIn('fast');
-    },
-    function () {
+  if ($('html').hasClass('no-touch')) {
+    // No touch device
+    $('.navigation-toggle').hover(
+      function () {
+        showNav();
+      },
+      function () {
 
-    }
-  );
+      }
+    );
 
-  $(".navigation").hover(
-    function () {
+    $(".navigation").hover(
+      function () {
 
-    },
-    function () {
-      $(this).removeClass('navigation-expanded');
-      $('.navigation-contents').slideUp('fast', function() {
-        $('.navigation-toggle').removeClass('navigation-toggle-active');
-        $('.navigation').addClass('navigation-box-shadow');
-        //$(".navigation-toggle").fadeIn('medium');
-        $('.page-overlay').fadeOut('fast');
-      });
-    }
-  );
+      },
+      function () {
+        hideNav();
+      }
+    );
+  } else {
+    // Touch device
+    $('.navigation-toggle-inactive').click(function() {
+      showNav();
+    });
+    $('.navigation-toggle-active').click(function() {
+      hideNav();
+    });
+  }
 
+  $('.page-overlay').click(function() {
+    hideNav();
+  });
 });
