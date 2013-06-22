@@ -975,6 +975,8 @@ button,
 input[type="submit"] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -998,6 +1000,7 @@ button:hover,
 button:focus,
 input[type=submit]:hover,
 input[type=submit]:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #e86f12));
   background-image: -webkit-linear-gradient(#f77916, #e86f12);
   background-image: -moz-linear-gradient(#f77916, #e86f12);
   background-image: -o-linear-gradient(#f77916, #e86f12);
@@ -1182,16 +1185,22 @@ optgroup {
 }
 /* line 90, ../sass/components/_typography.scss */
 .spotlight:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eaddaf), color-stop(100%, #f4e7b7));
   background-image: -webkit-linear-gradient(#eaddaf, #f4e7b7);
   background-image: -moz-linear-gradient(#eaddaf, #f4e7b7);
   background-image: -o-linear-gradient(#eaddaf, #f4e7b7);
   background-image: linear-gradient(#eaddaf, #f4e7b7);
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
 }
-/* line 93, ../sass/components/_typography.scss */
+/* line 94, ../sass/components/_typography.scss */
 .spotlight:hover .spotlight-cta {
   opacity: 1;
 }
-/* line 98, ../sass/components/_typography.scss */
+/* line 99, ../sass/components/_typography.scss */
 .spotlight .spotlight-image {
   overflow: hidden;
   *zoom: 1;
@@ -1210,17 +1219,17 @@ optgroup {
 .spotlight .spotlight-image img {
   float: left;
 }
-/* line 103, ../sass/components/_typography.scss */
+/* line 104, ../sass/components/_typography.scss */
 .spotlight .spotlight-info {
   overflow: hidden;
   *zoom: 1;
   padding: 0 8px;
 }
-/* line 108, ../sass/components/_typography.scss */
+/* line 109, ../sass/components/_typography.scss */
 .spotlight small, .spotlight .meta {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 112, ../sass/components/_typography.scss */
+/* line 113, ../sass/components/_typography.scss */
 .spotlight .spotlight-cta {
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -1230,7 +1239,7 @@ optgroup {
   opacity: 0;
   width: 200px;
 }
-/* line 119, ../sass/components/_typography.scss */
+/* line 120, ../sass/components/_typography.scss */
 .spotlight .cta, .spotlight .home [role="banner"] .presentation li a, .home [role="banner"] .presentation li .spotlight a, .spotlight .blog [role="banner"] a, .blog [role="banner"] .spotlight a, .spotlight .our-projects ul li a, .our-projects ul li .spotlight a {
   display: none;
   font-size: .8em;
@@ -1240,7 +1249,7 @@ optgroup {
 /**
  * Unstyled
  */
-/* line 134, ../sass/components/_typography.scss */
+/* line 135, ../sass/components/_typography.scss */
 ul.unstyled,
 ol.unstyled {
   list-style: none;
@@ -1250,89 +1259,89 @@ ol.unstyled {
 /**
  * Inline
  */
-/* line 143, ../sass/components/_typography.scss */
+/* line 144, ../sass/components/_typography.scss */
 ul.inline,
 ol.inline {
   list-style: none;
   margin-left: 0;
 }
-/* line 147, ../sass/components/_typography.scss */
+/* line 148, ../sass/components/_typography.scss */
 ul.inline > li,
 ol.inline > li {
   display: inline-block;
   margin-right: 1.11111em;
 }
-/* line 151, ../sass/components/_typography.scss */
+/* line 152, ../sass/components/_typography.scss */
 ul.inline > li:last-child,
 ol.inline > li:last-child {
   margin-right: 0;
 }
 
-/* line 161, ../sass/components/_typography.scss */
+/* line 162, ../sass/components/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 165, ../sass/components/_typography.scss */
+/* line 166, ../sass/components/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 169, ../sass/components/_typography.scss */
+/* line 170, ../sass/components/_typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 177, ../sass/components/_typography.scss */
+/* line 178, ../sass/components/_typography.scss */
 .text-muted {
   color: #000;
 }
 
-/* line 181, ../sass/components/_typography.scss */
+/* line 182, ../sass/components/_typography.scss */
 a.text-muted:hover,
 a.text-muted:focus {
   color: #000;
 }
 
-/* line 185, ../sass/components/_typography.scss */
+/* line 186, ../sass/components/_typography.scss */
 .text-warning {
   color: #000;
 }
 
-/* line 189, ../sass/components/_typography.scss */
+/* line 190, ../sass/components/_typography.scss */
 a.text-warning:hover,
 a.text-warning:focus {
   color: #000;
 }
 
-/* line 193, ../sass/components/_typography.scss */
+/* line 194, ../sass/components/_typography.scss */
 .text-error {
   color: #000;
 }
 
-/* line 197, ../sass/components/_typography.scss */
+/* line 198, ../sass/components/_typography.scss */
 a.text-error:hover,
 a.text-error:focus {
   color: #000;
 }
 
-/* line 201, ../sass/components/_typography.scss */
+/* line 202, ../sass/components/_typography.scss */
 .text-info {
   color: #000;
 }
 
-/* line 205, ../sass/components/_typography.scss */
+/* line 206, ../sass/components/_typography.scss */
 a.text-info:hover,
 a.text-info:focus {
   color: #000;
 }
 
-/* line 209, ../sass/components/_typography.scss */
+/* line 210, ../sass/components/_typography.scss */
 .text-success {
   color: #000;
 }
 
-/* line 213, ../sass/components/_typography.scss */
+/* line 214, ../sass/components/_typography.scss */
 a.text-success:hover,
 a.text-success:focus {
   color: #000;
@@ -1362,6 +1371,8 @@ a.text-success:focus {
 .cta-button {
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
   border-radius: 14px;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -1379,12 +1390,15 @@ a.text-success:focus {
 
 /* line 60, ../sass/components/_buttons.scss */
 .button {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(#f77916, #b55015);
   background-image: -moz-linear-gradient(#f77916, #b55015);
   background-image: -o-linear-gradient(#f77916, #b55015);
   background-image: linear-gradient(#f77916, #b55015);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
@@ -1403,6 +1417,7 @@ a.text-success:focus {
 }
 /* line 19, ../sass/components/_buttons.scss */
 .button:hover, .button:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
   background-image: -webkit-linear-gradient(#f77916, #a64912);
   background-image: -moz-linear-gradient(#f77916, #a64912);
   background-image: -o-linear-gradient(#f77916, #a64912);
@@ -1418,12 +1433,15 @@ a.text-success:focus {
 
 /* line 64, ../sass/components/_buttons.scss */
 .button-large {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(#f77916, #b55015);
   background-image: -moz-linear-gradient(#f77916, #b55015);
   background-image: -o-linear-gradient(#f77916, #b55015);
   background-image: linear-gradient(#f77916, #b55015);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
@@ -1444,6 +1462,7 @@ a.text-success:focus {
 }
 /* line 19, ../sass/components/_buttons.scss */
 .button-large:hover, .button-large:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
   background-image: -webkit-linear-gradient(#f77916, #a64912);
   background-image: -moz-linear-gradient(#f77916, #a64912);
   background-image: -o-linear-gradient(#f77916, #a64912);
@@ -1459,12 +1478,15 @@ a.text-success:focus {
 
 /* line 70, ../sass/components/_buttons.scss */
 .button-largest {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(#f77916, #b55015);
   background-image: -moz-linear-gradient(#f77916, #b55015);
   background-image: -o-linear-gradient(#f77916, #b55015);
   background-image: linear-gradient(#f77916, #b55015);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
@@ -1480,14 +1502,17 @@ a.text-success:focus {
   line-height: 1;
   padding: 6px 8px 4px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   font-size: 1.1em;
-  padding: 14px 24px;
+  padding: 14px 16px;
 }
 /* line 19, ../sass/components/_buttons.scss */
 .button-largest:hover, .button-largest:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
   background-image: -webkit-linear-gradient(#f77916, #a64912);
   background-image: -moz-linear-gradient(#f77916, #a64912);
   background-image: -o-linear-gradient(#f77916, #a64912);
@@ -1531,6 +1556,8 @@ img.right {
 .img-circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -1538,6 +1565,8 @@ img.right {
 .img-rounded {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -2310,10 +2339,11 @@ img.right {
 
 /* line 11, ../sass/components/_header.scss */
 .bottom-border {
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(left top, #f77916, #b55015);
   background-image: -moz-linear-gradient(left top, #f77916, #b55015);
   background-image: -o-linear-gradient(left top, #f77916, #b55015);
-  background-image: linear-gradient(to right bottom, #f77916, #b55015);
+  background-image: linear-gradient(left top, #f77916, #b55015);
   height: 20px;
 }
 
@@ -2329,12 +2359,15 @@ img.right {
 
 /* line 25, ../sass/components/_header.scss */
 .k-logo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(#f77916, #b55015);
   background-image: -moz-linear-gradient(#f77916, #b55015);
   background-image: -o-linear-gradient(#f77916, #b55015);
   background-image: linear-gradient(#f77916, #b55015);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 60px #f77916;
   -moz-box-shadow: 0 0 60px #f77916;
@@ -2404,6 +2437,8 @@ img.right {
 .navigation-toggle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 60px 60px #f4e7b7;
   -moz-box-shadow: 0 0 60px 60px #f4e7b7;
@@ -2422,12 +2457,15 @@ img.right {
 
 /* line 92, ../sass/components/_header.scss */
 .navigation-toggle-active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(#f77916, #b55015);
   background-image: -moz-linear-gradient(#f77916, #b55015);
   background-image: -o-linear-gradient(#f77916, #b55015);
   background-image: linear-gradient(#f77916, #b55015);
-  -webkit-border-radius: 50%;
+  -webkit-border-radius: 50% 50% 0 0;
   -moz-border-radius: 50% 50% 0 0;
+  -ms-border-radius: 50% 50% 0 0;
+  -o-border-radius: 50% 50% 0 0;
   border-radius: 50% 50% 0 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -2441,8 +2479,10 @@ img.right {
 
 /* line 103, ../sass/components/_header.scss */
 .navigation-contents {
-  -webkit-border-radius: 0;
+  -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -2459,10 +2499,11 @@ img.right {
 }
 /* line 116, ../sass/components/_header.scss */
 .navigation-contents .decor {
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
   background-image: -webkit-linear-gradient(left top, #f77916, #b55015);
   background-image: -moz-linear-gradient(left top, #f77916, #b55015);
   background-image: -o-linear-gradient(left top, #f77916, #b55015);
-  background-image: linear-gradient(to right bottom, #f77916, #b55015);
+  background-image: linear-gradient(left top, #f77916, #b55015);
   height: 8px;
   margin: 0 0 4px;
 }
@@ -2567,6 +2608,8 @@ img.right {
 .nav ul li a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   color: #403e35;
   font-size: .7em;
@@ -3381,6 +3424,8 @@ img.right {
 .page article {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
   -moz-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
@@ -3441,6 +3486,8 @@ img.right {
 .blog [role="main"] .summaries {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
   -moz-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
@@ -3498,6 +3545,8 @@ img.right {
 .post {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
   -moz-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
@@ -3656,6 +3705,8 @@ img.right {
   *zoom: 1;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
   -moz-box-shadow: 0 2px 4px #b7b19c, inset 0 0 80px #ececda;
@@ -3720,6 +3771,8 @@ img.right {
 .project img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
   display: block;
 }

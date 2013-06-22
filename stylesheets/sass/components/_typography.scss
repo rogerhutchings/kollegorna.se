@@ -89,6 +89,7 @@
 
   &:hover {
     @include background-image(linear-gradient(#EADDAF, $ds-color-background));
+    @include border-radius(8px 8px 0 0);
 
     .spotlight-cta {
       opacity: 1;
