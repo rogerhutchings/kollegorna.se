@@ -93,3 +93,14 @@
     display: block;
   }
 }
+
+
+// -----------------------------------------------------------------------------
+// Project grid
+// -----------------------------------------------------------------------------
+
+@include ds-layout-columns-up-to-three(project-grid, project-grid-item);
+
+.project-grid {
+  @extend .layout--max-1400-px;
+}

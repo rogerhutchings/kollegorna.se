@@ -2280,7 +2280,7 @@ img.right {
 }
 
 /* line 284, ../sass/components/_layout.scss */
-.layout--max-1400-px {
+.layout--max-1400-px, .project-grid {
   max-width: 1400px !important;
 }
 
@@ -3773,6 +3773,64 @@ img.right {
   display: block;
 }
 
+/* line 72, ../sass/components/_layout.scss */
+.project-grid {
+  *zoom: 1;
+  clear: both;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 66.66667em;
+  width: 100%;
+}
+/* line 141, ../sass/vendor/_griddo.scss */
+.project-grid:before, .project-grid:after {
+  content: " ";
+  display: table;
+}
+/* line 142, ../sass/vendor/_griddo.scss */
+.project-grid:after {
+  clear: both;
+}
+/* line 74, ../sass/components/_layout.scss */
+.project-grid .project-grid-item {
+  float: left;
+  list-style: none;
+  margin: 0;
+  min-height: 1px;
+  padding: 0 1.66667em;
+  position: relative;
+  width: 100%;
+}
+/* line 77, ../sass/components/_layout.scss */
+.project-grid .project-grid-item:last-child {
+  float: left;
+}
+
+@media (min-width: 26.66667em) {
+  /* line 110, ../sass/components/_layout.scss */
+  .project-grid .project-grid-item {
+    width: 50%;
+  }
+  /* line 11, ../sass/components/_layout.scss */
+  .project-grid .project-grid-item:nth-child(2n+1) {
+    clear: both;
+  }
+}
+@media (min-width: 42.66667em) {
+  /* line 118, ../sass/components/_layout.scss */
+  .project-grid .project-grid-item {
+    width: 33.33333%;
+  }
+  /* line 19, ../sass/components/_layout.scss */
+  .project-grid .project-grid-item:nth-child(2n+1) {
+    clear: none;
+  }
+  /* line 23, ../sass/components/_layout.scss */
+  .project-grid .project-grid-item:nth-child(3n+1) {
+    clear: both;
+  }
+}
 /* line 5, ../sass/sections/_contact.scss */
 .contact .nav-contact a,
 .contact .nav-contact a:hover,
