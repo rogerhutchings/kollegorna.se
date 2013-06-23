@@ -422,7 +422,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 60, ../sass/config/_mixins.scss */
+/* line 61, ../sass/config/_mixins.scss */
 .home [role="banner"], .blog [role="banner"],
 .blog [role="main"],
 .blog-post [role="main"], .projects [role="banner"],
@@ -1181,7 +1181,7 @@ optgroup {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
   padding-bottom: 0.55556em !important;
-  padding-top: 30px !important;
+  padding-top: 32px !important;
 }
 /* line 90, ../sass/components/_typography.scss */
 .spotlight:hover {
@@ -1190,11 +1190,11 @@ optgroup {
   background-image: -moz-linear-gradient(#eaddaf, #f4e7b7);
   background-image: -o-linear-gradient(#eaddaf, #f4e7b7);
   background-image: linear-gradient(#eaddaf, #f4e7b7);
-  -webkit-border-radius: 8px 8px 0 0;
-  -moz-border-radius: 8px 8px 0 0;
-  -ms-border-radius: 8px 8px 0 0;
-  -o-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
 }
 /* line 94, ../sass/components/_typography.scss */
 .spotlight:hover .spotlight-cta {
@@ -1204,9 +1204,14 @@ optgroup {
 .spotlight .spotlight-image {
   overflow: hidden;
   *zoom: 1;
-  -webkit-box-shadow: 0 2px 4px #b7b19c;
-  -moz-box-shadow: 0 2px 4px #b7b19c;
-  box-shadow: 0 2px 4px #b7b19c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #b7b19c;
+  -moz-box-shadow: 0 1px 2px #b7b19c;
+  box-shadow: 0 1px 2px #b7b19c;
   background: #fff;
   margin: 0 0 16px;
   padding: 0.66667em;
@@ -1215,7 +1220,7 @@ optgroup {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/* line 33, ../sass/config/_mixins.scss */
+/* line 34, ../sass/config/_mixins.scss */
 .spotlight .spotlight-image img {
   float: left;
 }
@@ -1350,7 +1355,7 @@ a.text-success:focus {
 /**
  *
  */
-/* line 34, ../sass/components/_buttons.scss */
+/* line 33, ../sass/components/_buttons.scss */
 .cta, .home [role="banner"] .presentation li a, .blog [role="banner"] a, .our-projects ul li a {
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
@@ -1361,13 +1366,13 @@ a.text-success:focus {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* line 40, ../sass/components/_buttons.scss */
+/* line 39, ../sass/components/_buttons.scss */
 .cta:hover, .home [role="banner"] .presentation li a:hover, .blog [role="banner"] a:hover, .our-projects ul li a:hover {
   border-color: #403e35;
   color: #403e35;
 }
 
-/* line 46, ../sass/components/_buttons.scss */
+/* line 45, ../sass/components/_buttons.scss */
 .cta-button {
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
@@ -1388,25 +1393,21 @@ a.text-success:focus {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/components/_buttons.scss */
+/* line 59, ../sass/components/_buttons.scss */
 .button {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
-  background-image: -webkit-linear-gradient(#f77916, #b55015);
-  background-image: -moz-linear-gradient(#f77916, #b55015);
-  background-image: -o-linear-gradient(#f77916, #b55015);
-  background-image: linear-gradient(#f77916, #b55015);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #d36107));
+  background-image: -webkit-linear-gradient(#f77916, #d36107);
+  background-image: -moz-linear-gradient(#f77916, #d36107);
+  background-image: -o-linear-gradient(#f77916, #d36107);
+  background-image: linear-gradient(#f77916, #d36107);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
   border: 1px solid #b55015;
   color: #fff;
   display: inline-block;
@@ -1415,41 +1416,37 @@ a.text-success:focus {
   padding: 6px 8px 4px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 19, ../sass/components/_buttons.scss */
+/* line 18, ../sass/components/_buttons.scss */
 .button:hover, .button:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
-  background-image: -webkit-linear-gradient(#f77916, #a64912);
-  background-image: -moz-linear-gradient(#f77916, #a64912);
-  background-image: -o-linear-gradient(#f77916, #a64912);
-  background-image: linear-gradient(#f77916, #a64912);
-  border-color: #b55015;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #ba5506));
+  background-image: -webkit-linear-gradient(#f77916, #ba5506);
+  background-image: -moz-linear-gradient(#f77916, #ba5506);
+  background-image: -o-linear-gradient(#f77916, #ba5506);
+  background-image: linear-gradient(#f77916, #ba5506);
+  border-color: #a14a06;
   color: #fff;
 }
-/* line 25, ../sass/components/_buttons.scss */
+/* line 24, ../sass/components/_buttons.scss */
 .button:active {
   position: relative;
   top: 1px;
 }
 
-/* line 64, ../sass/components/_buttons.scss */
+/* line 63, ../sass/components/_buttons.scss */
 .button-large {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
-  background-image: -webkit-linear-gradient(#f77916, #b55015);
-  background-image: -moz-linear-gradient(#f77916, #b55015);
-  background-image: -o-linear-gradient(#f77916, #b55015);
-  background-image: linear-gradient(#f77916, #b55015);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #d36107));
+  background-image: -webkit-linear-gradient(#f77916, #d36107);
+  background-image: -moz-linear-gradient(#f77916, #d36107);
+  background-image: -o-linear-gradient(#f77916, #d36107);
+  background-image: linear-gradient(#f77916, #d36107);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
   border: 1px solid #b55015;
   color: #fff;
   display: inline-block;
@@ -1460,41 +1457,37 @@ a.text-success:focus {
   font-size: 1em;
   padding: 8px 12px;
 }
-/* line 19, ../sass/components/_buttons.scss */
+/* line 18, ../sass/components/_buttons.scss */
 .button-large:hover, .button-large:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
-  background-image: -webkit-linear-gradient(#f77916, #a64912);
-  background-image: -moz-linear-gradient(#f77916, #a64912);
-  background-image: -o-linear-gradient(#f77916, #a64912);
-  background-image: linear-gradient(#f77916, #a64912);
-  border-color: #b55015;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #ba5506));
+  background-image: -webkit-linear-gradient(#f77916, #ba5506);
+  background-image: -moz-linear-gradient(#f77916, #ba5506);
+  background-image: -o-linear-gradient(#f77916, #ba5506);
+  background-image: linear-gradient(#f77916, #ba5506);
+  border-color: #a14a06;
   color: #fff;
 }
-/* line 25, ../sass/components/_buttons.scss */
+/* line 24, ../sass/components/_buttons.scss */
 .button-large:active {
   position: relative;
   top: 1px;
 }
 
-/* line 70, ../sass/components/_buttons.scss */
+/* line 69, ../sass/components/_buttons.scss */
 .button-largest {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #b55015));
-  background-image: -webkit-linear-gradient(#f77916, #b55015);
-  background-image: -moz-linear-gradient(#f77916, #b55015);
-  background-image: -o-linear-gradient(#f77916, #b55015);
-  background-image: linear-gradient(#f77916, #b55015);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #d36107));
+  background-image: -webkit-linear-gradient(#f77916, #d36107);
+  background-image: -moz-linear-gradient(#f77916, #d36107);
+  background-image: -o-linear-gradient(#f77916, #d36107);
+  background-image: linear-gradient(#f77916, #d36107);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
   border: 1px solid #b55015;
   color: #fff;
   display: inline-block;
@@ -1502,25 +1495,25 @@ a.text-success:focus {
   line-height: 1;
   padding: 6px 8px 4px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-  font-size: 1.1em;
-  padding: 14px 16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 10px 12px;
 }
-/* line 19, ../sass/components/_buttons.scss */
+/* line 18, ../sass/components/_buttons.scss */
 .button-largest:hover, .button-largest:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #a64912));
-  background-image: -webkit-linear-gradient(#f77916, #a64912);
-  background-image: -moz-linear-gradient(#f77916, #a64912);
-  background-image: -o-linear-gradient(#f77916, #a64912);
-  background-image: linear-gradient(#f77916, #a64912);
-  border-color: #b55015;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f77916), color-stop(100%, #ba5506));
+  background-image: -webkit-linear-gradient(#f77916, #ba5506);
+  background-image: -moz-linear-gradient(#f77916, #ba5506);
+  background-image: -o-linear-gradient(#f77916, #ba5506);
+  background-image: linear-gradient(#f77916, #ba5506);
+  border-color: #a14a06;
   color: #fff;
 }
-/* line 25, ../sass/components/_buttons.scss */
+/* line 24, ../sass/components/_buttons.scss */
 .button-largest:active {
   position: relative;
   top: 1px;
@@ -1540,14 +1533,19 @@ img.right {
 .img-polaroid {
   overflow: hidden;
   *zoom: 1;
-  -webkit-box-shadow: 0 2px 4px #b7b19c;
-  -moz-box-shadow: 0 2px 4px #b7b19c;
-  box-shadow: 0 2px 4px #b7b19c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #b7b19c;
+  -moz-box-shadow: 0 1px 2px #b7b19c;
+  box-shadow: 0 1px 2px #b7b19c;
   background: #fff;
   margin: 0 0 16px;
   padding: 0.66667em;
 }
-/* line 33, ../sass/config/_mixins.scss */
+/* line 34, ../sass/config/_mixins.scss */
 .img-polaroid img {
   float: left;
 }
@@ -2444,9 +2442,7 @@ img.right {
   -moz-box-shadow: 0 0 60px 60px #f4e7b7;
   box-shadow: 0 0 60px 60px #f4e7b7;
   background: #f4e7b7;
-  border: 1px solid rgba(247, 121, 22, 0.95);
-  border-bottom-width: 2px;
-  border-top-width: 2px;
+  border: 2px dashed rgba(91, 85, 65, 0.6);
   cursor: pointer;
   float: right;
   height: 40px;

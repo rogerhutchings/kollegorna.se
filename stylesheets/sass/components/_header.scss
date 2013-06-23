@@ -78,9 +78,9 @@
   @include border-radius(50%);
   @include box-shadow(0 0 60px 60px $ds-color-background);
   background: $ds-color-background;
-  border: 1px solid rgba($ds-color-orange, .95);
-  border-bottom-width: 2px;
-  border-top-width: 2px;
+  border: 2px dashed rgba($ds-color-text, .6);
+  //border-bottom-width: 2px;
+  //border-top-width: 2px;
   cursor: pointer;
   float: right;
   height: 40px;

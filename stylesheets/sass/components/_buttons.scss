@@ -3,10 +3,9 @@
 // -----------------------------------------------------------------------------
 
 @mixin ds-button {
-  @include background-image(linear-gradient($ds-color-orange, $ds-color-orange-dark));
-  @include border-radius(4px);
+  @include background-image(linear-gradient($ds-color-orange, darken($ds-color-orange, 10%)));
+  @include border-radius(3px);
   @include box-shadow(0 1px 4px rgba(0, 0, 0, .35));
-  @include ds-transition;
   border: 1px solid $ds-color-orange-dark;
   color: #fff;
   display: inline-block;
@@ -17,8 +16,8 @@
 
   &:hover,
   &:focus {
-    @include background-image(linear-gradient($ds-color-orange, $ds-color-orange-darkest));
-    border-color: $ds-color-orange-dark;
+    @include background-image(linear-gradient($ds-color-orange, darken($ds-color-orange, 15%)));
+    border-color: darken($ds-color-orange, 20%);
     color: #fff;
   }
 
@@ -69,7 +68,8 @@
 
 .button-largest {
   @include ds-button;
-  @include border-radius(6px);
-  font-size: 1.1em;
-  padding: 14px 16px;
+  @include border-radius(5px);
+  //font-size: 1.1em;
+  font-size: 1em;
+  padding: 10px 12px;
 }

@@ -85,11 +85,11 @@
 .spotlight {
   @include ds-transition;
   padding-bottom: ($ds-margin/2) !important;
-  padding-top: 30px !important;
+  padding-top: 32px !important;
 
   &:hover {
     @include background-image(linear-gradient(#EADDAF, $ds-color-background));
-    @include border-radius(8px 8px 0 0);
+    @include border-radius(3px 3px 0 0);
 
     .spotlight-cta {
       opacity: 1;
