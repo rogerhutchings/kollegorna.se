@@ -1,6 +1,6 @@
 $(function() {
-  $('.selected-projects').flexslider({
+  /*$('.selected-projects').flexslider({
     animation: 'slide',
     directionNav: false
-  });
+  });*/
 });

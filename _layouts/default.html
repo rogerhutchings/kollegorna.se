@@ -27,107 +27,27 @@
   <link rel="stylesheet" href="/fonts/fontello/css/kollegorna-icons-ie7.css"><![endif]-->
   <link rel="stylesheet" href="/stylesheets/css/design-system.css">
 
-  {% javascript_asset_tag modernizr %}
-  - /_assets/js/vendor/modernizr.min.js
-  {% endjavascript_asset_tag %}
+  <script src="/js/vendor/modernizr.min.js"></script>
 </head>
 <body class="{{ page.body_class }}">
 
-  <div class="page-overlay"></div>
-
-  <header class="header">
-    <a href="/" class="k-logo" role="presentation"><span>K</span></a>
-
-    <nav class="navigation">
-      <div class="navigation-toggle navigation-toggle-inactive"><i class="icon-menu"></i></div>
-
-      <div class="navigation-contents">
-        <div class="decor"></div>
-        <ul>
-          <li><a href="/">Hem</a></li>
-          <li>
-            <a href="/projekt/">Projekt</a>
-          </li>
-          <li><a href="/kontakta/">Kontakta</a></li>
-          <li><a href="/blogg/">Blogg</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- / .navigation -->
-  </header>
-  <!-- / .header -->
+  {% include header.html %}
 
   {{ content }}
 
-  <footer class="footer" role="contentinfo">
-    <ul>
-      <li class="vcard">
-        <h6>Adress</h6>
-        <address class="adr">
-          <a class="url fn org" href="http://www.kollegorna.se/">Kollegorna AB</a><br />
-          <span class="extended-address">Wallingatan 37</span><br />
-          <span class="postal-code">111 24</span> <span class="locality">Stockholm</span><br />
-          <a href="/kontakta/#map">Karta</a><br />
-        </address>
-      </li>
-      <li>
-        <h6>Mail</h6>
-        <p><a href="mailto:hej@kollegorna.se">hej@kollegorna.se</a></p>
-        <h6>Telefon</h6>
-        <p>
-          <a href="callto:+46702420750">070 – 242 07 50</a> (Per)<br>
-          <a href="callto:+46735052929">073 – 505 29 29</a> (Henrik)<br>
-        </p>
-      </li>
-      <li>
-        <h6>Vi ses också på</h6>
-        <ul>
-          <li><a href="http://twitter.com/kollegorna">Twitter</a></li>
-          <li><a href="http://github.com/kollegorna">GitHub</a></li>
-          <li><a href="http://instagram.com/kollegorna">Instagram</a></li>
-          <li><a href="http://facebook.com/kollegorna">Facebook</a></li>
-        </ul>
-      </li>
-    </ul>
+  {% include footer.html %}
 
-    <p class="license">
-      Allt innehåll är licenserat med <a rel="license" href="http://creativecommons.org/licenses/by/2.5/se/deed.en_US">Creative Commons Attribution 2.5</a>. Källkod på <a href="https://github.com/kollegorna/kollegorna.se">GitHub</a>.
-    </p>
-  </footer>
+  <script src="/js/vendor/jquery-1.9.1.min.js"></script>
+  <script src="/js/vendor/jquery.lazyload.min.js"></script>
+  <script src="/js/vendor/jquery.lettering-0.6.1.min.js"></script>
+  <script src="/js/vendor/jquery.fitvids.js"></script>
+  <script src="/js/vendor/jquery.mixitup.min.js"></script>
+  <script src="/js/vendor/helper.js"></script>
+  <script src="/js/app/sections/home.js"></script>
+  <script src="/js/app/sections/projects.js"></script>
+  <script src="/js/app/navigation.js"></script>
+  <script src="/js/app/main.js"></script>
 
-  <div class="bottom-border"></div>
-
-  {% javascript_asset_tag global %}
-  - /_assets/js/vendor/jquery-1.8.1.min.js
-  - /_assets/js/vendor/jquery.lazyload.min.js
-  - /_assets/js/vendor/flexslider/jquery.flexslider-min.js
-  - /_assets/js/vendor/jquery.lettering-0.6.1.min.js
-  - /_assets/js/vendor/jquery.fitvids.js
-  - /_assets/js/vendor/helper.js
-  - /_assets/js/app/sections/home.js
-  - /_assets/js/app/sections/projects.js
-  - /_assets/js/main.js
-  {% endjavascript_asset_tag %}
-
-  <script>
-    var _gaq=[['_setAccount','UA-11425486-1'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '5065e97cf5a1f503b2000017');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
+  {% include tracking.html %}
 </body>
 </html>

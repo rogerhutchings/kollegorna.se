@@ -1,11 +1,4 @@
-MBP.scaleFix();
-MBP.hideUrlBar();
-
 $(function() {
-  $(".logo, .header-logo").lettering();
-
-  $('.post').fitVids();
-
   function showNav() {
     $('.navigation').addClass('navigation-expanded');
     $('.navigation').removeClass('navigation-box-shadow');
