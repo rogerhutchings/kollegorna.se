@@ -104,3 +104,7 @@
 .project-grid {
   @extend .layout--max-1400-px;
 }
+
+.project-grid-item {
+  @extend .spotlight;
+}

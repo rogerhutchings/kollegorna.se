@@ -99,11 +99,17 @@
   .spotlight-image {
     @include ds-polaroid;
     @include ds-transition;
+
+    margin-bottom: 6px;
   }
 
   .spotlight-info {
     @include clearfix;
     padding: 0 8px;
+  }
+
+  p {
+    margin: 0;
   }
 
   small {

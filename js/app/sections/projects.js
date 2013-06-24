@@ -3,5 +3,9 @@ $(function() {
     effect : "fadeIn"
   });
 
-  $('#Grid').mixitup();
+  /*var options = {
+      valueNames: [ 'client' ]
+  };
+
+  var projectGrid = new List('grid', options);*/
 });
