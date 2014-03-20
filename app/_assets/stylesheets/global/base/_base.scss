@@ -2,6 +2,13 @@
 // Setup
 // -----------------------------------------------------------------------------
 
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+}
+
 html,
 body {
   background: $ds-color-background;
@@ -22,7 +29,7 @@ body {
   font-style: $ds-font-style;
   font-weight: $ds-font-weight;
   margin: 0;
-  //padding: 0 $ds-margin;
+  padding: 0;
   line-height: $ds-line-height;
   position: relative;
 }
@@ -70,7 +77,6 @@ h6 {
   margin: .5em 0 .2em;
 
   a {
-    //border-color: $ds-color-heading-dark;
     color: $ds-color-heading-dark;
     border: 0;
   }
