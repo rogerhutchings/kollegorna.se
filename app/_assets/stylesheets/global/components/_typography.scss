@@ -1,0 +1,222 @@
+
+// -----------------------------------------------------------------------------
+// Headings
+// -----------------------------------------------------------------------------
+
+/**
+ * Section heading
+ */
+.section-heading {
+  font-size: ds-em-calc(72px);
+  line-height: 1.2;
+}
+
+/**
+ * Page heading
+ */
+.page-heading {
+  font-size: ds-em-calc(64px);
+  line-height: 1.2;
+}
+
+/**
+ * Sub headings
+ */
+.sub-heading-1,
+.sub-heading-2,
+.sub-heading-3,
+.sub-heading-4,
+.sub-heading-5,
+.sub-heading-6 {
+  font-weight: $ds-font-weight;
+  line-height: $ds-headings-line-height;
+}
+.sub-heading-1 {
+  font-size: $ds-h1-font-size;
+}
+.sub-heading-2 {
+  font-size: $ds-h2-font-size;
+}
+.sub-heading-3 {
+  font-size: $ds-h3-font-size;
+}
+.sub-heading-4 {
+  font-size: $ds-h4-font-size;
+}
+.sub-heading-5 {
+  font-size: $ds-h5-font-size;
+}
+.sub-heading-6 {
+  font-size: $ds-h6-font-size;
+}
+
+/**
+ * Marked heading
+ */
+.marked {
+  background: $ds-color-text-dark;
+  color: $ds-color-background;
+  display: inline-block;
+  padding: 0 .3em;
+}
+
+// -----------------------------------------------------------------------------
+// Body text
+// -----------------------------------------------------------------------------
+
+/**
+ * Lead text
+ * Used in intros.
+ */
+.lead {
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+
+/**
+ * Meta
+ * Display meta info
+ */
+.meta {
+  @extend small;
+  color: $ds-color-text-light;
+}
+
+.spotlight {
+  @include ds-transition;
+  padding-bottom: ($ds-margin/2) !important;
+  padding-top: 32px !important;
+
+  &:hover {
+    @include background-image(linear-gradient(#EADDAF, $ds-color-background));
+    @include border-radius(3px 3px 0 0);
+
+    .spotlight-cta {
+      opacity: 1;
+    }
+  }
+
+  .spotlight-image {
+    @include ds-polaroid;
+    @include ds-transition;
+
+    margin-bottom: 6px;
+  }
+
+  .spotlight-info {
+    @include clearfix;
+    padding: 0 8px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  small {
+    color: rgba(0,0,0,.6);
+  }
+
+  .spotlight-cta {
+    @include ds-transition;
+    float: right;
+    opacity: 0;
+    width: 200px;
+  }
+
+  .cta {
+    display: none;
+    font-size: .8em;
+    margin-right: 10px;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Lists
+// -----------------------------------------------------------------------------
+
+/**
+ * Unstyled
+ */
+ul.unstyled,
+ol.unstyled {
+  list-style: none;
+  margin-#{$ds-float}: 0;
+}
+
+/**
+ * Inline
+ */
+ul.inline,
+ol.inline {
+  list-style: none;
+  margin-#{$ds-float}: 0;
+
+  & > li {
+    display: inline-block;
+    margin-#{$ds-float-opposite}: $ds-margin;
+
+    &:last-child {
+      margin-#{$ds-float-opposite}: 0;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Alignment
+// -----------------------------------------------------------------------------
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// -----------------------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------------------
+
+.text-muted {
+  color: #000;
+}
+a.text-muted:hover,
+a.text-muted:focus {
+  color: #000;
+}
+
+.text-warning {
+  color: #000;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #000;
+}
+
+.text-error {
+  color: #000;
+}
+a.text-error:hover,
+a.text-error:focus {
+  color: #000;
+}
+
+.text-info {
+  color: #000;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #000;
+}
+
+.text-success {
+  color: #000;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #000;
+}

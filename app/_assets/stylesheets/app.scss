@@ -1,7 +1,2 @@
-// *= require bower_components/normalize-css/normalize
-
-@import "compass";
-
-body {
-  background: image-url('cats.jpg');
-}
+// *= require bower_components/normalize-scss/normalize
+@import "app/app";

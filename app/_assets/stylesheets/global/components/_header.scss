@@ -1,0 +1,227 @@
+
+.header {
+  min-height: 100px;
+  position: relative;
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    min-height: 0;
+  }
+}
+
+.bottom-border {
+  @include background-image(linear-gradient(left top, $ds-color-orange, $ds-color-orange-dark));
+  height: 20px;
+}
+
+.page-overlay {
+  background: rgba($ds-color-background, .5);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 90;
+}
+
+.k-logo {
+  @include background-image(linear-gradient($ds-color-orange, $ds-color-orange-dark));
+  @include border-radius(50%);
+  @include box-shadow(0 0 60px $ds-color-orange);
+  @include text-shadow(0 -3px 3px rgba(0, 0, 0, .4));
+  border: 0;
+  color: $ds-color-background;
+  font-family: $ds-font-logo;
+  font-size: 48px;
+  font-style: italic;
+  height: 80px;
+  line-height: 73px;
+  position: absolute;
+  left: 40px;
+  text-align: center;
+  top: 40px;
+  width: 80px;
+  z-index: 50;
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    position: fixed;
+  }
+
+  &:hover {
+    color: $ds-color-background;
+    @include rotate(360deg);
+  }
+
+  .home & {
+    display: none;
+  }
+}
+
+.navigation {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 99;
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    position: fixed;
+  }
+}
+
+.navigation-expanded {
+  width: 300px;
+}
+
+.navigation-box-shadow {
+  @include box-shadow(0 0 60px $ds-color-background);
+}
+
+.navigation-toggle {
+  @include border-radius(50%);
+  @include box-shadow(0 0 60px 60px $ds-color-background);
+  background: $ds-color-background;
+  border: 2px dashed rgba($ds-color-text, .6);
+  //border-bottom-width: 2px;
+  //border-top-width: 2px;
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+.navigation-toggle-active {
+  @include background-image(linear-gradient($ds-color-orange, $ds-color-orange-dark));
+  @include border-radius(50% 50% 0 0);
+  @include box-shadow(0 0 10px rgba(0, 0, 0, .25));
+  border: 0;
+  color: #fff;
+  height: 44px;
+  line-height: 44px;
+  width: 42px;
+}
+
+.navigation-contents {
+  @include border-radius(0 0 4px 4px);
+  @include box-shadow(0 0 10px rgba(0, 0, 0, .25));
+  background: #fff;
+  clear: both;
+  display: none;
+  font-size: .9em;
+  float: right;
+  margin-top: -10px;
+  padding: 0 0 4px;
+  width: 300px;
+  z-index: 100;
+
+  .decor {
+    @include background-image(linear-gradient(left top, $ds-color-orange, $ds-color-orange-dark));
+    height: 8px;
+    margin: 0 0 4px;
+  }
+
+  > ul {
+    margin: 0 20px;
+
+    > li {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      display: block;
+      margin: 0;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+
+  a {
+    border: 0;
+    color: $ds-color-text;
+    display: block;
+    padding: 8px 0;
+
+    &:hover {
+      color: $ds-color-link;
+    }
+
+    &.active {
+      font-weight: $ds-font-weight-bold;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.header-logo {
+  @include text-shadow(1px 1px 0 $ds-color-background, 2px 2px 0 rgba(0, 0, 0, .3));
+  color: $ds-color-text;
+  display: block;
+  font: italic $ds-font-weight-black 42px/1 $ds-font-logo;
+  margin: 0 0 15px;
+  padding: 15px 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  &:hover {
+    border: 0;
+  }
+  @include breakpoint($ds-breakpoint-tablet) {
+    @include inline-block;
+    left: 0;
+    margin: 0;
+    padding: 0 5px;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+  }
+
+  span {
+    @include inline-block;
+    &:nth-child(even) {
+      opacity: .95;
+    }
+  }
+}
+
+.nav {
+  border-bottom: 1px dashed rgba(0, 0, 0, .3);
+  margin: 0 20px 20px;
+  padding: 0 0 20px;
+  position: relative;
+
+  a {
+    border: 0;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      a {
+        @include border-radius(4px);
+        color: $ds-color-heading;
+        font-size: .7em;
+        font-weight: $ds-font-weight-bold;
+        text-transform: uppercase;
+        &:hover {
+          color: white;
+          text-decoration: none;
+          background-color: $ds-color-heading
+        }
+      }
+    }
+  }
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    margin: 0 40px 40px;
+    padding: 20px 0;
+    ul {
+      text-align: right;
+      li:last-child {
+        //padding-right: 30px;
+      }
+    }
+  }
+}

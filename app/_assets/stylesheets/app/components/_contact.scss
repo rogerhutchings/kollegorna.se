@@ -1,0 +1,100 @@
+.contact {
+  .nav-contact {
+    a,
+    a:hover,
+    a:focus {
+      background: $ds-color-heading;
+      border: 0;
+      color: $ds-color-background;
+      padding: 4px 6px 2px;
+    }
+  }
+  [role="main"],
+  [role="banner"] {
+
+  }
+  [role="banner"] {
+    @extend %ds-wrapper;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    h1 {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    @include breakpoint($ds-breakpoint-tablet) {
+      margin-bottom: 40px;
+      padding-top: 80px;
+    }
+  }
+}
+
+.colleague-wrap {
+  @extend %ds-wrapper;
+}
+
+.colleagues {
+  //@include ds-box;
+  ul {
+    @include clearfix;
+    list-style: none;
+    @include breakpoint($ds-breakpoint-tablet) {
+      li {
+        float: left;
+        width: 50%;
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+  }
+  h3,
+  h4,
+  dt {
+    //color: $ds-color-black-text;
+  }
+  dt {
+    font-weight: $ds-font-weight;
+  }
+}
+
+.map {
+
+}
+
+
+.profiles {
+  @extend %ds-wrapper;
+}
+
+.profile {
+  float: left;
+  //padding: 0 15px;
+  width: 33%;
+}
+
+.profile__image {
+  @include ds-polaroid;
+
+  img {
+
+  }
+}
+
+.profile__info {
+  float: left;
+  width: 70%;
+}
+
+#t-section-title {
+  font-size: 64px;
+  position: relative;
+  text-transform: none;
+
+  &:after {
+    background: #000;
+    bottom: 0;
+    height: 10px;
+    position: absolute;
+    width: 40px;
+  }
+}

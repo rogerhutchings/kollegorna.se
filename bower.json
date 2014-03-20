@@ -1,8 +1,9 @@
 {
-  "name": "jekyll-boilerplate",
+  "name": "kollegorna-se",
   "version": "0.0.0",
   "dependencies": {
     "modernizr": "~2.7.1",
-    "normalize-css": "~3.0.0"
+    "normalize-scss": "~3.0.0",
+    "griddo": "~1.1.0"
   }
 }
