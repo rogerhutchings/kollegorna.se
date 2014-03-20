@@ -4,7 +4,7 @@ body_class: blog-post
 comments: true
 ---
 <section role="main">
-  <article class="post">
+  <article class="post" vocab="http://schema.org/" typeof="BlogPosting">
     <header>
       {% if page.top_image %}
       <figure class="top-image"><img src="{{ page.top_image }}" alt="{{ page.top_image_alt }}"></figure>
@@ -13,7 +13,7 @@ comments: true
       <h1>{{ page.title }}</h1>
 
       <span class="author">Av <a href="mailto:{{ page.author_email }}"><!--<img src="{{ page.author_email | to_gravatar }}?s=40" alt="{{ page.author }}"> -->{{ page.author }}</a></span>
-      <time pubdate>{{ page.date | date_to_string }}</time>
+      <time property="dateCreated" pubdate>{{ page.date | date_to_string }}</time>
 
     </header>
 
