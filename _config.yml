@@ -1,2 +1,22 @@
+# Paths
+source:      ./app
+destination: ./dist
+
+# Setup
+name: Kollegorna
 permalink: /blogg/:year/:month/:title/
 url: http://www.kollegorna.se
+gems: [sass, compass, breakpoint, uglifier, jekyll-assets, jekyll-assets/compass]
+markdown: redcarpet
+pygments: true
+
+# Jekyll Assets configuration
+# https://github.com/ixti/jekyll-assets
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - ../vendor/assets
+  js_compressor:  uglifier
+  css_compressor: sass

@@ -1,18 +1,22 @@
-#Guidelines for kollegorna.se#
+This is [our website](http://www.kollegorna.se).
 
-##Projects##
+### Setup locally
 
-###Project screenshots###
+1. Clone repository
+2. Make sure you have [Bundler](https://rubygems.org/gems/bundler) and [Node.js](http://nodejs.org) installed.
+2. $ bundle install
+3. $ npm install
+4. $ bower install
 
-1. Use Safari.
-2. Maximize the browser window.
-3. Make sure that shadows are disabled on screenshots. (http://osxdaily.com/2011/05/23/disable-shadow-screen-shots-mac/)
-4. CMD+SHIFT+4 then hit space and take screenshot.
-5. Save as project-name.png in images/projects.
+### Serve locally
 
-**Create JPG for the web with Photoshop**
+$ grunt serve
 
-1. Open project-name.png.
-2. Add a new background layer with the site background color.
-3. Decrease the size to 1000 px width.
-4. Save for web with JPG Very High – quality: 90.
+### Deploy
+
+$ grunt deploy
+
+### Tools and references
+
+* [Bower](http://www.bower.io)
+* [Grunt](http://www.gruntjs.com)
