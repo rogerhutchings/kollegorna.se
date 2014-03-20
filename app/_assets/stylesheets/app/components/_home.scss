@@ -1,3 +1,7 @@
+.site-intro {
+
+}
+
 /**
  * Styles for home page
  */
@@ -62,14 +66,13 @@
 }
 
 
-.home [role="banner"] {
+.site-intro {
   @extend %ds-wrapper;
-  margin-bottom: 30px;
   min-height: 500px;
   position: relative;
   text-align: center;
   @include breakpoint($ds-breakpoint-tablet) {
-    margin-bottom: 120px;
+
   }
 
   ul {

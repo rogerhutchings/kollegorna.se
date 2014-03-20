@@ -57,8 +57,8 @@
 
 .navigation {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 39px;
+  top: 39px;
   z-index: 99;
 
   @include breakpoint($ds-breakpoint-laptop) {
@@ -71,22 +71,43 @@
 }
 
 .navigation-box-shadow {
-  @include box-shadow(0 0 60px $ds-color-background);
+  //@include box-shadow(0 0 60px $ds-color-background);
+}
+
+.border-top {
+  background: #ded2a7;
+  height: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: none;
+}
+
+.navigation-toggle--scroll {
+  background: #ded2a7;
+  //color: $ds-color-background !important;
 }
 
 .navigation-toggle {
-  @include border-radius(50%);
-  @include box-shadow(0 0 60px 60px $ds-color-background);
-  background: $ds-color-background;
-  border: 2px dashed rgba($ds-color-text, .6);
-  //border-bottom-width: 2px;
-  //border-top-width: 2px;
+  @include border-radius(0 0 5px 5px);
+  //@include box-shadow(0 0 60px 60px $ds-color-background);
+  //background: $ds-color-background;
+  //background: #ded2a7;
+  //border: 2px dashed rgba($ds-color-text, .6);
   cursor: pointer;
   float: right;
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
-  width: 40px;
+  width: 30px;
+
+  .icon-menu,
+  .icon-menu:before,
+  .icon-menu:after {
+    font-size: 1.15em !important;
+  }
 }
 
 .navigation-toggle-active {

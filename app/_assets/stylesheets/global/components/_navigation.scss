@@ -1,3 +1,48 @@
+.header {
+  min-height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-background {
+  background: rgba(0, 0, 0, .5);
+  color: #fff !important;
+  display: none;
+  height: 80px;
+  position: absolute;
+  width: 100%;
+}
+
+.header--background {
+  .icon-menu,
+  .icon-menu:before,
+  .icon-menu:after {
+    color: #fff !important;
+  }
+}
+
+/*
+
+.main-nav {
+  float: right;
+  margin-bottom: -1px;
+  margin-right: 20px;
+  a {
+    border-bottom: 2px solid $ds-color-background;
+    color: $ds-color-text;
+    display: inline-block;
+    font-weight: 600;
+    font-size: .8em;
+    padding: 15px 15px;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid #222;
+    }
+  }
+}
+*/
 
 /*
 .navigation {
