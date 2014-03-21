@@ -1,21 +1,27 @@
 # The Colleagues!
 per:
-  name: Per Sandström
+  firstname: Per
+  lastname: Sandström
   email: per@kollegorna.se
   twitter: persand
   github: persand
 henrik:
-  name: Henrik Sjökvist
+  firstname: Henrik
+  lastname: Sjökvist
   email: henrik@kollegorna.se
 samuel:
-  name: Samuel Carlsson
+  firstname: Samuel
+  lastname: Carlsson
   email: samuel@kollegorna.se
 joakim:
-  name: Joakim Lundberg
+  firstname: Joakim
+  lastname: Lundberg
   email: joakim@kollegorna.se
 stai:
-  name: Joakim Stai
+  firstname: Joakim
+  lastname: Stai
   email: stai@kollegorna.se
 filippos:
-  name: Filippos Vasikalis
+  firstname: Filippos
+  lastname: Vasikalis
   email: filippos@kollegorna.se

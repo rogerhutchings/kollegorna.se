@@ -1,8 +1,8 @@
 ---
 layout: default
-body_class: blog-post
+body_class: page-blog-post
 ---
-<section role="main">
+<main role="main" class="blog-post">
   <article class="post" vocab="http://schema.org/" typeof="BlogPosting">
     <header>
       {% if page.top_image %}
@@ -30,14 +30,5 @@ body_class: blog-post
         })();
       </script>
     {% endif %}
-  </article>
-
-  <article class="posts">
-    <h3 class="title">Fler blogginlägg</h3>
-    <ul>
-      {% for post in site.related_posts limit:10 %}
-        <li><time>{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
   </article>
 </section>

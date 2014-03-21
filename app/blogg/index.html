@@ -15,83 +15,106 @@ body_class: blog
 
   <main class="blog-posts" role="main">
     {% for post in paginator.posts %}
-      <div class="post-item post-item--{{ post.layout }}">
-      {% if post.layout == "post-blank" %}
+      <div class="post-item post-item--{{ post.type }}">
+      {% if post.type == "post-blank" %}
         {{ post.content }}
       {% else %}
-        <article class="post post--{{ post.layout | replace: 'post-', '' }}" vocab="http://schema.org/" typeof="BlogPosting">
-          {% case post.layout %}
-            {% when 'post-link' %}
-              <h2 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h2>
-            {% when 'post-quote' %}
-              <blockquote class="post-quote">
-                {{ post.quote }}
-              </blockquote>
+        <article class="post post--{{ post.type }}" vocab="http://schema.org/" typeof="BlogPosting">
+          {% case post.type %}
+            {% when 'link' %}
+              <div property="articleBody" class="post-content">
+                <h2 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h2>
+                {{ post.content }}
+              </div>
+            {% when 'quote' %}
+              <div property="articleBody" class="post-content">
+                <blockquote class="post-quote">
+                  {{ post.quote }}
+                </blockquote>
 
-              <cite class="post-cite">
-                {{ post.cite }}
-              </cite>
-            {% when 'post-image' %}
-              <figure class="post-image">
-                <img src="{{ post.image }}" alt="{{ post.title }}">
+                <cite class="post-cite">
+                  {{ post.cite }}
+                </cite>
+                {{ post.content }}
+              </div>
+            {% when 'image' %}
+              <div property="articleBody" class="post-content">
+                <figure class="post-image">
+                  <img src="{{ post.image }}" alt="{{ post.title }}">
 
-                {% if post.caption %}
-                  <figcaption>
-                    {{ post.caption }}
-                  </figcaption>
-                {% endif %}
-              </figure>
-            {% when 'post-video' %}
-              <figure class="post-video">
-                {{ post.video_embed_code }}
+                  {% if post.caption %}
+                    <figcaption>
+                      {{ post.caption }}
+                    </figcaption>
+                  {% endif %}
+                </figure>
+                {{ post.content }}
+              </div>
+            {% when 'video' %}
+              <div property="articleBody" class="post-content">
+                <figure class="post-video">
+                  {{ post.video_embed_code }}
 
-                {% if post.caption %}
-                  <figcaption>
-                    {{ post.caption }}
-                  </figcaption>
-                {% endif %}
-              </figure>
-            {% when 'post' %}
-              <header>
-                {% if post.top_image %}
-                  <figure class="top-image"><img src="{{ post.top_image }}" alt="{{ post.top_image_alt }}"></figure>
+                  {% if post.caption %}
+                    <figcaption>
+                      {{ post.caption }}
+                    </figcaption>
+                  {% endif %}
+                </figure>
+                {{ post.content }}
+              </div>
+            {% else %}
+              <header class="post-header">
+                {% if post.image %}
+                  <figure class="post-image">
+                    <img property="image" src="{{ post.image }}" alt="{{ post.image_alt }}">
+                  </figure>
                 {% endif %}
 
                 <h2 property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
               </header>
+
+              {% if post.summary %}
+                <div property="description" class="post-summary">
+                  {{ post.summary }}
+                  <p class="post-read-more">
+                    <a href="{{ post.url }}">Läs hela inlägget</a>
+                  </p>
+                </div>
+              {% else %}
+                <div property="articleBody" class="post-content">
+                  {{ post.content }}
+                </div>
+              {% endif %}
           {% endcase %}
 
-          {% if post.summary %}
-            <div class="post-summary">
-              {{ post.summary }}
-              <p class="post-read-more">
-                <a href="{{ post.url }}">Läs hela inlägget</a>
-              </p>
-            </div>
-          {% else %}
-            <div property="articleBody" class="post-content">
-              {{ post.content }}
-            </div>
-          {% endif %}
-
-          <footer class="post-meta">
+          <footer class="post-footer">
             {% assign author = site.data.colleagues[post.author] %}
             {% if author %}
-                <img src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.name }}" />
-                <span class="author"><a href="mailto:{{ author.email }}">{{ author.name }}</a></span>
+              <div class="post-author" property="author" vocab="http://schema.org/" typeof="Person">
+                <img property="image" src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.firstname }} {{ author.lastname }}" />
+                <a property="email" href="mailto:{{ author.email }}">
+                  <span property="givenName">{{ author.firstname }}</span>
+                  <span property="familyName">{{ author.lastname }}</span>
+                </a>
+              </div>
             {% endif %}
 
-            <time property="dateCreated" pubdate><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></time>
+              <div class="post-date">
+                <time property="dateCreated" pubdate><a property="url" href="{{ post.url }}">{{ post.date | date_to_string }}</a></time>
+              </div>
 
             {% if post.source_url %}
-              via
-              <a href="{{ post.source_url }}">
-                {% if post.source_title %}
-                  {{ post.source_title }}
-                {% else %}
-                  {{ post.source_url }}
-                {% endif %}
-              </a>
+              <div class="post-via">
+                via
+                <a property="isBasedOnUrl" href="{{ post.source_url }}">
+                  {% if post.source_title %}
+                    {{ post.source_title }}
+                  {% else %}
+                    {{ post.source_url }}
+                  {% endif %}
+                </a>
+              </div>
             {% endif %}
           </footer>
           <!-- / .post-meta -->
@@ -102,7 +125,9 @@ body_class: blog
       </div>
       <!-- / .post-item -->
     {% endfor %}
+  </main>
 
+  <footer class="blog-footer">
     <!-- Pagination links -->
     <nav class="pagination">
       {% if paginator.previous_page %}
@@ -121,7 +146,8 @@ body_class: blog
         <span class="pagination-next">Nästa</span>
       {% endif %}
     </nav>
-  </main>
+  </footer>
+  <!-- / .blog-footer -->
 
 </section>
 <!-- / .blog -->
