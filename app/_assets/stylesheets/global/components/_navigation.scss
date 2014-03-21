@@ -6,12 +6,19 @@
 }
 
 .header-background {
+  @include rotate(45deg);
   background: rgba(0, 0, 0, .5);
   color: #fff !important;
   display: none;
-  height: 80px;
+  height: 260px;
   position: absolute;
-  width: 100%;
+  right: -130px;
+  top: -130px;
+  width: 260px;
+
+  &:hover {
+    background: rgba(0, 0, 0, .65);
+  }
 }
 
 .header--background {

@@ -6,22 +6,122 @@ meta_description: "Följ Kollegornas framfart!"
 body_class: blog
 ---
 
-<header role="banner">
-  <h1>Blogg</h1>
-  <p><a href="/feed.xml">Prenumerera med RSS</a></p>
-</header>
+<section class="blog">
 
-<section role="main">
-  <div class="summaries">
-  {% for post in site.posts %}
-    <article class="post-summary">
-      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      <time pubdate>{{ post.date | date_to_string }}</time>
-      <p class="summary">
-        {{ post.summary }}
-      </p>
-    </article>
-  {% endfor %}
-  </div>
-  <!-- / .summaries -->
+  <header class="blog-header" role="banner">
+    <h1>Blogg</h1>
+    <p><a href="/feed.xml">Prenumerera med RSS</a></p>
+  </header>
+
+  <main class="blog-posts" role="main">
+    {% for post in paginator.posts %}
+      <div class="post-item post-item--{{ post.layout }}">
+      {% if post.layout == "post-blank" %}
+        {{ post.content }}
+      {% else %}
+        <article class="post post--{{ post.layout | replace: 'post-', '' }}" vocab="http://schema.org/" typeof="BlogPosting">
+          {% case post.layout %}
+            {% when 'post-link' %}
+              <h2 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h2>
+            {% when 'post-quote' %}
+              <blockquote class="post-quote">
+                {{ post.quote }}
+              </blockquote>
+
+              <cite class="post-cite">
+                {{ post.cite }}
+              </cite>
+            {% when 'post-image' %}
+              <figure class="post-image">
+                <img src="{{ post.image }}" alt="{{ post.title }}">
+
+                {% if post.caption %}
+                  <figcaption>
+                    {{ post.caption }}
+                  </figcaption>
+                {% endif %}
+              </figure>
+            {% when 'post-video' %}
+              <figure class="post-video">
+                {{ post.video_embed_code }}
+
+                {% if post.caption %}
+                  <figcaption>
+                    {{ post.caption }}
+                  </figcaption>
+                {% endif %}
+              </figure>
+            {% when 'post' %}
+              <header>
+                {% if post.top_image %}
+                  <figure class="top-image"><img src="{{ post.top_image }}" alt="{{ post.top_image_alt }}"></figure>
+                {% endif %}
+
+                <h2 property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              </header>
+          {% endcase %}
+
+          {% if post.summary %}
+            <div class="post-summary">
+              {{ post.summary }}
+              <p class="post-read-more">
+                <a href="{{ post.url }}">Läs hela inlägget</a>
+              </p>
+            </div>
+          {% else %}
+            <div property="articleBody" class="post-content">
+              {{ post.content }}
+            </div>
+          {% endif %}
+
+          <footer class="post-meta">
+            {% assign author = site.data.colleagues[post.author] %}
+            {% if author %}
+                <img src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.name }}" />
+                <span class="author"><a href="mailto:{{ author.email }}">{{ author.name }}</a></span>
+            {% endif %}
+
+            <time property="dateCreated" pubdate><a href="{{ post.url }}">{{ post.date | date_to_string }}</a></time>
+
+            {% if post.source_url %}
+              via
+              <a href="{{ post.source_url }}">
+                {% if post.source_title %}
+                  {{ post.source_title }}
+                {% else %}
+                  {{ post.source_url }}
+                {% endif %}
+              </a>
+            {% endif %}
+          </footer>
+          <!-- / .post-meta -->
+
+        </article>
+        <!-- / .post -->
+      {% endif %}
+      </div>
+      <!-- / .post-item -->
+    {% endfor %}
+
+    <!-- Pagination links -->
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.page == "1" %}
+          <a href="/blogg" class="pagination-previous">Föregående</a>
+        {% else %}
+          <a href="/blogg/page{{ paginator.previous_page }}" class="pagination-previous">Föregående</a>
+        {% endif %}
+      {% else %}
+        <span class="pagination-previous">Föregående</span>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="/blogg/page{{ paginator.next_page }}" class="pagination-next">Nästa</a>
+      {% else %}
+        <span class="pagination-next">Nästa</span>
+      {% endif %}
+    </nav>
+  </main>
+
 </section>
+<!-- / .blog -->

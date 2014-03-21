@@ -1,11 +1,12 @@
 $(function() {
   function showNav() {
+    $('.page-overlay').fadeIn('fast');
+    //$('.page-content, .footer, .bottom-border').hide();
     $('.navigation').addClass('navigation-expanded');
     $('.navigation').removeClass('navigation-box-shadow');
     $('.navigation-toggle').addClass('navigation-toggle-active');
     $('.navigation-toggle').removeClass('navigation-toggle-inactive');
     $('.navigation-contents').slideDown('fast');
-    $('.page-overlay').fadeIn('fast');
   }
 
   function hideNav() {
@@ -15,37 +16,18 @@ $(function() {
       $('.navigation-toggle').removeClass('navigation-toggle-active');
       $('.navigation').addClass('navigation-box-shadow');
       $('.page-overlay').fadeOut('fast');
+      //$('.page-content, .footer, .bottom-border').show();
     });
   }
 
-  if ($('html').hasClass('no-touch')) {
-    // No touch device
-    $('.navigation-toggle').hover(
-      function () {
-        showNav();
-      },
-      function () {
+  $('.page-overlay').height($(document).height());
 
-      }
-    );
-
-    $(".navigation").hover(
-      function () {
-
-      },
-      function () {
-        hideNav();
-      }
-    );
-  } else {
-    // Touch device
-    $('.navigation-toggle-inactive').click(function() {
-      showNav();
-    });
-    $('.navigation-toggle-active').click(function() {
-      hideNav();
-    });
-  }
+  $('.navigation-toggle-inactive').click(function() {
+    showNav();
+  });
+  $('.navigation-toggle-active').click(function() {
+    hideNav();
+  });
 
   $('.page-overlay').click(function() {
     hideNav();

@@ -1,5 +1,6 @@
 $(function() {
-  $('.site-intro').height($(window).height());
+  //$('.site-intro').height($(window).height());
+  $('.site-intro').css('min-height', $(window).height() + 'px');
 });
 
 //var menu_target = $(".layout__up-to-two-columns").offset().top;
