@@ -26,6 +26,25 @@
   padding-top: ds-em-calc(40px);
 }
 
+.pagination {
+  @include clearfix;
+  text-align: center;
+
+  a {
+    @include ds-button;
+    overflow: hidden;
+    width: 30px;
+  }
+}
+
+.pagination-previous {
+  float: left;
+}
+
+.pagination-next {
+  float: right;
+}
+
 // A .post-item class wraps .post in blog post listing.
 .post-item {
   padding: ds-em-calc(40px) 0;

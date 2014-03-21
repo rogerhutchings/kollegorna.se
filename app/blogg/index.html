@@ -23,7 +23,7 @@ body_class: blog
           {% case post.type %}
             {% when 'link' %}
               <div property="articleBody" class="post-content">
-                <h2 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h2>
+                <h1 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h1>
                 {{ post.content }}
               </div>
             {% when 'quote' %}
@@ -32,9 +32,12 @@ body_class: blog
                   {{ post.quote }}
                 </blockquote>
 
-                <cite class="post-cite">
-                  {{ post.cite }}
-                </cite>
+                {% if post.cite %}
+                  <cite class="post-cite">
+                    {{ post.cite }}
+                  </cite>
+                {% endif %}
+
                 {{ post.content }}
               </div>
             {% when 'image' %}
@@ -71,7 +74,7 @@ body_class: blog
                   </figure>
                 {% endif %}
 
-                <h2 property="name"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h1 property="name"><a href="{{ post.url }}">{{ post.title }}</a></h1>
               </header>
 
               {% if post.summary %}

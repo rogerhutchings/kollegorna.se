@@ -84,6 +84,7 @@ h6 {
 
 h1 {
   font-size: $ds-h1-font-size;
+  font-weight: $ds-font-weight-black;
 }
 
 h2 {
@@ -129,21 +130,39 @@ q {
 }
 
 blockquote:before,
+q:before {
+  content: '“';
+}
+
 blockquote:after,
-q:before,
 q:after {
-  content: '';
-  content: none;
+  content: '”';
 }
 
 blockquote {
-  border-#{$ds-float}: ds-em-calc(5px) solid $ds-color-border;
-  color: $ds-color-text-light;
+  font-size: 1.4em;
+  font-weight: $ds-font-weight;
+  line-height: 1.6;
   margin: 0 0 $ds-margin;
-  padding: $ds-padding;
+  position: relative;
+
+  &:before,
+  &:after {
+    font-size: 1.5em;
+    font-weight: $ds-font-weight-black;
+    position: absolute;
+  }
+
+  &:after {
+    bottom: -.2em;
+  }
+
+  &:before {
+    left: -.63em;
+    top: -.3em;
+  }
 
   cite {
-    color: $ds-color-text;
     display: block;
   }
 
@@ -192,7 +211,15 @@ abbr {
 }
 
 cite {
-  font-style: italic;
+  font-style: normal;
+  position: relative;
+
+  &:before {
+    content: "—";
+    font-weight: $ds-font-weight-black;
+    left: -1.1em;
+    position: absolute;
+  }
 }
 
 del {

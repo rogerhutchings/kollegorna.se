@@ -1,6 +1,19 @@
 .site-intro {
-  background-image: url('/img/faux-bg.jpg');
-  background-size: cover;
+  //background-image: url('http://0.0.0.0:4000/img/test-bg.jpg');
+  //background-size: cover;
+  display: table;
+  width: 100%;
+}
+
+.site-intro-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.site-intro-info {
+  @extend %ds-wrapper;
+  position: relative;
 }
 
 /**
@@ -62,14 +75,12 @@
   }
   @include breakpoint($ds-breakpoint-tablet) {
     font: italic $ds-font-weight-black 96px/1.2 $ds-font-logo;
-    margin: 67px 0 60px;
+    margin: 0 0 60px;
   }
 }
 
 
 .site-intro {
-  @extend %ds-wrapper;
-  min-height: 500px;
   position: relative;
   text-align: center;
   @include breakpoint($ds-breakpoint-tablet) {
@@ -100,6 +111,7 @@
       position: absolute;
       right: 0;
       top: 230px;
+      top: 0;
       width: 320px;
     }
   }
