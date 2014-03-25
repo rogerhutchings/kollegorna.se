@@ -58,6 +58,12 @@
   }
 }
 
+.post {
+  h1 {
+    margin-top: 0;
+  }
+}
+
 .post-image {
   img {
     @include ds-polaroid;
@@ -78,25 +84,27 @@
   display: inline-block;
   margin-top: ds-em-calc(22px);
   padding-top: ds-em-calc(15px);
+  position: relative;
   width: 100%;
 
   a {
-    color: $ds-color-text;
     border: 0;
   }
 }
 
-.post-author,
-.post-date,
-.post-via {
+.post-author {
+  @include clearfix;
   float: left;
-  font-size: .8em;
-  height: 40px;
-  line-height: 40px;
-  margin-right: ds-em-calc(5px);
+
+  a {
+    color: #403E35;
+  }
 }
 
-.post-author {
+.post-author__image {
+  float: left;
+  height: 50px;
+
   img {
     @include ds-polaroid;
     @include border-radius(50%);
@@ -106,49 +114,43 @@
   }
 }
 
+.post-author__name {
+  float: left;
+  font-size: .8em;
+  height: 25px;
+  line-height: 30px;
+}
+
+.post-meta {
+  left: 67px;
+  position: absolute;
+  top: 40px;
+}
+
+.post-date,
+.post-tags {
+  font-size: .8em;
+}
+
 .post-date {
-  &:before {
-    content: " – ";
-    padding-right: ds-em-calc(5px);
+  a {
+    color: #403E35;
   }
+}
+
+.post-tags {
+  color: $ds-color-text;
 }
 
 .post-via {
-  float: right;
-  margin-right: 0;
-  margin-left: ds-em-calc(15px);
+  font-size: .8em;
+  position: absolute;
+  right: 0;
+  top: 43px;
 }
 
-.post--post {
-  header {
-    margin: 0 0 1em;
-  }
-  .top-image {
-    margin: 0 0 1em;
-    @include breakpoint($ds-breakpoint-tablet) {
-      margin: 0 0 2em;
-    }
-  }
-  .right {
-    float: right;
-    margin: 0 0 0 2em;
-  }
-  .clear {
-    clear: both;
-  }
-  .author,
-  time {
-    color: #777;
-  }
-  .author img {
-    border-radius: 50%;
-  }
-  time:before {
-    content: " – ";
-  }
-  #disqus_thread {
-    padding-top: 2em;
-  }
+#disqus_thread {
+  padding-top: 2em;
 }
 
 .blog-post {

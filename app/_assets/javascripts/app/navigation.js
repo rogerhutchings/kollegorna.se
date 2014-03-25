@@ -28,6 +28,9 @@ $(function() {
     hideNav();
   });
 
+  var nav_links_height = $(window).height() / 6;
+  $('.nav-links a').css('line-height', nav_links_height + 'px');
+
 });
 
 //var menu_target = $(".layout__up-to-two-columns").offset().top;

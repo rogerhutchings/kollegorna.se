@@ -95,16 +95,21 @@ body_class: blog
             {% assign author = site.data.colleagues[post.author] %}
             {% if author %}
               <div class="post-author" property="author" vocab="http://schema.org/" typeof="Person">
-                <img property="image" src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.firstname }} {{ author.lastname }}" />
-                <a property="email" href="mailto:{{ author.email }}">
-                  <span property="givenName">{{ author.firstname }}</span>
-                  <span property="familyName">{{ author.lastname }}</span>
-                </a>
+                <div class="post-author__image">
+                  <img property="image" src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.firstname }} {{ author.lastname }}" />
+                </div>
+                <div class="post-author__name">
+                  <a property="email" href="mailto:{{ author.email }}">
+                    <span property="givenName">{{ author.firstname }}</span>
+                    <span property="familyName">{{ author.lastname }}</span>
+                  </a>
+                </div>
               </div>
             {% endif %}
 
-              <div class="post-date">
-                <time property="dateCreated" pubdate><a property="url" href="{{ post.url }}">{{ post.date | date_to_string }}</a></time>
+              <div class="post-meta">
+                <time class="post-date" property="dateCreated" pubdate><a property="url" href="{{ post.url }}">{{ post.date | date_to_string }}</a></time>
+                <span class="post-tags">taggat <a href="#">kunder</a>, <a href="#">priser</a></span>
               </div>
 
             {% if post.source_url %}
