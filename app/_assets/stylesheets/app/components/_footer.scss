@@ -11,10 +11,6 @@
 
   a {
     border-bottom: 2px solid lighten($ds-color-link, 20%);
-
-    &:hover {
-      //border-color: lighten($ds-color-link-hover, 40%);
-    }
   }
 
   ul {
@@ -80,4 +76,9 @@
     color: #000;
     font-size: 16px;
   }
+}
+
+.footer-border {
+  @include background-image(linear-gradient(left top, $ds-color-orange, $ds-color-orange-dark));
+  height: 20px;
 }

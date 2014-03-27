@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// Spotlight
+//
+// A highlighted blurb
+// -----------------------------------------------------------------------------
+
+.spotlight {
+  @include ds-transition;
+  padding-bottom: ($ds-margin/2) !important;
+  padding-top: 32px !important;
+
+  &:hover {
+    @include background-image(linear-gradient(#EADDAF, $ds-color-background));
+    @include border-radius(3px 3px 0 0);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  small {
+    color: rgba(0,0,0,.6);
+  }
+}
+
+.spotlight__image {
+  @include ds-polaroid;
+  @include ds-transition;
+  margin-bottom: 6px;
+}
+
+.spotlight__info {
+  @include clearfix;
+  padding: 0 8px;
+}
+
+.spotlight__title {
+
+}
+
+.spotlight__meta {
+
+}
+
+.spotlight__description {
+
+}
+
+.spotlight__cta {
+  @include ds-transition;
+  float: right;
+  opacity: 0;
+  width: 200px;
+}

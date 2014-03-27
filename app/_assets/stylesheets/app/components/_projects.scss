@@ -102,7 +102,7 @@
 @include ds-layout-columns-up-to-three(project-grid, project-grid-item);
 
 .project-grid {
-  @extend .layout--max-1400-px;
+  @extend .l-max-1400-px;
 }
 
 .project-grid-item {

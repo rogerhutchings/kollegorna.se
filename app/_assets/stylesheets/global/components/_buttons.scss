@@ -69,7 +69,6 @@
 .button-largest {
   @include ds-button;
   @include border-radius(5px);
-  //font-size: 1.1em;
   font-size: 1em;
   padding: 10px 12px;
 }

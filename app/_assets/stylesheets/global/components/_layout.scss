@@ -3,7 +3,7 @@
 //
 // These mixins can be used within our projects for generating layouts with
 // different breakpoints. Columns are handled by Griddo.
-//
+// -----------------------------------------------------------------------------
 
 @mixin ds-layout-columns-two {
   @include griddo-width(6);
@@ -255,60 +255,50 @@
 // Layout classes
 //
 // Generate classes with our mixins above.
-//
-
-// Generated griddo classes with griddo prefix.
-// Must only be used for prototyping.
-@include griddo-classes(griddo-row, griddo-column, griddo-column);
+// -----------------------------------------------------------------------------
 
 // Generate a layout which can contain up to four columns in a row.
-@include ds-layout-columns-up-to-two(layout__up-to-two-columns, layout__column);
-@include ds-layout-columns-up-to-three(layout__up-to-three-columns, layout__column);
-@include ds-layout-columns-up-to-four(layout__up-to-four-columns, layout__column);
-@include ds-layout-columns-up-to-five(layout__up-to-five-columns, layout__column);
-@include ds-layout-columns-up-to-six(layout__up-to-six-columns, layout__column);
+@include ds-layout-columns-up-to-two(l-up-2-columns, l-column);
+@include ds-layout-columns-up-to-three(l-up-3-columns, l-column);
+@include ds-layout-columns-up-to-four(l-up-4-columns, l-column);
+@include ds-layout-columns-up-to-five(l-up-5-columns, l-column);
+@include ds-layout-columns-up-to-six(l-up-6-columns, l-column);
 
 // Layout modifiers
-.layout--max-100 {
+.l-max-100 {
   max-width: 100% !important;
 }
 
-.layout--max-800-px {
+.l-max-800-px {
   max-width: 800px !important;
 }
 
-.layout--max-1200-px {
+.l-max-1200-px {
   max-width: 1200px !important;
 }
 
-.layout--max-1400-px {
+.l-max-1400-px {
   max-width: 1400px !important;
 }
 
-.layout--max-1600-px {
+.l-max-1600-px {
   max-width: 1600px !important;
 }
 
 // -----------------------------------------------------------------------------
-// Page layouts
-//
-//
+// Layout helper classes
 // -----------------------------------------------------------------------------
 
-.page-one-column {
-  margin: 0 auto;
-  max-width: 768px;
-  padding: $ds-margin;
-}
-
-// -----------------------------------------------------------------------------
-// Layout helpers
-// -----------------------------------------------------------------------------
-
-.left {
+%l-left {
   float: left;
 }
+.l-left {
+  @extend %l-left;
+}
 
-.right {
+%l-right {
   float: right;
+}
+.l-right {
+  @extend %l-right;
 }

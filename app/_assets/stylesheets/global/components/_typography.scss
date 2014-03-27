@@ -3,131 +3,69 @@
 // Headings
 // -----------------------------------------------------------------------------
 
-/**
- * Section heading
- */
-.section-heading {
-  font-size: ds-em-calc(72px);
-  line-height: 1.2;
+%t-heading-site {
+
 }
 
-/**
- * Page heading
- */
-.page-heading {
-  font-size: ds-em-calc(64px);
-  line-height: 1.2;
+%t-heading-section {
+
 }
 
-/**
- * Sub headings
- */
-.sub-heading-1,
-.sub-heading-2,
-.sub-heading-3,
-.sub-heading-4,
-.sub-heading-5,
-.sub-heading-6 {
+%t-heading-secondary {
   font-weight: $ds-font-weight;
   line-height: $ds-headings-line-height;
 }
-.sub-heading-1 {
+
+%t-heading-secondary--1 {
   font-size: $ds-h1-font-size;
 }
-.sub-heading-2 {
+
+%t-heading-secondary--2 {
   font-size: $ds-h2-font-size;
 }
-.sub-heading-3 {
+
+%t-heading-secondary--3 {
   font-size: $ds-h3-font-size;
 }
-.sub-heading-4 {
+
+%t-heading-secondary--4 {
   font-size: $ds-h4-font-size;
 }
-.sub-heading-5 {
+
+%t-heading-secondary--5 {
   font-size: $ds-h5-font-size;
 }
-.sub-heading-6 {
+
+%t-heading-secondary--6 {
   font-size: $ds-h6-font-size;
 }
 
-/**
- * Marked heading
- */
-.marked {
-  background: $ds-color-text-dark;
-  color: $ds-color-background;
-  display: inline-block;
-  padding: 0 .3em;
-}
-
 // -----------------------------------------------------------------------------
-// Body text
+// Body copy
 // -----------------------------------------------------------------------------
 
 /**
  * Lead text
- * Used in intros.
+ * Used for the introduction of a longer text.
  */
-.lead {
+%t-lead {
   font-size: 1.3em;
   line-height: 1.4;
+}
+.t-lead {
+  @extend %t-lead;
 }
 
 /**
  * Meta
  * Display meta info
  */
-.meta {
+%t-meta {
   @extend small;
   color: $ds-color-text-light;
 }
-
-.spotlight {
-  @include ds-transition;
-  padding-bottom: ($ds-margin/2) !important;
-  padding-top: 32px !important;
-
-  &:hover {
-    @include background-image(linear-gradient(#EADDAF, $ds-color-background));
-    @include border-radius(3px 3px 0 0);
-
-    .spotlight-cta {
-      opacity: 1;
-    }
-  }
-
-  .spotlight-image {
-    @include ds-polaroid;
-    @include ds-transition;
-
-    margin-bottom: 6px;
-  }
-
-  .spotlight-info {
-    @include clearfix;
-    padding: 0 8px;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  small {
-    color: rgba(0,0,0,.6);
-  }
-
-  .spotlight-cta {
-    @include ds-transition;
-    float: right;
-    opacity: 0;
-    width: 200px;
-  }
-
-  .cta {
-    display: none;
-    font-size: .8em;
-    margin-right: 10px;
-  }
+.t-meta {
+  @extend %t-meta;
 }
 
 // -----------------------------------------------------------------------------
@@ -162,61 +100,76 @@ ol.inline {
 }
 
 // -----------------------------------------------------------------------------
-// Alignment
+// Alignment / Layout
 // -----------------------------------------------------------------------------
 
-.text-left {
+%t-left {
   text-align: left;
 }
+.t-left {
+  @extend %t-left;
+}
 
-.text-center {
+%t-center {
   text-align: center;
 }
+.t-center {
+  @extend %t-center;
+}
 
-.text-right {
+%t-right {
   text-align: right;
 }
+.t-right {
+  @extend %t-right;
+}
 
 // -----------------------------------------------------------------------------
-// Utility
+// Utility @TODO
 // -----------------------------------------------------------------------------
 
-.text-muted {
+.t-muted {
   color: #000;
 }
-a.text-muted:hover,
-a.text-muted:focus {
-  color: #000;
-}
-
-.text-warning {
-  color: #000;
-}
-a.text-warning:hover,
-a.text-warning:focus {
+a.t-muted:hover,
+a.t-muted:focus {
   color: #000;
 }
 
-.text-error {
+.t-warning {
   color: #000;
 }
-a.text-error:hover,
-a.text-error:focus {
-  color: #000;
-}
-
-.text-info {
-  color: #000;
-}
-a.text-info:hover,
-a.text-info:focus {
+a.t-warning:hover,
+a.t-warning:focus {
   color: #000;
 }
 
-.text-success {
+.t-error {
   color: #000;
 }
-a.text-success:hover,
-a.text-success:focus {
+a.t-error:hover,
+a.t-error:focus {
   color: #000;
 }
+
+.t-info {
+  color: #000;
+}
+a.t-info:hover,
+a.t-info:focus {
+  color: #000;
+}
+
+.t-success {
+  color: #000;
+}
+a.t-success:hover,
+a.t-success:focus {
+  color: #000;
+}
+
+
+
+// OLD STUFF BELOW HERE
+
+

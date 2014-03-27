@@ -12,6 +12,7 @@ $ds-em: 18px !default;
 
 // Breakpoints
 $ds-breakpoint-smartphone: ds-em-calc(480px) !default;
+$ds-breakpoint-tablet-small: ds-em-calc(600px) !default;
 $ds-breakpoint-tablet: ds-em-calc(768px) !default;
 $ds-breakpoint-laptop: ds-em-calc(992px) !default;
 $ds-breakpoint-desktop: ds-em-calc(1200px) !default;
