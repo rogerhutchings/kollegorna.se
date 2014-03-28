@@ -1,5 +1,5 @@
 $(function() {
-  $('.site-intro-content').css('height', $(window).height() + 'px');
+  $('.site-intro-content').height($(window).height());
 });
 
 

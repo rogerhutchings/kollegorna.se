@@ -1,16 +1,3 @@
-.site-intro {
-  //background-image: url('http://0.0.0.0:4000/img/test-bg.jpg');
-  //background-size: cover;
-  display: table;
-  width: 100%;
-}
-
-.site-intro-content {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .site-intro-info {
   @extend %ds-wrapper;
   position: relative;
@@ -19,13 +6,6 @@
 /**
  * Styles for home page
  */
-
-.home {
-  border: 0;
-  .nav {
-    display: none;
-  }
-}
 
 .scream-something-loud {
   background: rgba(247, 121, 22, .7);
@@ -43,7 +23,6 @@
   }
 
   p {
-    //@extend .wrapper;
     margin-bottom: 0;
   }
 }
@@ -79,14 +58,7 @@
   }
 }
 
-
 .site-intro {
-  position: relative;
-  text-align: center;
-  @include breakpoint($ds-breakpoint-tablet) {
-
-  }
-
   ul {
     list-style: none;
     li {

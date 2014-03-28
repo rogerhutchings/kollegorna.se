@@ -252,6 +252,27 @@
 }
 
 // -----------------------------------------------------------------------------
+// Full screen container
+//
+//
+// -----------------------------------------------------------------------------
+@mixin ds-layout-fullscreen($wrapper, $content, $breakpoint: $ds-breakpoint-tablet) {
+  @include breakpoint($breakpoint) {
+    .#{$wrapper} {
+      display: table;
+      position: relative;
+      width: 100%;
+    }
+
+    .#{$content} {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Layout classes
 //
 // Generate classes with our mixins above.
@@ -263,6 +284,7 @@
 @include ds-layout-columns-up-to-four(l-up-4-columns, l-column);
 @include ds-layout-columns-up-to-five(l-up-5-columns, l-column);
 @include ds-layout-columns-up-to-six(l-up-6-columns, l-column);
+@include ds-layout-fullscreen(l-fullscreen, l-fullscreen__content);
 
 // Layout modifiers
 .l-max-100 {
