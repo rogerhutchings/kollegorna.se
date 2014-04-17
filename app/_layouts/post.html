@@ -3,20 +3,56 @@ layout: default
 body_class: page-blog-post
 ---
 <main role="main" class="blog-post">
-  <article class="post" vocab="http://schema.org/" typeof="BlogPosting">
-    <header>
-      {% if page.top_image %}
-      <figure class="top-image"><img src="{{ page.top_image }}" alt="{{ page.top_image_alt }}"></figure>
+  <article class="post post--{{ page.type }}" vocab="http://schema.org/" typeof="BlogPosting">
+    <header class="post-header">
+      {% if page.image %}
+        <figure class="post-image">
+          <img property="image" src="{{ page.image }}" alt="{{ page.image_alt }}">
+        </figure>
       {% endif %}
 
-      <h1>{{ page.title }}</h1>
-
-      <span class="author">Av <a href="mailto:{{ page.author_email }}"><!--<img src="{{ page.author_email | to_gravatar }}?s=40" alt="{{ page.author }}"> -->{{ page.author }}</a></span>
-      <time property="dateCreated" pubdate>{{ page.date | date_to_string }}</time>
-
+      <h1 property="name">{{ page.title }}</h1>
     </header>
 
-    {{ content }}
+    <div property="articleBody" class="post-content">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      {% assign author = site.data.colleagues[page.author] %}
+      {% if author %}
+        <div class="post-author" property="author" vocab="http://schema.org/" typeof="Person">
+          <div class="post-author__image">
+            <img property="image" src="{{ author.email | to_gravatar }}" alt="Bild på {{ author.firstname }} {{ author.lastname }}" />
+          </div>
+          <div class="post-author__name">
+            <a property="email" href="mailto:{{ author.email }}">
+              <span property="givenName">{{ author.firstname }}</span>
+              <span property="familyName">{{ author.lastname }}</span>
+            </a>
+          </div>
+        </div>
+      {% endif %}
+
+        <div class="post-meta">
+          <time class="post-date" property="dateCreated" pubdate><a property="url" href="{{ page.url }}">{{ page.date | date_to_string }}</a></time>
+          <!--<span class="post-tags">taggat <a href="#">kunder</a>, <a href="#">priser</a></span>-->
+        </div>
+
+      {% if page.source_url %}
+        <div class="post-via">
+          via
+          <a property="isBasedOnUrl" href="{{ page.source_url }}">
+            {% if page.source_title %}
+              {{ page.source_title }}
+            {% else %}
+              {{ page.source_url }}
+            {% endif %}
+          </a>
+        </div>
+      {% endif %}
+    </footer>
+    <!-- / .post-footer -->
 
     {% if page.comments %}
       <div id="disqus_thread"></div>

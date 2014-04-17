@@ -1,5 +1,4 @@
 
-
 .blog-header {
   display: none;
 
@@ -32,16 +31,24 @@
 
   a {
     @include ds-button;
-    overflow: hidden;
+    @include border-radius(50%);
+    height: 30px;
+    line-height: 30px;
+    padding: 0 ds-em-calc(8px);
     width: 30px;
   }
 }
 
-.pagination-previous {
+.pagination__previous {
   float: left;
 }
 
-.pagination-next {
+.pagination__page-number {
+  color: $ds-color-text-light;
+  font-size: .8em;
+}
+
+.pagination__next {
   float: right;
 }
 
@@ -77,6 +84,15 @@
       margin-bottom: 0;
     }
   }
+
+  figure {
+    @include ds-polaroid;
+  }
+}
+
+.post-read-more {
+  padding-top: ds-em-calc(15px);
+
 }
 
 .post-footer {
@@ -154,6 +170,8 @@
 }
 
 .blog-post {
+  padding-top: ds-em-calc(120px);
+
   .post {
     @extend %ds-wrapper;
   }
