@@ -77,6 +77,10 @@
   }
 }
 
+.post-video {
+  @include ds-polaroid;
+}
+
 .post-content {
   figure,
   p {
@@ -85,8 +89,10 @@
     }
   }
 
-  figure {
-    @include ds-polaroid;
+  .post--post & {
+    figure {
+      @include ds-polaroid;
+    }
   }
 }
 
