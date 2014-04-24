@@ -1,22 +1,70 @@
 ---
 layout: default
-body_class: page-blog-post
+body_class: page-blog-post page-blog-post--post
 ---
 <main role="main" class="blog-post">
   <article class="post post--{{ page.type }}" vocab="http://schema.org/" typeof="BlogPosting">
-    <header class="post-header">
-      {% if page.image %}
-        <figure class="post-image">
-          <img property="image" src="{{ page.image }}" alt="{{ page.image_alt }}">
-        </figure>
-      {% endif %}
+    {% case page.type %}
+      {% when 'link' %}
+        <div property="articleBody" class="post-content">
+          <h1 property="name"><a href="{{ page.link_url }}">{{ page.link_title }}</a></h1>
+          {{ content }}
+        </div>
+      {% when 'quote' %}
+        <div property="articleBody" class="post-content">
+          <blockquote class="post-quote">
+            {{ page.quote }}
+          </blockquote>
 
-      <h1 property="name">{{ page.title }}</h1>
-    </header>
+          {% if page.cite %}
+            <cite class="post-cite">
+              {{ page.cite }}
+            </cite>
+          {% endif %}
 
-    <div property="articleBody" class="post-content">
-      {{ content }}
-    </div>
+          {{ content }}
+        </div>
+      {% when 'image' %}
+        <div property="articleBody" class="post-content">
+          <figure class="post-image">
+            <img src="{{ page.image }}" alt="{{ page.title }}">
+
+            {% if page.caption %}
+              <figcaption>
+                {{ page.caption }}
+              </figcaption>
+            {% endif %}
+          </figure>
+          {{ content }}
+        </div>
+      {% when 'video' %}
+        <div property="articleBody" class="post-content">
+          <figure class="post-video">
+            {{ page.video_embed_code }}
+
+            {% if page.caption %}
+              <figcaption>
+                {{ page.caption }}
+              </figcaption>
+            {% endif %}
+          </figure>
+          {{ content }}
+        </div>
+      {% else %}
+        <header class="post-header">
+          {% if page.image %}
+            <figure class="post-image">
+              <img property="image" src="{{ page.image }}" alt="{{ page.image_alt }}">
+            </figure>
+          {% endif %}
+
+          <h1 property="name"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        </header>
+
+        <div property="articleBody" class="post-content">
+          {{ content }}
+        </div>
+    {% endcase %}
 
     <footer class="post-footer">
       {% assign author = site.data.colleagues[page.author] %}

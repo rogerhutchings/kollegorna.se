@@ -9,7 +9,7 @@ url: http://www.kollegorna.se
 gems: [sass, compass, breakpoint, uglifier, jekyll-assets, jekyll-assets/compass]
 markdown: redcarpet
 pygments: true
-paginate: 6
+paginate: 9
 paginate_path: "blogg/page:num"
 
 # Jekyll Assets configuration
