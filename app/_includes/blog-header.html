@@ -1,7 +1,13 @@
 <header class="blog-header" role="banner">
   <div class="blog-header__content">
-    <div class="blog-header__logo" aria-hidden="true"></div>
-    <h1>Blogg</h1>
+    <figure class="blog-header__logo">
+      <img src="{% asset_path blog/blog-heading.svg %}" alt="Blogg" data-fallback="{% asset_path blog/blog-heading.png %}">
+    </figure>
     <a class="blog-header__rss" href="/rss.xml"><span>Prenumerera via RSS</span></a>
+    <div class="blog-header__info">
+      <span class="blog-header__count">{{ site.posts | size }}</span> inlägg om
+
+      <span data-typer-targets='{ "targets" : ["lanseringar","webbnörderi","det senaste","nytt folk"]}'>det senaste</span>
+    </div>
   </div>
 </header>
