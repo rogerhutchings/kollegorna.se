@@ -4,11 +4,31 @@
 // -----------------------------------------------------------------------------
 
 %t-heading-site {
+  font-size: $ds-h1-font-size;
+  font-weight: $ds-font-weight-black;
+  line-height: 1.2;
 
+  small {
+    display: block;
+    font-weight: $ds-font-weight;
+  }
+}
+.t-heading-site {
+  @extend %t-heading-site;
 }
 
 %t-heading-section {
+  font-size: 2em;
+  font-weight: $ds-font-weight-bold;
 
+  small {
+    display: block;
+    font-size: inherit;
+    font-weight: $ds-font-weight;
+  }
+}
+.t-heading-section {
+  @extend %t-heading-section;
 }
 
 %t-heading-secondary {

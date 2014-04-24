@@ -1,100 +1,111 @@
-.contact {
-  .nav-contact {
-    a,
-    a:hover,
-    a:focus {
-      background: $ds-color-heading;
-      border: 0;
-      color: $ds-color-background;
-      padding: 4px 6px 2px;
-    }
-  }
-  [role="main"],
-  [role="banner"] {
 
-  }
-  [role="banner"] {
-    @extend %ds-wrapper;
-    margin-bottom: 20px;
-    padding-top: 40px;
-    h1 {
-      font-size: 2em;
-      text-transform: uppercase;
-    }
-    @include breakpoint($ds-breakpoint-tablet) {
-      margin-bottom: 40px;
-      padding-top: 80px;
-    }
-  }
-}
+.contact-header {
+  @include griddo-container;
+  padding: ds-em-calc(30px) 0;
+  text-align: center;
 
-.colleague-wrap {
-  @extend %ds-wrapper;
+  @include breakpoint($ds-breakpoint-laptop) {
+    padding: ds-em-calc(40px) 0;
+  }
+
+  &:after {
+    content: " – – – – – – – – – – – – – – ";
+    display: block;
+    margin: -10px 0 ds-em-calc(30px);
+    text-align: center;
+
+    @include breakpoint($ds-breakpoint-laptop) {
+      margin-bottom: ds-em-calc(30px);
+    }
+  }
 }
 
 .colleagues {
-  //@include ds-box;
-  ul {
-    @include clearfix;
-    list-style: none;
-    @include breakpoint($ds-breakpoint-tablet) {
-      li {
-        float: left;
-        width: 50%;
-        &:nth-child(2n+1) {
-          clear: both;
-        }
-      }
+  @include griddo-row;
+}
+
+.colleague {
+  @include griddo-column;
+
+  @include breakpoint($ds-breakpoint-smartphone) {
+    @include griddo-width(2);
+    margin-bottom: ds-em-calc(20px);
+    text-align: center;
+
+    &:nth-child(2n+1) {
+      clear: both;
     }
   }
-  h3,
-  h4,
-  dt {
-    //color: $ds-color-black-text;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    @include griddo-width(4);
+    margin-bottom: ds-em-calc(30px);
+
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+    &:nth-child(3n+1) {
+      clear: both;
+    }
   }
-  dt {
-    font-weight: $ds-font-weight;
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    @include griddo-width(3);
+    margin-bottom: ds-em-calc(40px);
+
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+    &:nth-child(3n+1) {
+      clear: none;
+    }
+    &:nth-child(4n+1) {
+      clear: both;
+    }
   }
 }
 
-.map {
-
-}
-
-
-.profiles {
-  @extend %ds-wrapper;
-}
-
-.profile {
-  float: left;
-  //padding: 0 15px;
-  width: 33%;
-}
-
-.profile__image {
+.colleague__image {
   @include ds-polaroid;
+  @include border-radius(50%);
+  display: inline-block;
+  max-width: 200px;
+  margin: 0;
 
   img {
-
+    @include border-radius(50%);
+    float: none;
   }
 }
 
-.profile__info {
-  float: left;
-  width: 70%;
+.colleague__name {
+  font-size: 1em;
+  font-weight: $ds-font-weight-bold;
+  margin: 0;
 }
 
-#t-section-title {
-  font-size: 64px;
-  position: relative;
-  text-transform: none;
+.colleague__title {
+  font-size: .8em;
+  font-weight: $ds-font-weight;
+  margin: 0 0 ds-em-calc(12px);
+}
 
-  &:after {
-    background: #000;
-    bottom: 0;
-    height: 10px;
-    position: absolute;
-    width: 40px;
-  }
+.colleague__meta {
+  @extend small;
+  margin-bottom: ds-em-calc(6px);
+}
+
+.contact-office {
+  @include griddo-container;
+  text-align: center;
+}
+
+.contact-office__map {
+  @include ds-polaroid;
+}
+
+.contact-snail-mail {
+  @include griddo-container;
+  padding-top: 40px;
+  text-align: center;
 }

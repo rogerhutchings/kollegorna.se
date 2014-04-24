@@ -2,26 +2,46 @@
 per:
   firstname: Per
   lastname: Sandström
+  title: Designer + Partner
   email: per@kollegorna.se
   twitter: persand
   github: persand
+  phone: 070 - 242 07 50
 henrik:
   firstname: Henrik
   lastname: Sjökvist
+  title: Utvecklare + Partner
   email: henrik@kollegorna.se
+  twitter: henrrrik
+  github: henrrrik
+  phone: 073 – 505 29 29
 samuel:
   firstname: Samuel
   lastname: Carlsson
+  title: Utvecklare + Partner
   email: samuel@kollegorna.se
+  twitter: ksamc
+  github: ksamc
+  phone: 070 - 242 07 50
 joakim:
   firstname: Joakim
   lastname: Lundberg
   email: joakim@kollegorna.se
+  title: Utvecklare
+  github: fyra3or
 stai:
   firstname: Joakim
   lastname: Stai
   email: stai@kollegorna.se
+  title: Utvecklare
+  github: joakim
 filippos:
   firstname: Filippos
   lastname: Vasikalis
   email: filippos@kollegorna.se
+  title: Utvecklare
+kobot:
+  firstname: Kobot
+  lastname:
+  email: kobot@kollegorna.se
+  title: Robot
