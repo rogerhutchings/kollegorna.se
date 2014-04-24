@@ -7,7 +7,19 @@ body_class: blog
 ---
 
 <section class="blog">
-  {% include blog-header.html %}
+  <header class="blog-header" role="banner">
+    <div class="blog-header__content">
+      <figure class="blog-header__logo">
+        <a href="/blogg"><img src="{% asset_path blog/blog-heading.svg %}" alt="Blogg" data-fallback="{% asset_path blog/blog-heading.png %}"></a>
+      </figure>
+      <a class="blog-header__rss" href="/rss.xml"><span>Prenumerera via RSS</span></a>
+      <div class="blog-header__info">
+        <span class="blog-header__count">{{ site.posts | size }}</span> inlägg om
+
+        <span data-typer-targets='{ "targets" : ["lanseringar","webbnörderi","det senaste","nytt folk"]}'>det senaste</span>
+      </div>
+    </div>
+  </header>
 
   <main class="blog-posts" role="main">
     {% for post in paginator.posts %}

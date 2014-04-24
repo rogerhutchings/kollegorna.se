@@ -3,7 +3,7 @@ $(function() {
 
   // Typer
   // http://cosmos.layervault.com/typer-js.html
-  $('[data-typer-targets]').typer()
+  $('[data-typer-targets]').typer();
 
   // SVG fallback
   if (!Modernizr.svg) {
