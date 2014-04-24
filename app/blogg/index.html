@@ -9,8 +9,11 @@ body_class: blog
 <section class="blog">
 
   <header class="blog-header" role="banner">
-    <h1>Blogg</h1>
-    <p><a href="/feed.xml">Prenumerera med RSS</a></p>
+    <div class="blog-header__content">
+      <div class="blog-header__logo" aria-hidden="true"></div>
+      <h1>Blogg</h1>
+      <a class="blog-header__rss" href="/rss.xml"><span>Prenumerera via RSS</span></a>
+    </div>
   </header>
 
   <main class="blog-posts" role="main">
