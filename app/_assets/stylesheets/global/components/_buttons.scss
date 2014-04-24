@@ -5,19 +5,19 @@
 @mixin ds-button {
   @include background-image(linear-gradient($ds-color-orange, darken($ds-color-orange, 10%)));
   @include border-radius(3px);
-  @include box-shadow(0 1px 4px rgba(0, 0, 0, .35));
-  border: 1px solid $ds-color-orange-dark;
+  border: 0;
   color: #fff;
   display: inline-block;
   font-size: .8em;
+  font-weight: $ds-font-weight-bold;
   line-height: 1;
   padding: 6px 8px 4px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
 
   &:hover,
   &:focus {
-    @include background-image(linear-gradient($ds-color-orange, darken($ds-color-orange, 15%)));
-    border-color: darken($ds-color-orange, 20%);
+    @include background-image(linear-gradient($ds-color-orange, darken($ds-color-orange, 14%)));
     color: #fff;
   }
 
@@ -62,13 +62,13 @@
 
 .button-large {
   @include ds-button;
-  font-size: 1em;
+  //font-size: 1em;
   padding: 8px 12px;
 }
 
 .button-largest {
   @include ds-button;
   @include border-radius(5px);
-  font-size: 1em;
+  //font-size: 1em;
   padding: 10px 12px;
 }

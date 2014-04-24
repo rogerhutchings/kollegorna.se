@@ -41,7 +41,7 @@ body {
 a,
 a:active {
   @include ds-transition;
-  border-bottom: 2px solid $ds-color-link;
+  border-bottom: 1px solid $ds-color-link;
   color: $ds-color-link;
   text-decoration: none;
 }
