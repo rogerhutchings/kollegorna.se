@@ -99,6 +99,24 @@ ol.inline {
   }
 }
 
+.progress-list {
+  text-align: center;
+
+  li {
+    &:after {
+      color: #333;
+      content: "↓";
+      display: block;
+      font-size: 1.5em;
+      font-weight: $ds-font-weight-black;
+      padding: 20px 0;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
 // -----------------------------------------------------------------------------
 // Alignment / Layout
 // -----------------------------------------------------------------------------

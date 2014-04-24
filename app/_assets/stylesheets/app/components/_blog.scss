@@ -92,6 +92,23 @@
   }
 }
 
+.post--link {
+  h1 {
+    a {
+      &:after {
+        color: $ds-color-link;
+        content: " → ";
+      }
+
+      &:hover:after {
+        //color: darken($ds-color-link, 10);
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
 .post-image {
   img {
     @include ds-polaroid;
