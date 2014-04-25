@@ -5,9 +5,7 @@
 // -----------------------------------------------------------------------------
 
 .spotlight {
-  @include ds-transition;
-  padding-bottom: ($ds-margin/2) !important;
-  padding-top: 32px !important;
+  padding: $ds-margin 0;
 
   &:hover {
     @include background-image(linear-gradient(#EADDAF, $ds-color-background));

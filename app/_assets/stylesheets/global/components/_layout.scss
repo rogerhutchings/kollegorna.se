@@ -287,24 +287,39 @@
 @include ds-layout-fullscreen(l-fullscreen, l-fullscreen__content);
 
 // Layout modifiers
+%l-max-100 {
+  max-width: 100%;
+}
 .l-max-100 {
-  max-width: 100% !important;
+  @extend %l-max-100;
 }
 
+%l-max-800-px {
+  max-width: 800px;
+}
 .l-max-800-px {
-  max-width: 800px !important;
+  @extend %l-max-800px;
 }
 
+%l-max-1200-px {
+  max-width: 1200px;
+}
 .l-max-1200-px {
-  max-width: 1200px !important;
+  @extend %l-max-1200px;
 }
 
+%l-max-1400-px {
+  max-width: 1400px;
+}
 .l-max-1400-px {
-  max-width: 1400px !important;
+  @extend %l-max-1400px;
 }
 
+%l-max-1600-px {
+  max-width: 1600px;
+}
 .l-max-1600-px {
-  max-width: 1600px !important;
+  @extend %l-max-1600px;
 }
 
 // -----------------------------------------------------------------------------
