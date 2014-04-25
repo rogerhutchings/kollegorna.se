@@ -1,0 +1,55 @@
+---
+layout: default
+title: Om oss | Kollegorna
+meta_title: Om oss
+meta_description: "Hör av dig och berätta om ditt nästa projekt."
+body_class: about
+---
+
+
+
+<section role="main">
+
+  <div class="profiles">
+    {% for colleagues in site.data.colleagues %}
+
+      {% for colleague in colleagues %}
+        {% if colleague.firstname %}
+          <article class="profile" vocab="http://schema.org/" typeof="Person">
+            <figure class="profile__image">
+              <img property="image" src="{{ colleague.email | to_gravatar }}" alt="Bild på {{ colleague.firstname }} {{ colleague.lastname }}" />
+            </figure>
+            <!-- / .profile__image -->
+
+            <h1 class="profile__name">{{ colleague.firstname }} {{ colleague.lastname }}</h1>
+            <h2 class="profile__title">{{ colleague.title }}</h2>
+
+            {% if colleague.does %}
+              <div class="profile__meta">{{ colleague.does }}</a></div>
+            {% endif %}
+
+            {% if colleague.email %}
+              <div class="profile__meta"><a href="mailto:{{ colleague.email }}">{{ colleague.email }}</a></div>
+            {% endif %}
+
+            {% if colleague.github %}
+              <div class="profile__meta"><a href="https://github.com/{{ colleague.github }}">GitHub</a></div>
+            {% endif %}
+
+            {% if colleague.twitter %}
+              <div class="profile__meta"><a href="https://twitter.com/{{ colleague.twitter }}">Twitter</a></div>
+            {% endif %}
+
+            {% if colleague.linkedin %}
+              <div class="profile__meta"><a href="{{ colleague.linkedin }}">LinkedIn</a></div>
+            {% endif %}
+          </article>
+          <!-- / .contact -->
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <!-- / .contacts -->
+
+
+</section>
