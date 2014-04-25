@@ -174,20 +174,17 @@
       padding: 20px 340px 0 0;
     }
 
-    p:first-child {
+    /*p:first-child {
       font-size: 1.3em;
       line-height: 1.4;
 
       a {
         border: 0;
       }
-    }
+    }*/
 
     li {
       margin-bottom: .5em;
-      a {
-        @extend .cta;
-      }
     }
   }
 

@@ -27,20 +27,6 @@
   }
 }
 
-/**
- *
- */
-.cta {
-  @include ds-transition;
-  border-bottom: 2px solid $ds-color-link;
-  font-size: .8em;
-  font-weight: $ds-font-weight-bold;
-  text-transform: uppercase;
-  &:hover {
-   border-color: $ds-color-heading;
-   color: $ds-color-heading;
-  }
-}
 
 .cta-button {
   @include border-radius(14px);
@@ -62,13 +48,11 @@
 
 .button-large {
   @include ds-button;
-  //font-size: 1em;
   padding: 8px 12px;
 }
 
 .button-largest {
   @include ds-button;
   @include border-radius(5px);
-  //font-size: 1em;
   padding: 10px 12px;
 }

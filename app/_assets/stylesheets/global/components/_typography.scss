@@ -9,7 +9,6 @@
   line-height: 1.2;
 
   small {
-    display: block;
     font-weight: $ds-font-weight;
   }
 }
@@ -22,7 +21,6 @@
   font-weight: $ds-font-weight-bold;
 
   small {
-    display: block;
     font-size: inherit;
     font-weight: $ds-font-weight;
   }
@@ -35,29 +33,50 @@
   font-weight: $ds-font-weight;
   line-height: $ds-headings-line-height;
 }
+.t-heading-secondary {
+  @extend %t-heading-secondary;
+}
 
 %t-heading-secondary--1 {
   font-size: $ds-h1-font-size;
+}
+.t-heading-secondary--1 {
+  @extend %t-heading-secondary--1;
 }
 
 %t-heading-secondary--2 {
   font-size: $ds-h2-font-size;
 }
+.t-heading-secondary--2 {
+  @extend %t-heading-secondary--2;
+}
 
 %t-heading-secondary--3 {
   font-size: $ds-h3-font-size;
+}
+.t-heading-secondary--3 {
+  @extend %t-heading-secondary--3;
 }
 
 %t-heading-secondary--4 {
   font-size: $ds-h4-font-size;
 }
+.t-heading-secondary--4 {
+  @extend %t-heading-secondary--4;
+}
 
 %t-heading-secondary--5 {
   font-size: $ds-h5-font-size;
 }
+.t-heading-secondary--5 {
+  @extend %t-heading-secondary--5;
+}
 
 %t-heading-secondary--6 {
   font-size: $ds-h6-font-size;
+}
+.t-heading-secondary--6 {
+  @extend %t-heading-secondary--6;
 }
 
 // -----------------------------------------------------------------------------
@@ -86,6 +105,31 @@
 }
 .t-meta {
   @extend %t-meta;
+}
+
+/**
+ * Heavy stuff
+ * Put some extra emphasis on something. Like a bit of text or a link.
+ */
+%t-heavy {
+  font-size: .8em;
+  font-weight: $ds-font-weight-bold;
+  text-transform: uppercase;
+}
+%t-heavy-link {
+  @include ds-transition;
+  border-bottom: 2px solid $ds-color-link;
+
+  &:hover {
+    border-color: $ds-color-heading;
+    color: $ds-color-heading;
+  }
+}
+.t-heavy {
+  @extend %t-heavy;
+}
+a.t-heavy {
+  @extend %t-heavy-link;
 }
 
 // -----------------------------------------------------------------------------
