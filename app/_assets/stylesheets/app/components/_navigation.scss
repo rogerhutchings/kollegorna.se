@@ -60,15 +60,18 @@
 
   .icon-menu,
   .icon-menu:before,
-  .icon-menu:after {
+  .icon-menu:after,
+  .icon-cancel,
+  .icon-cancel:before,
+  .icon-cancel:after {
     font-size: 1.3em !important;
   }
 }
 
 .nav-close {
-  .icon-menu,
-  .icon-menu:before,
-  .icon-menu:after {
+  .icon-cancel,
+  .icon-cancel:before,
+  .icon-cancel:after {
     color: #fff !important;
   }
 }
