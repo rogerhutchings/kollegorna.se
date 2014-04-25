@@ -11,6 +11,23 @@
   small {
     font-weight: $ds-font-weight;
   }
+
+  span {
+    //background: rgba(0, 0, 0, .15);
+    /*border-bottom: 15px solid rgba(0, 0, 0, .1);
+    border-bottom: 15px solid $ds-color-background;
+    border-bottom: 15px solid $ds-color-link;*/
+    display: inline-block;
+
+    &:after {
+      //background: $ds-color-link;
+      @include background-image(linear-gradient(left top, $ds-color-orange, darken($ds-color-orange, 10%)));
+      content: " ";
+      display: block;
+      height: 20px;
+      overflow: hidden;
+    }
+  }
 }
 .t-hero {
   @extend %t-hero;

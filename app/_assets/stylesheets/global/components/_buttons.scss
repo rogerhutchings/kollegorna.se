@@ -41,7 +41,6 @@
   text-transform: uppercase;
 }
 
-
 .button {
   @include ds-button;
 }
@@ -53,6 +52,5 @@
 
 .button-largest {
   @include ds-button;
-  @include border-radius(5px);
   padding: 10px 12px;
 }
