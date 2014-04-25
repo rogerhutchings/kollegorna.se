@@ -22,6 +22,14 @@
 
 .colleagues {
   @include griddo-row;
+
+  &:after {
+    content: " – – – – – – – – – – – – – – ";
+    display: block;
+    margin: 0 0 ds-em-calc(30px);
+    padding: ds-em-calc(30px) 0 0;
+    text-align: center;
+  }
 }
 
 .colleague {
@@ -70,7 +78,7 @@
   @include border-radius(50%);
   display: inline-block;
   max-width: 200px;
-  margin: 0;
+  margin: 0 0 ds-em-calc(14px);
 
   img {
     @include border-radius(50%);
@@ -85,6 +93,7 @@
 }
 
 .colleague__title {
+  color: $ds-color-text-light;
   font-size: .8em;
   font-weight: $ds-font-weight;
   margin: 0 0 ds-em-calc(12px);
@@ -98,6 +107,26 @@
 .contact-office {
   @include griddo-container;
   text-align: center;
+
+  &:after {
+    content: " – – – – – – – – – – – – – – ";
+    display: block;
+    padding: ds-em-calc(30px) 0 0;
+    text-align: center;
+  }
+}
+
+.contact-office__city {
+  font-size: 1em;
+  font-weight: $ds-font-weight-bold;
+  margin: 0;
+}
+
+.contact-office__address {
+  color: $ds-color-text-light;
+  font-size: 1em;
+  font-weight: $ds-font-weight;
+  margin: 0 0 ds-em-calc(24px);
 }
 
 .contact-office__map {
@@ -106,6 +135,6 @@
 
 .contact-snail-mail {
   @include griddo-container;
-  padding-top: 40px;
+  padding-top: ds-em-calc(15px);
   text-align: center;
 }
