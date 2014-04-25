@@ -3,23 +3,85 @@
 // http://www.kollegorna.se/om
 // -----------------------------------------------------------------------------
 
+.clients {
+  margin-left: -($griddo-gutter/2);
+  margin-right: -($griddo-gutter/2);
+  li {
+    margin-bottom: $ds-margin;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    li {
+      text-align: center;
+
+      &:nth-child(0n) {
+        text-align: left;
+      }
+
+      &:nth-child(1n+1) {
+        text-align: center;
+      }
+
+      &:nth-child(3n) {
+        text-align: right;
+      }
+
+      &:nth-child(3n+1) {
+        text-align: left;
+      }
+    }
+  }
+}
+
 .profiles {
-  @include griddo-container;
 }
 
 .profile {
   @include clearfix;
+  @include ds-gutter-bottom;
+  text-align: center;
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    text-align: left;
+  }
 }
 
 .profile__image {
   @include ds-polaroid;
   @include border-radius(50%);
-  display: inline-block;
-  max-width: 200px;
-  margin: 0 0 ds-em-calc(14px);
+  margin: 0 auto 20px;
+  max-width: ds-em-calc(120px);
+  padding: ds-em-calc(6px);
 
   img {
     @include border-radius(50%);
     float: none;
   }
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    float: left;
+    margin: 0 $ds-margin 0 0;
+  }
+}
+
+.profile__name {
+  font-size: 1em;
+  font-weight: $ds-font-weight-bold;
+  margin: 0;
+  padding: 5px 0 0;
+}
+
+.profile__title {
+  color: $ds-color-text-light;
+  font-size: .8em;
+  font-weight: $ds-font-weight;
+  margin: 0;
+}
+
+.profile__does {
+  font-size: .8em;
+}
+
+.profile__meta {
+  padding: ds-em-calc(12px) 0 0;
 }

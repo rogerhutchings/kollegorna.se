@@ -1,7 +1,13 @@
 // Global Design System
 @import "../global/global";
 
-// Sections
+// Setup
+@import "components/layout";
+@import "components/header";
+@import "components/footer";
+@import "components/navigation";
+
+// Sections/Pages
 @import "components/home";
 @import "components/page";
 @import "components/blog";
@@ -9,8 +15,6 @@
 @import "components/about";
 @import "components/contact";
 
-@import "components/header";
-@import "components/footer";
-@import "components/navigation";
+
 @import "components/case-study";
 @import "components/print";

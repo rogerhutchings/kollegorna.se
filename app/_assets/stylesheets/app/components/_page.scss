@@ -1,9 +1,9 @@
 
-.l-page {
-  @include griddo-container;
+.page-header {
   @include ds-gutter-v-double;
 }
 
-.l-page--narrow {
-  max-width: 900px;
+.page-polaroid {
+  @include ds-polaroid;
+  @include ds-gutter-bottom;
 }

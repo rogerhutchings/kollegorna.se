@@ -8,7 +8,7 @@ per:
   github: persand
   linkedin: "https://www.linkedin.com/in/psandstrom"
   phone: 070 - 242 07 50
-  does: "cupcakes, foo bars, hello, world"
+  does: "webb- & interaktionsdesign, front end, drupal, rails"
 henrik:
   firstname: Henrik
   lastname: Sjökvist
@@ -17,6 +17,7 @@ henrik:
   twitter: henrrrik
   github: henrrrik
   phone: 073 – 505 29 29
+  does: "skägg"
 samuel:
   firstname: Samuel
   lastname: Carlsson
@@ -25,25 +26,30 @@ samuel:
   twitter: ksamc
   github: ksamc
   phone: 070 - 242 07 50
+  does: "macgyver-pulande"
 joakim:
   firstname: Joakim
   lastname: Lundberg
   email: joakim@kollegorna.se
   title: Utvecklare
   github: fyra3or
+  does: "krav maga"
 stai:
   firstname: Joakim
   lastname: Stai
   email: stai@kollegorna.se
   title: Utvecklare
   github: joakim
+  does: "español"
 filippos:
   firstname: Filippos
   lastname: Vasikalis
   email: filippos@kollegorna.se
   title: Utvecklare
+  does: "tennis"
 kobot:
   firstname: Kobot
   lastname:
   email: kobot@kollegorna.se
-  title: Övervakning + Service
+  title: Byrårobot
+  does: "övervakning, automatisering, service, analys, gif-bilder"

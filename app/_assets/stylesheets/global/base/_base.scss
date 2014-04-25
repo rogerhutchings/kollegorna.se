@@ -87,6 +87,7 @@ a:link {
   font-weight: $ds-font-weight-black;
   line-height: 1.2;
   margin-bottom: .75em;
+  text-transform: none;
 }
 h1 {
   @extend %h1;
@@ -95,6 +96,8 @@ h1 {
 %h2 {
   @extend %h1-6;
   font-size: $ds-h2-font-size;
+  font-weight: $ds-font-weight-black;
+  text-transform: uppercase;
 }
 h2 {
   @extend %h2;
@@ -103,6 +106,8 @@ h2 {
 %h3 {
   @extend %h1-6;
   font-size: $ds-h3-font-size;
+  font-weight: $ds-font-weight-black;
+  text-transform: none;
 }
 h3 {
   @extend %h3;
@@ -111,6 +116,8 @@ h3 {
 %h4 {
   @extend %h1-6;
   font-size: $ds-h4-font-size;
+  margin: 0;
+  text-transform: uppercase;
 }
 h4 {
   @extend %h4;
@@ -119,6 +126,8 @@ h4 {
 %h5 {
   @extend %h1-6;
   font-size: $ds-h5-font-size;
+  margin: 0;
+  text-transform: none;
 }
 h5 {
   @extend %h5;
@@ -127,6 +136,7 @@ h5 {
 %h6 {
   @extend %h1-6;
   font-size: $ds-h6-font-size;
+  margin: 0;
   text-transform: uppercase;
 }
 h6 {
@@ -142,10 +152,10 @@ p {
 }
 
 hr {
-  border: 1px solid $ds-color-border;
+  border: 1px solid rgba(0, 0, 0, .2);
   border-width: 1px 0 0;
   clear: both;
-  margin: $ds-margin 0 ($ds-margin - ds-em-calc(1px));
+  margin: ($ds-margin*2) 0 (($ds-margin*2) - ds-em-calc(1px));
   height: 0;
 }
 

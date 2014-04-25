@@ -1,3 +1,36 @@
+
+.polaroid {
+  @include ds-polaroid;
+}
+
+.hero {
+  @include clearfix;
+  @include ds-gutter-v-double;
+  background: rgba(0, 0, 0, .03);
+}
+
+.hero__header {
+  @include ds-gutter-bottom;
+  @include ds-gutter-bottom(margin);
+}
+
+.hero__title {
+  margin: 0;
+}
+
+.callout {
+  @include clearfix;
+  background: $ds-color-link;
+  color: #fff;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+  }
+}
+
 // -----------------------------------------------------------------------------
 // Spotlight
 //

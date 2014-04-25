@@ -1,0 +1,37 @@
+
+.l-page {
+  @include ds-gutter-v-double;
+}
+
+.l-block {
+  @include griddo-container;
+}
+
+.l-block--narrow {
+  max-width: 900px;
+}
+
+.l-block--medium {
+  max-width: 1000px;
+}
+
+.l-block__section {
+  @include clearfix;
+  @include ds-gutter-bottom;
+  @include ds-gutter-bottom(margin);
+}
+
+.l-block__header,
+.l-block__intro,
+.l-block__content {
+  @include griddo-column(12);
+
+  @include breakpoint($ds-breakpoint-desktop) {
+    @include griddo-column(10);
+    @include griddo-push(1);
+  }
+}
+
+.l-block__container {
+  @include griddo-column(12);
+}
