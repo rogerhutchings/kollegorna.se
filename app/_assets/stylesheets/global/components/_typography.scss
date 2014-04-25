@@ -29,6 +29,13 @@
   @extend %t-heading-section;
 }
 
+%t-heading {
+  margin: 0;
+}
+.t-heading {
+  @extend %t-heading;
+}
+
 %t-heading-secondary {
   font-weight: $ds-font-weight;
   line-height: $ds-headings-line-height;

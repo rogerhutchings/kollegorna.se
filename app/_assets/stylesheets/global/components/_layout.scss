@@ -1,4 +1,184 @@
 // -----------------------------------------------------------------------------
+// Gutter mixins
+//
+// The gutter mixins provides gutter for different breakpoints.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Global gutter on a box (v/h)
+// -----------------------------------------------------------------------------
+@mixin ds-gutter($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}: $ds-padding-smartphone;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}: $ds-padding-tablet;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}: $ds-padding-laptop;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter vertical
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-v($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-top: $ds-padding-smartphone-v;
+  #{$type}-bottom: $ds-padding-smartphone-v;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-top: $ds-padding-tablet-v;
+    #{$type}-bottom: $ds-padding-tablet-v;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-top: $ds-padding-laptop-v;
+    #{$type}-bottom: $ds-padding-laptop-v;
+  }
+}
+
+@mixin ds-gutter-v-double($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-top: ($ds-padding-smartphone-v*2);
+  #{$type}-bottom: ($ds-padding-smartphone-v*2);
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-top: ($ds-padding-tablet-v*2);
+    #{$type}-bottom: ($ds-padding-tablet-v*2);
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-top: ($ds-padding-laptop-v*2);
+    #{$type}-bottom: ($ds-padding-laptop-v*2);
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter horizontal
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-h($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-left: $ds-padding-smartphone-h;
+  #{$type}-right: $ds-padding-smartphone-h;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-left: $ds-padding-tablet-h;
+    #{$type}-right: $ds-padding-tablet-h;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-left: $ds-padding-laptop-h;
+    #{$type}-right: $ds-padding-laptop-h;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter top
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-top($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-top: $ds-padding-smartphone-v;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-top: $ds-padding-tablet-v;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-top: $ds-padding-laptop-v;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter bottom
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-bottom($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-bottom: $ds-padding-smartphone-v;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-bottom: $ds-padding-tablet-v;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-bottom: $ds-padding-laptop-v;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter left
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-left($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-left: $ds-padding-smartphone-h;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-left: $ds-padding-tablet-h;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-left: $ds-padding-laptop-h;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Gutter right
+// -----------------------------------------------------------------------------
+@mixin ds-gutter-right($type: false) {
+  @if ($type == false) {
+    $type: padding;
+  } @else {
+    $type: margin;
+  }
+
+  #{$type}-right: $ds-padding-smartphone-h;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    #{$type}-right: $ds-padding-tablet-h;
+  }
+
+  @include breakpoint($ds-breakpoint-laptop) {
+    #{$type}-right: $ds-padding-laptop-h;
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Layout mixins
 //
 // These mixins can be used within our projects for generating layouts with
@@ -298,28 +478,38 @@
   max-width: 800px;
 }
 .l-max-800-px {
-  @extend %l-max-800px;
+  @extend %l-max-800-px;
 }
 
 %l-max-1200-px {
   max-width: 1200px;
 }
 .l-max-1200-px {
-  @extend %l-max-1200px;
+  @extend %l-max-1200-px;
 }
 
 %l-max-1400-px {
   max-width: 1400px;
 }
 .l-max-1400-px {
-  @extend %l-max-1400px;
+  @extend %l-max-1400-px;
 }
 
 %l-max-1600-px {
   max-width: 1600px;
 }
 .l-max-1600-px {
-  @extend %l-max-1600px;
+  @extend %l-max-1600-px;
+}
+
+// -----------------------------------------------------------------------------
+// Basic page layout
+// -----------------------------------------------------------------------------
+
+.l-page {
+  @include griddo-container;
+
+
 }
 
 // -----------------------------------------------------------------------------

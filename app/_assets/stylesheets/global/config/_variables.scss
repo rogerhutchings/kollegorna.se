@@ -78,6 +78,18 @@ $ds-margin: ds-em-calc(20px) !default;
 $ds-padding: ds-em-calc(20px) !default;
 $ds-radius: ds-em-calc(5px);
 
+$ds-padding-smartphone-h: ds-em-calc(20px);
+$ds-padding-smartphone-v: ds-em-calc(20px);
+$ds-padding-smartphone: $ds-padding-smartphone-h $ds-padding-smartphone-v;
+
+$ds-padding-tablet-h: ds-em-calc(30px);
+$ds-padding-tablet-v: ds-em-calc(30px);
+$ds-padding-tablet: $ds-padding-tablet-h $ds-padding-tablet-v;
+
+$ds-padding-laptop-h: ds-em-calc(40px);
+$ds-padding-laptop-v: ds-em-calc(40px);
+$ds-padding-laptop: $ds-padding-laptop-h $ds-padding-laptop-v;
+
 
 //
 // GRIDDO

@@ -39,9 +39,6 @@
     list-style: none;
     li {
       display: block;
-      a {
-        @extend .cta;
-      }
     }
   }
 }
