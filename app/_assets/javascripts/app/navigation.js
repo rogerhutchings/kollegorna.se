@@ -4,6 +4,8 @@ $(function() {
     $('.nav-toggle').addClass('nav-toggle--open');
     $('.nav-toggle-button').addClass('nav-toggle-button--active');
     $('.nav-toggle-button').removeClass('nav-toggle-button--inactive');
+    $('.nav-toggle-button').hide();
+    $('.nav-close').fadeIn('slow');
     $('.nav-toggle').fadeOut('medium');
   }
 
@@ -12,6 +14,8 @@ $(function() {
     $('.nav').slideUp('medium', function() {
       $('.nav-toggle-button').addClass('nav-toggle-button--inactive');
       $('.nav-toggle-button').removeClass('nav-toggle-button--active');
+      $('.nav-close').fadeOut('medium');
+      $('.nav-toggle-button').show();
       $('.nav-toggle').fadeIn('medium');
     });
   }
