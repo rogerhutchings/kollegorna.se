@@ -7,17 +7,6 @@
   @include breakpoint($ds-breakpoint-laptop) {
     padding: ds-em-calc(40px) 0;
   }
-
-  &:after {
-    content: " – – – – – – – – – – – – – – ";
-    display: block;
-    margin: -10px 0 ds-em-calc(30px);
-    text-align: center;
-
-    @include breakpoint($ds-breakpoint-laptop) {
-      margin-bottom: ds-em-calc(30px);
-    }
-  }
 }
 
 .colleagues {

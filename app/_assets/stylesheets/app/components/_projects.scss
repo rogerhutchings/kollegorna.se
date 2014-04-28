@@ -1,59 +1,15 @@
+.projects-header,
 .projects {
-  .nav-projects {
-    a,
-    a:hover,
-    a:focus {
-      background: $ds-color-heading;
-      border: 0;
-      color: $ds-color-background;
-      padding: 4px 6px 2px;
-    }
-  }
-
-  [role="banner"],
-  [role="main"] {
-    @extend %ds-wrapper;
-  }
-  [role="banner"] {
-    @include clearfix;
-    margin-bottom: 20px;
-    @include breakpoint($ds-breakpoint-tablet) {
-      margin-bottom: 40px;
-      padding: 60px 0;
-    }
-  }
-}
-
-.our-projects {
-  @include breakpoint($ds-breakpoint-tablet) {
-    float: left;
-    width: 60%;
-  }
-
-  ul {
-    list-style: none;
-    li {
-      display: block;
-    }
-  }
-}
-
-.current-projects {
-  margin: 0 0 20px;
-  @include breakpoint($ds-breakpoint-tablet) {
-    float: right;
-    margin-bottom: 0;
-    width: 34%;
-  }
+  @extend %ds-wrapper;
 }
 
 .project {
   @include clearfix;
   @include ds-box;
 
-  h1 {
+  /*h1 {
     font-size: 1.4em;
-  }
+  }*/
 
   figure {
     margin: -20px -20px 0;
@@ -84,19 +40,4 @@
     @include border-radius(4px);
     display: block;
   }
-}
-
-
-// -----------------------------------------------------------------------------
-// Project grid
-// -----------------------------------------------------------------------------
-
-@include ds-layout-columns-up-to-three(project-grid, project-grid-item);
-
-.project-grid {
-  @extend .l-max-1400-px;
-}
-
-.project-grid-item {
-  @extend .spotlight;
 }
