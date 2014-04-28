@@ -31,6 +31,49 @@
   }
 }
 
+// Gradient border
+//
+
+@mixin gradient-border {
+  @include background-image(linear-gradient(left top, $ds-color-orange, darken($ds-color-orange, 10%)));
+}
+@mixin gradient-border--wide {
+  @include background-image(linear-gradient(left top, $ds-color-orange, $ds-color-orange-dark));
+}
+
+%gradient-border {
+  display: inline-block;
+
+  &:after {
+    @include gradient-border;
+    content: " ";
+    display: block;
+    height: 20px;
+    overflow: hidden;
+  }
+}
+/*span*/.gradient-border {
+  @extend %gradient-border;
+}
+
+%gradient-border--thin {
+  &:after {
+    height: 10px;
+  }
+}
+/*span*/.gradient-border--thin {
+  @extend %gradient-border--thin;
+}
+
+%gradient-border--fat {
+  &:after {
+    height: 30px;
+  }
+}
+/*span*/.gradient-border--fat {
+  @extend %gradient-border--fat;
+}
+
 // -----------------------------------------------------------------------------
 // Spotlight
 //
