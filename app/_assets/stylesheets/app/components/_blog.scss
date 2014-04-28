@@ -6,7 +6,7 @@
 }
 
 .blog-header--small {
-  &:after {
+  /*&:after {
     content: " – – – – – – – – – – – – – – ";
     display: block;
     margin: -10px 0 ds-em-calc(30px);
@@ -15,7 +15,7 @@
     @include breakpoint($ds-breakpoint-laptop) {
       margin-bottom: ds-em-calc(30px);
     }
-  }
+  }*/
 }
 
 .blog-header__content {
@@ -37,6 +37,13 @@
 
   img {
     float: none;
+  }
+
+  .gradient-border {
+    &:after {
+      margin-bottom: 10px;
+      margin-top: 3px;
+    }
   }
 
   .blog-header--small & {
@@ -67,13 +74,6 @@
 }
 
 .blog-header__info {
-  &:before {
-    content: " – – – – – – – – – – – – – – – – – – – – ";
-    display: block;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-
   line-height: 30px;
   text-align: center;
 }

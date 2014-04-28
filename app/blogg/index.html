@@ -10,9 +10,12 @@ body_class: blog
   <header class="blog-header" role="banner">
     <div class="blog-header__content">
       <figure class="blog-header__logo">
-        <a href="/blogg"><img src="{% asset_path blog/blog-heading.svg %}" alt="Blogg" data-fallback="{% asset_path blog/blog-heading.png %}"></a>
+        <span class="gradient-border"><a href="/blogg"><img src="{% asset_path blog/blog-heading.svg %}" alt="Blogg" data-fallback="{% asset_path blog/blog-heading.png %}"></a></span>
       </figure>
       <a class="blog-header__rss" href="/rss.xml"><span>Prenumerera via RSS</span></a>
+
+      <!--<div class="gradient-border gradient-border--thin" style="display: block; margin: 10px auto 20px; width: 250px"></div>-->
+
       <div class="blog-header__info">
         <span class="blog-header__count">{{ site.posts | size }}</span> inlägg om
 
