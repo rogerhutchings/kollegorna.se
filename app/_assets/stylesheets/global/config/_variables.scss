@@ -26,10 +26,10 @@ $ds-breakpoint-ipad-portrait: ds-em-calc(768px) !default;
 $ds-breakpoint-ipad-landscape: ds-em-calc(1024px) !default;
 
 // Colors
-$ds-color-blue: #0A7AA6 !default;
 $ds-color-orange: #F77916 !default;
 $ds-color-orange-dark: #b55015 !default;
 $ds-color-orange-darkest: #a64912 !default;
+$ds-color-green: #25C480 !default;
 
 $ds-color-background: #F4E7B7 !default;
 $ds-color-background-light: #fff !default;
@@ -89,7 +89,6 @@ $ds-padding-tablet: $ds-padding-tablet-h $ds-padding-tablet-v;
 $ds-padding-laptop-h: ds-em-calc(40px);
 $ds-padding-laptop-v: ds-em-calc(40px);
 $ds-padding-laptop: $ds-padding-laptop-h $ds-padding-laptop-v;
-
 
 //
 // GRIDDO
