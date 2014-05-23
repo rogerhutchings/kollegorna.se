@@ -34,11 +34,34 @@ body_class: blog
           {% case post.type %}
             {% when 'link' %}
               <div property="articleBody" class="post-content">
+                {% if post.image %}
+                  <figure class="post-image">
+                    <a href="{{ post.link_url }}"><img src="{{ post.image }}" alt="{{ post.title }}"></a>
+
+                    {% if post.caption %}
+                      <figcaption>
+                        {{ post.caption }}
+                      </figcaption>
+                    {% endif %}
+                  </figure>
+                {% endif %}
                 <h1 property="name"><a href="{{ post.link_url }}">{{ post.link_title }}</a></h1>
                 {{ post.content }}
               </div>
             {% when 'quote' %}
               <div property="articleBody" class="post-content">
+                {% if post.image %}
+                  <figure class="post-image">
+                    <img src="{{ post.image }}" alt="{{ post.title }}">
+
+                    {% if post.caption %}
+                      <figcaption>
+                        {{ post.caption }}
+                      </figcaption>
+                    {% endif %}
+                  </figure>
+                {% endif %}
+
                 <blockquote class="post-quote">
                   {{ post.quote }}
                 </blockquote>
