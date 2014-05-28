@@ -42,13 +42,15 @@ stai:
   twitter: joakimstai
   github: joakim
   linkedin: "https://www.linkedin.com/in/joakimstai"
-  phone: 085 - 197 10 85
+  phone: 08 - 519 710 85
   does: "Drupal, JavaScript, serverkonfigurering och optimering"
 filippos:
   firstname: Filippos
   lastname: Vasilakis
   email: filippos@kollegorna.se
   title: Utvecklare
+  twitter: vasilakisfil
+  github: vasilakisfil
   does: "Ruby, Rails"
 kobot:
   firstname: Kobot
