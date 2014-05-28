@@ -41,3 +41,16 @@
     display: block;
   }
 }
+
+.project-links {
+  list-style: none;
+  margin-left: 0;
+
+  a {
+    &:after {
+      color: $ds-color-text;
+      font-weight: $ds-font-weight-bold;
+      content: " → ";
+    }
+  }
+}
