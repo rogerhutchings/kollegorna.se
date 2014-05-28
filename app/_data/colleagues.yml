@@ -39,7 +39,10 @@ stai:
   lastname: Stai
   email: stai@kollegorna.se
   title: Utvecklare
+  twitter: joakimstai
   github: joakim
+  linkedin: "https://www.linkedin.com/in/joakimstai"
+  phone: 085 - 197 10 85
   does: "Drupal, JavaScript, serverkonfigurering och optimering"
 filippos:
   firstname: Filippos
