@@ -1,5 +1,5 @@
 /* TEAM */
-  Designer/Developer: Per Sandström
+  Designer: Per Sandström
   Contact: per [at] kollegorna.se
   Twitter: @persand
   From: Stockholm, Sweden
@@ -9,9 +9,23 @@
   Twitter: @henrrrik
   From: Stockholm, Sweden
 
-  Designer/Developer: Joakim Lundberg
+  Developer: Samuel Carlsson
+  Contact: samuel [at] kollegorna.se
+  From: Stockholm, Sweden
+
+  Developer: Joakim Lundberg
   Contact: jocke [at] kollegorna.se
   Twitter: @jockelund
+  From: Stockholm, Sweden
+
+  Developer: Joakim Stai
+  Contact: stai [at] kollegorna.se
+  Twitter: @joakimstai
+  From: Valencia, Spain
+
+  Developer: Filippos Vasilakis
+  Contact: filippos [at] kollegorna.se
+  Twitter: @vasilakisfil
   From: Stockholm, Sweden
 
 /* SITE */
