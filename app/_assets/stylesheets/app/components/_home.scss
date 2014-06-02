@@ -1,6 +1,17 @@
+.site-intro {
+  padding: 40px 20px;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    padding: 0;
+  }
+}
+
 .site-intro-info {
-  @extend %ds-wrapper;
   position: relative;
+
+  @include breakpoint($ds-breakpoint-tablet) {
+    @extend %ds-wrapper;
+  }
 }
 
 /**
