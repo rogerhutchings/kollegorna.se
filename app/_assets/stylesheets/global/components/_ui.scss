@@ -45,6 +45,7 @@
   display: inline-block;
 
   &:after {
+    @include border-radius(2px);
     @include gradient-border;
     content: " ";
     display: block;
