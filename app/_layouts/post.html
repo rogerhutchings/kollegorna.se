@@ -18,6 +18,17 @@ body_class: page-blog-post page-blog-post--post
     {% case page.type %}
       {% when 'link' %}
         <div property="articleBody" class="post-content">
+          {% if page.image %}
+            <figure class="post-image">
+              <a href="{{ page.link_url }}"><img src="{{ page.image }}" alt="{{ page.title }}"></a>
+
+              {% if page.caption %}
+                <figcaption>
+                  {{ page.caption }}
+                </figcaption>
+              {% endif %}
+            </figure>
+          {% endif %}
           <h1 property="name"><a href="{{ page.link_url }}">{{ page.link_title }}</a></h1>
           {{ content }}
         </div>
