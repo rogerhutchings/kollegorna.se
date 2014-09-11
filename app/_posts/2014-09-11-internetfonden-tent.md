@@ -7,6 +7,7 @@ author: per
 meta_title: "Ansökan till Internetfonden: Tent Adoption"
 meta_description: ""
 image: "/images/posts/2014/tent-logo.png"
+comments: true
 ---
 
 Igår kl 13:00 stängde ansökan till denna ansökningsomgång av [Internetfonden](http://www.internetfonden.se). Någon timme dessförinnan skickade vi in vår ansökan för projektet "Tent Adoption".
