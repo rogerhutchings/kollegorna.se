@@ -11,7 +11,7 @@ image: "/images/posts/2014/tent-logo.png"
 
 Igår kl 13:00 stängde ansökan till denna ansökningsomgång av [Internetfonden](http://www.internetfonden.se). Någon timme dessförinnan skickade vi in vår ansökan för projektet "Tent Adoption".
 
-[Tent](http://tent.io) är ett protokoll under utveckling för decentraliserad kommunikation på Internet. All din data samlas på ett och samma ställe där du har full kontroll över den. Data är ett generellt ord och Tent är också ett generellt protokoll som kan användas av väldigt många olika typer av applikationer. Allt från sociala nätverk som Facebook och Twitter, lagringstjänster som Dropbox och Flickr, till helt nya typer av appar och tjänster som tidigare inte varit möjliga att bygga.
+[Tent](http://cupcake.io/tent) är ett protokoll under utveckling för decentraliserad kommunikation på Internet. All din data samlas på ett och samma ställe där du har full kontroll över den. Data är ett generellt ord och Tent är också ett generellt protokoll som kan användas av väldigt många olika typer av applikationer. Allt från sociala nätverk som Facebook och Twitter, lagringstjänster som Dropbox och Flickr, till helt nya typer av appar och tjänster som tidigare inte varit möjliga att bygga.
 Tack vare bl.a. dess starka kryptering, att det kan köras anonymt på Tor-nätverket och möjligheterna att själv drifta en Tent-server så slår det även mot de olika typer av övervakning och censur som hotar det fria och öppna Internet.
 Vi ser Tent som ett väldigt spännande protokoll och hoppas att det ska innebära ett betydelsefullt tillskott till Internets infrastruktur.
 
