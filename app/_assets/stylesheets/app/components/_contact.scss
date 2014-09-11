@@ -25,13 +25,13 @@
   @include griddo-column;
 
   @include breakpoint($ds-breakpoint-smartphone) {
-    @include griddo-width(2);
+    //@include griddo-width(2);
     margin-bottom: ds-em-calc(20px);
     text-align: center;
 
-    &:nth-child(2n+1) {
+    /*&:nth-child(2n+1) {
       clear: both;
-    }
+    }*/
   }
 
   @include breakpoint($ds-breakpoint-tablet) {
