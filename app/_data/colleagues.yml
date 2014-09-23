@@ -45,6 +45,14 @@ filippos:
   twitter: vasilakisfil
   github: vasilakisfil
   does: "Ruby, Rails"
+urban:
+  firstname: Urban
+  lastname: Sandén
+  email: urban@kollegorna.se
+  title: Designer
+  twitter: urre
+  github: urre
+  does: "UI/UX design, front end"
 kobot:
   firstname: Kobot
   lastname:

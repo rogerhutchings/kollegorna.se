@@ -131,7 +131,6 @@
   }
 
   .post {
-    //@extend %ds-wrapper;
     margin: 0 auto;
     max-width: 760px;
   }
@@ -268,6 +267,7 @@
   //padding-top: ds-em-calc(120px);
 
   .post {
-    @extend %ds-wrapper;
+    margin: 0 auto;
+    max-width: 760px;
   }
 }
