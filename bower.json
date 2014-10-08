@@ -8,6 +8,7 @@
     "griddo": "~1.1.0",
     "fitvids": "~1.1.0",
     "Lettering.js": "~0.6.1",
-    "jquery.lazyload": "~1.9.3"
+    "jquery.lazyload": "~1.9.3",
+    "jquery.typer": "https://github.com/layervault/jquery.typer.js"
   }
 }
