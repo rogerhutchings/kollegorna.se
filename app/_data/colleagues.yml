@@ -53,6 +53,13 @@ urban:
   twitter: urre
   github: urre
   does: "UI/UX design, front end"
+ivan:
+  firstname: Ivan
+  lastname: Novosad
+  email: ivan@kollegorna.se
+  title: Developer
+  twitter: ivannovosad
+  github: ivannovosad
 kobot:
   firstname: Kobot
   lastname:
