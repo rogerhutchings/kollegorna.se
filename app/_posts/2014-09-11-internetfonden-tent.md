@@ -22,5 +22,5 @@ Totalt har .SE fått in 105 ansökningar och vi håller nu alla tummar att vi bl
 
 Är du intresserad av att bidra eller har några frågor? Kontakta [Joakim Stai](mailto:stai@kollegorna.se).
 
-Läs en mer ingående presentation av projektet i vår Labs-blogg:  
-[Tent, and our application for a grant](http://labs.kollegorna.se/blog/2014/09/tent-iis/)
+Läs en mer ingående presentation av projektet i vår Labs-blogg:
+[Why Tent is needed](http://labs.kollegorna.se/blog/2014/09/tent-iis/)
