@@ -61,7 +61,7 @@
         misc: function() {
 
             // Show menu
-            $('nav').on('click touchstart', function(event) {
+            $('nav.popover').on('click touchstart', function(event) {
                 Kollegorna.showHidepopover();
                 event.preventDefault();
             })
