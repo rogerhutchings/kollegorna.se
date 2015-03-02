@@ -11,12 +11,8 @@
 
   Developer: Samuel Carlsson
   Contact: samuel [at] kollegorna.se
-  From: Stockholm, Sweden
-
-  Developer: Joakim Lundberg
-  Contact: jocke [at] kollegorna.se
-  Twitter: @jockelund
-  From: Stockholm, Sweden
+  Twitter: @ksamc
+  From: Seoul, South Korea
 
   Developer: Joakim Stai
   Contact: stai [at] kollegorna.se
@@ -27,6 +23,22 @@
   Contact: filippos [at] kollegorna.se
   Twitter: @vasilakisfil
   From: Stockholm, Sweden
+  
+  Designer: Urban Sandén
+  Contact: urban [at] kollegorna.se
+  Twitter: @urre
+  From: Jönköping, Sweden
+
+  Developer: Ivan Novosad
+  Contact: ivan [at] kollegorna.se
+  Twitter: @ivannovosad
+  From: Trnava, Slovakia
+
+  Developer: Dennis Carlsson
+  Contact: dennis [at] kollegorna.se
+  Twitter: @dencarlsson
+  From: Stockholm, Sweden
+  
 
 /* SITE */
   Language: Swedish

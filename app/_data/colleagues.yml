@@ -57,10 +57,18 @@ ivan:
   firstname: Ivan
   lastname: Novosad
   email: ivan@kollegorna.se
-  title: Developer
+  title: Utvecklare
   twitter: ivannovosad
   github: ivannovosad
   does: "Ruby, Rails, EmberJS"
+Dennis:
+  firstname: Dennis
+  lastname: Carlsson
+  email: dennis@kollegorna.se
+  title: Utvecklare(Praktikant)
+  twitter: dencarlsson
+  github: dencarlsson
+  does: "Front end, Ruby, Rails"
 kobot:
   firstname: Kobot
   lastname:
