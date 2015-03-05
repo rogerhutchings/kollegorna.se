@@ -61,7 +61,7 @@ ivan:
   twitter: ivannovosad
   github: ivannovosad
   does: "Ruby, Rails, EmberJS"
-Dennis:
+dennis:
   firstname: Dennis
   lastname: Carlsson
   email: dennis@kollegorna.se
@@ -69,6 +69,12 @@ Dennis:
   twitter: dencarlsson
   github: dencarlsson
   does: "Front end, Ruby, Rails"
+kong:
+  firstname: Kong
+  email: kong@konginitiative.com
+  title: Chief Snowboard Officer
+  twitter: konginitiative
+  does: "Snow business"
 kobot:
   firstname: Kobot
   lastname:
