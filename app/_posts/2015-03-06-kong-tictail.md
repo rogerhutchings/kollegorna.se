@@ -6,6 +6,7 @@ created: 1425559858
 author: per
 meta_title: "There’s no business like snow business"
 meta_description: "Som ni har kunnat läsa tidigare har vi lanserat The Kong Initiative – en webbshop för breda snowboards. Den är byggd på Tictail och nu släpper vi två verktyg vi använt oss av när vi gjort shoppen."
+comments: true
 ---
 
 Som ni har kunnat [läsa tidigare](blogg) har vi lanserat [The Kong Initiative](http://www.konginitiative.com) – en webbshop för breda snowboards. Den är byggd på [Tictail](http://www.tictail.com) och nu släpper vi två verktyg vi använt oss av när vi gjort shoppen.

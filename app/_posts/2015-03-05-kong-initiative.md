@@ -7,6 +7,7 @@ author: henrik
 meta_title: "There’s no business like snow business"
 meta_description: "Idag lanserar vi nu äntligen The Kong Initiative! Berätta för alla du känner att en inte längre behöver ligga sömnlös över att det skulle vara svårt att få tag på breda brädor på denna sida Atlanten."
 image: "/images/posts/2015/kong-mountain.png"
+comments: true
 ---
 
 Vi har under åren hjälpt flera av våra kunder att sälja grejor på internet, men vi har också själva känt att vore kul att testa att sälja något i liten skala. Dels för att det helt enkelt verkar kul, men också för att få vandra runt i e-handlarens skor och lära sig mer om branschen. 
