@@ -27,16 +27,6 @@ samuel:
   github: ksamc
   phone: 070 - 695 10 92
   does: "Ruby, Rails, Symfony, JavaScript"
-stai:
-  firstname: Joakim
-  lastname: Stai
-  email: stai@kollegorna.se
-  title: Utvecklare
-  twitter: joakimstai
-  github: joakim
-  linkedin: "https://www.linkedin.com/in/joakimstai"
-  phone: 08 - 519 710 85
-  does: "Drupal, JavaScript, serverkonfigurering och optimering"
 filippos:
   firstname: Filippos
   lastname: Vasilakis
