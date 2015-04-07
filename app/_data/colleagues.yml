@@ -8,7 +8,7 @@ per:
   github: persand
   linkedin: "https://www.linkedin.com/in/psandstrom"
   phone: 070 - 242 07 50
-  does: "UI/UX design, front end, Drupal"
+  does: "UI/UX design, front end"
 henrik:
   firstname: Henrik
   lastname: Sjökvist
@@ -51,6 +51,14 @@ ivan:
   twitter: ivannovosad
   github: ivannovosad
   does: "Ruby, Rails, EmberJS"
+raymall:
+  firstname: Raymall
+  lastname: Pérez
+  email: raymall@kollegorna.se
+  title: Designer
+  twitter: raymallperez
+  github: raymallperez
+  does: "UI/UX design, front end"
 dennis:
   firstname: Dennis
   lastname: Carlsson
