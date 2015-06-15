@@ -25,6 +25,15 @@ body {
 // Footer
 // -----------------------------------------------------------------------------
 
+.header {
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+
 .footer {
   color: $ds-color-text-light;
   padding: 120px 20px 40px;
@@ -57,7 +66,6 @@ body {
 
   h1 {
     margin: 0;
-    padding: 60px 0 40px;
     text-align: center;
 
     img {
@@ -284,5 +292,4 @@ body {
 
 .page {
   @extend %content-wrapper;
-  padding-top: 60px;
 }
