@@ -1,14 +1,9 @@
 {
   "name": "kollegorna-se",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
-    "modernizr": "~2.7.1",
-    "normalize-scss": "~3.0.0",
-    "jquery": "~2.1.0",
-    "griddo": "~1.1.0",
-    "fitvids": "~1.1.0",
-    "Lettering.js": "~0.6.1",
-    "jquery.lazyload": "~1.9.3",
-    "jquery.typer": "https://github.com/layervault/jquery.typer.js"
+    "modernizr": "~2.8.3",
+    "jquery": "~2.1.4",
+    "kollegorna-design-system": "kollegorna/design-system"
   }
 }
