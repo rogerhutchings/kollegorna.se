@@ -1,24 +1,37 @@
-This is [our website](http://www.kollegorna.se).
+This is the boilerplate for [Kollegornas](https://github.com/kollegorna) Middleman projects. We're currently using Middleman 3.
 
-### Setup locally
+## Local setup
 
-1. Clone repository ``$ git clone git@github.com:kollegorna/kollegorna.se.git``
-2. Make sure you have [Bundler](https://rubygems.org/gems/bundler) and [Node.js](http://nodejs.org) installed.
-2. ``$ bundle install``
-3. ``$ npm install``
-4. ``$ bower install``
+1. Make sure you have [the same Ruby version installed as the repo](https://github.com/kollegorna/middleman-boilerplate/blob/master/.ruby-version).
+2. Install [Bundler](https://rubygems.org/gems/bundler) and [Node.js](http://nodejs.org).
+3. Clone repository
+4. ``$ npm install``
+5. ``$ gulp install``
 
-### Serve locally
+### Gulp commands
 
-    $ grunt serve
+Runs bundle install and bower install
 
-Fire up [http://0.0.0.0:4000](http://0.0.0.0:4000/) in a browser
+	$ gulp install 
 
-### Deploy
+Builds Middleman and create a BrowserSync server that watches all changes
+	
+	$ gulp serve
 
-    $ grunt deploy
+Builds Middleman
+	
+	$ gulp build
+     
+Builds Middleman and deploys with rsync
 
-### Tools and references
+	$ gulp deploy
 
-* [Bower](http://www.bower.io)
-* [Grunt](http://www.gruntjs.com)
+### Configuration
+
+#### Deployment
+
+If you're planning to use rsync for deployment then you have to change the configuration:
+
+[gulpfile.js](https://github.com/kollegorna/middleman-boilerplate/blob/master/gulpfile.js#L33)
+
+By default it's configured to deploy to one of our VPS:s.

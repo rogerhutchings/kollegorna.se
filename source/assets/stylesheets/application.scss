@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+// -----------------------------------------------------------------------------
+// Libraries
+// -----------------------------------------------------------------------------
+@import "normalize-scss";
+@import "kollegorna-design-system";
+
+body {
+  color: $ds-color-scrub;
+}
+
+%home-wrapper {
+  clear: both;
+  margin: 0 auto 80px;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.home__intro,
+.home__projects,
+.home__labs,
+.home__more,
+.home__jobs,
+.home__clients {
+  @extend %home-wrapper;
+}
+
+.home__intro {
+  h1 {
+    margin: 0;
+    padding: 60px 0 40px;
+    text-align: center;
+
+    img {
+      max-width: 160px;
+    }
+  }
+}
+
+.home__colleagues {
+  @extend %ds-clearfix;
+  margin: 0 auto 60px;
+  max-width: 1280px;
+  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: 500px) {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: ds-rem-calc(36);
+  }
+}
+
+.profile {
+  padding-bottom: 40px;
+
+  img {
+    max-width: 180px;
+  }
+
+  h1 {
+    @extend %h3;
+    font-size: $ds-h4-font-size;
+    margin: 0;
+    text-transform: none;
+  }
+
+  h2 {
+    @extend %h5;
+    color: $ds-color-text-light;
+    font-weight: $ds-font-weight;
+    margin: 0;
+  }
+
+  @media (min-width: 500px) {
+    float: left;
+    padding: 0 20px 40px;
+    width: 50%;
+
+    &:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+
+  @media (min-width: 700px) {
+    width: 33.333%;
+
+    &:nth-child(2n+1) {
+      clear: none;
+    }
+
+    &:nth-child(3n+1) {
+      clear: both;
+    }
+
+    &:last-child {
+      margin-left: 33.333%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 940px) {
+    width: 25%;
+
+    &:nth-child(2n+1),
+    &:nth-child(3n+1) {
+      clear: none;
+    }
+
+    &:nth-child(4n+1) {
+      clear: both;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(9) {
+      margin-left: 25%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    width: 20%;
+
+    &:nth-child(2n+1),
+    &:nth-child(3n+1),
+    &:nth-child(4n+1) {
+      clear: none;
+    }
+
+    &:nth-child(5n+1) {
+      clear: both;
+    }
+
+    &:nth-child(9) {
+      margin-left: 0;
+    }
+  }
+}
+
+.profile__does {
+  @extend small;
+  margin: 5px 0 10px;
+}
+
+.profile__contact {
+  @extend small;
+  margin-bottom: 10px;
+}
+
+.profile__links {
+  a {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: inline-block;
+    height: 26px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    width: 26px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    img {
+      max-width: 12px;
+      opacity: 0.55;
+    }
+  }
+}
+
+.profile__tumblr {
+  img {
+    max-width: auto;
+    height: 12px;
+  }
+}
+
+.home__labs {
+  ul {
+    list-style: none;
+    margin: 0 0 25px;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  time {
+    display: block;
+  }
+}
+
+.home__labs__cta {
+  text-align: center;
+}
+
+.home__clients {
+  ul {
+    @extend %ds-clearfix;
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+    text-align: center;
+
+    @media (min-width: 400px) {
+      float: left;
+      text-align: left;
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: both;
+      }
+    }
+
+    @media (min-width: 600px) {
+      width: 33.333%;
+
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+
+      &:nth-child(3n+1) {
+        clear: both;
+      }
+    }
+  }
+}
+
+.footer {
+  color: $ds-color-text-light;
+  padding: 120px 20px 40px;
+  text-align: center;
+
+  img {
+    opacity: 0.6;
+  }
+}

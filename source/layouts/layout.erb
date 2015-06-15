@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js" lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title><%= current_page.data.title || "Kollegorna" %></title>
+
+  <%= javascript_include_tag "modernizr" %>
+
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,300italic,400italic" rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag "application" %>
+</head>
+<body class="<%= current_page.data.body_classes %>">
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KDZKDQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KDZKDQ');</script>
+  <!-- End Google Tag Manager -->
+
+  <%= partial "header" %>
+
+  <%= yield %>
+
+  <%= partial "footer" %>
+  <%= javascript_include_tag "application" %>
+</body>
+</html>

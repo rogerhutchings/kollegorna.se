@@ -1,9 +1,0 @@
-
-.page-header {
-  @include ds-gutter-v-double;
-}
-
-.page-polaroid {
-  @include ds-polaroid;
-  @include ds-gutter-bottom;
-}
