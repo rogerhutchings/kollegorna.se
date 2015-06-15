@@ -48,7 +48,7 @@
 
           return curr_date + ' ' + month_names[curr_month] + ' ' + curr_year;
         } else {
-          return curr_date + ' ' + curr_month + ' ' + curr_year;
+          return d.toISOString().substring(0, 10);
         }
       }
     };
