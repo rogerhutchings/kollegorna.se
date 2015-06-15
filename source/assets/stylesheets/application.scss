@@ -6,9 +6,35 @@
 @import "normalize-scss";
 @import "kollegorna-design-system";
 
+// -----------------------------------------------------------------------------
+// General stuff
+// -----------------------------------------------------------------------------
+
 body {
   color: $ds-color-scrub;
 }
+
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+
+.footer {
+  color: $ds-color-text-light;
+  padding: 120px 20px 40px;
+  text-align: center;
+
+  img {
+    opacity: 0.6;
+  }
+}
+
+.footer__cc {
+  padding-top: 20px;
+}
+
+// -----------------------------------------------------------------------------
+// Home
+// -----------------------------------------------------------------------------
 
 %home-wrapper {
   clear: both;
@@ -244,18 +270,4 @@ body {
       }
     }
   }
-}
-
-.footer {
-  color: $ds-color-text-light;
-  padding: 120px 20px 40px;
-  text-align: center;
-
-  img {
-    opacity: 0.6;
-  }
-}
-
-.footer__cc {
-  padding-top: 20px;
 }
