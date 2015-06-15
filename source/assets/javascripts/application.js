@@ -1,5 +1,9 @@
 //= require "jquery"
 
+
+/*!
+ * kollegorna.se js
+ */
 (function() {
 
     'use strict';
@@ -10,7 +14,6 @@
         // get labs RSS feed
         this.labsRssFeed();
       },
-
 
       labsRssFeed: function () {
         if($('.home__labs').length) {
@@ -24,7 +27,7 @@
                 $.each(data.responseData.feed.entries, function (i, e) {
                   if (i < 5) {
                     var press_date = new Date(e.publishedDate);
-                    $('.home__labs ul').append('<li><a href="' + e.link + '">' + e.title + '</a><time class="t-meta t-meta--small">' + formatRssDate(press_date) + '</time></li>');
+                    $('.home__labs ul').append('<li><a href="' + e.link + '">' + e.title + '</a><time class="t-meta t-meta--small">' + Kollegorna.formatRssDate(press_date) + '</time></li>');
                   }
                 });
               }
@@ -32,22 +35,25 @@
           });
         }
       },
+
+      formatRssDate: function (d) {
+        var curr_date = d.getDate();
+        var curr_month = d.getMonth();
+        var curr_year = d.getFullYear();
+
+        if ($('html').attr('lang') == 'sv') {
+          var month_names = new Array("januari", "februari", "mars",
+          "april", "maj", "juni", "juli", "augusti", "september",
+          "oktober", "november", "december");
+
+          return curr_date + ' ' + month_names[curr_month] + ' ' + curr_year;
+        } else {
+          return curr_date + ' ' + curr_month + ' ' + curr_year;
+        }
+      }
     };
 
     document.addEventListener("DOMContentLoaded", function(event) {
         Kollegorna.init();
     });
-
-    var month_names = new Array("januari", "februari", "mars",
-      "april", "maj", "juni", "juli", "augusti", "september",
-      "oktober", "november", "december");
-
-    function formatRssDate(d) {
-      var curr_date = d.getDate();
-      var curr_month = d.getMonth();
-      var curr_year = d.getFullYear();
-
-      return curr_date + ' ' + month_names[curr_month]
-      + ' ' + curr_year;
-    }
 }());
