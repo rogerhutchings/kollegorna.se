@@ -20,6 +20,13 @@ after_configuration do
   end
 end
 
+# Blog
+activate :blog do |blog|
+  blog.prefix = "blogg"
+  blog.permalink = "blogg/{year}/{month}/{title}/index.html"
+  blog.sources = "blogg/{year}-{month}-{day}-{title}.html"
+end
+
 # Pretty urls
 activate :directory_indexes
 
