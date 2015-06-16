@@ -297,3 +297,34 @@ body {
 .page {
   @extend %content-wrapper;
 }
+
+// -----------------------------------------------------------------------------
+// Blog
+// -----------------------------------------------------------------------------
+
+.article {
+  @extend %content-wrapper;
+
+  figure {
+    text-align: center;
+  }
+
+  img {
+    float: none;
+  }
+}
+
+.article__header {
+  text-align: center;
+
+  time {
+    color: $ds-color-text-light;
+    font-size: $ds-font-size-body-copy;
+  }
+}
+
+.article__body {
+  img {
+    @extend .polaroid;
+  }
+}
