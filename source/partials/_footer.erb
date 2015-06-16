@@ -32,13 +32,14 @@
     </li>
   </ul>
 
-  <p>
+
   <% if current_page.data.lang == 'en' %>
-    Don't miss <a href="https://labs.kollegorna.se">our lab</a>.
+    <p>Don't miss <a href="https://labs.kollegorna.se">our lab</a>.</p>
   <% else %>
-    Besök även <a href="https://labs.kollegorna.se">vårt labb</a>.
+    <p>Besök även <a href="https://labs.kollegorna.se">vårt labb</a>.</p>
+    <p>Information <a href="/english">in english</a>.</p>
   <% end %>
-  </p>
+
 
   <p class="footer__cc">
     <% if current_page.data.lang == 'en' %>
