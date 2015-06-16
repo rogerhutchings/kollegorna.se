@@ -59,6 +59,7 @@ body {
 .home__intro,
 .home__projects,
 .home__labs,
+.home__blog,
 .home__more,
 .home__jobs,
 .home__clients {
@@ -234,7 +235,8 @@ body {
   }
 }
 
-.home__labs {
+.home__labs,
+.home__blog {
   ul {
     list-style: none;
     margin: 0 0 25px;
@@ -251,7 +253,8 @@ body {
   }
 }
 
-.home__labs__cta {
+.home__labs__cta,
+.home__blog__cta {
   text-align: center;
 }
 
@@ -304,23 +307,25 @@ body {
 
 .blog {
   @extend %content-wrapper;
+}
 
-  article {
+.article-summary {
+  h1 {
+    font-size: $ds-font-size-body-copy;
+    margin: 0;
+  }
+
+  time {
+    color: $ds-color-text-light;
+    font-size: $ds-font-size-body-copy;
+  }
+
+  .blog & {
     @extend %content-wrapper;
     margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    h1 {
-      font-size: $ds-font-size-body-copy;
-      margin: 0;
-    }
-
-    time {
-      color: $ds-color-text-light;
-      font-size: $ds-font-size-body-copy;
     }
   }
 }

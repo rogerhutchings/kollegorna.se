@@ -302,6 +302,29 @@ body_classes: home
   </div>
 </section>
 
+<section class="home__blog">
+  <h2>
+    <span class="gradient-border">
+      Blogg
+    </span>
+  </h2>
+
+  <ul>
+  <% blog.articles[0...3].each do |article| %>
+    <li vocab="http://schema.org/" typeof="BlogPosting">
+      <a property="url" href="<%= article.url %>"><%= article.title %></a>
+      <time class="t-meta t-meta--small" property="datePublished" datetime="<%= article.date.strftime('%Y-%m-%d') %>">
+        <%= article.date.strftime('%Y-%m-%d') %>
+      </time>
+    </li>
+  <% end %>
+  </ul>
+
+  <div class="home__blog__cta">
+    <a class="button" href="/blogg">Alla inlägg</a>
+  </div>
+</section>
+
 <section class="home__labs">
   <h2>
     <span class="gradient-border">
