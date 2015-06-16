@@ -1,5 +1,5 @@
 //= require "jquery"
-
+//= require "fitvids"
 
 /*!
  * kollegorna.se js
@@ -13,6 +13,8 @@
       init: function() {
         // get labs RSS feed
         this.labsRssFeed();
+
+        this.fitvids();
       },
 
       labsRssFeed: function () {
@@ -50,6 +52,10 @@
         } else {
           return d.toISOString().substring(0, 10);
         }
+      },
+
+      fitvids: function () {
+        $('.article__body').fitVids();
       }
     };
 

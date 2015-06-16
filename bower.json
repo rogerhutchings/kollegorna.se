@@ -4,6 +4,7 @@
   "dependencies": {
     "modernizr": "~2.8.3",
     "jquery": "~2.1.4",
-    "kollegorna-design-system": "kollegorna/design-system"
+    "kollegorna-design-system": "kollegorna/design-system",
+    "fitvids": "~1.1.0"
   }
 }
