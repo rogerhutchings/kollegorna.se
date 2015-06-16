@@ -321,7 +321,6 @@ body {
   }
 
   .blog & {
-    @extend %content-wrapper;
     margin-bottom: 30px;
 
     &:last-child {
