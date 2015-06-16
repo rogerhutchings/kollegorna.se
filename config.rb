@@ -20,13 +20,29 @@ after_configuration do
   end
 end
 
-# Pretty urls
+# Blog
+activate :blog do |blog|
+  blog.default_extension = '.md'
+  blog.new_article_template = 'article.erb'
+  blog.paginate = true
+  blog.permalink = "blogg/{year}/{month}/{title}/index.html"
+  blog.sources = "posts/{year}-{month}-{day}-{title}.html"
+end
+page 'posts/*', layout: :article
+
+activate :autoprefixer
 activate :directory_indexes
+activate :syntax
+
+set :markdown, fenced_code_blocks: true
+set :markdown_engine, :redcarpet
 
 # Minimize css/js and fix assets for Build
 configure :build do
+  activate :gzip
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html
   activate :asset_hash
   activate :sitemap, :hostname => "https://www.kollegorna.se"
 end

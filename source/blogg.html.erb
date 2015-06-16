@@ -1,0 +1,16 @@
+---
+title: Kollegornas blogg
+body_classes: blog
+---
+
+<% blog.articles.each do |article| %>
+  <article vocab="http://schema.org/" typeof="BlogPosting">
+    <h1 property="name">
+      <a property="url" href="<%= article.url %>"><%= article.title %></a>
+    </h1>
+    <time property="datePublished" datetime="<%= article.date.strftime('%Y-%m-%d') %>">
+      <%= article.date.strftime('%Y-%m-%d') %>
+    </time>
+  </article>
+<% end %>
+

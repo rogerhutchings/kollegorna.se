@@ -25,3 +25,8 @@ Builds Middleman and deploys with rsync
 
 	$ gulp deploy
 
+## Writing posts
+
+    $ middleman article NAME
+
+Will generate a file in source/posts. 
