@@ -28,7 +28,10 @@ activate :blog do |blog|
   blog.permalink = "blogg/{year}/{month}/{title}/index.html"
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
 end
+
+# Custom page layouts
 page 'posts/*', layout: :article
+page "/feed.xml", :layout => false
 
 activate :autoprefixer
 activate :directory_indexes
