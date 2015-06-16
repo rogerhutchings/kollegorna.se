@@ -302,6 +302,29 @@ body {
 // Blog
 // -----------------------------------------------------------------------------
 
+.blog {
+  @extend %content-wrapper;
+
+  article {
+    @extend %content-wrapper;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h1 {
+      font-size: $ds-font-size-body-copy;
+      margin: 0;
+    }
+
+    time {
+      color: $ds-color-text-light;
+      font-size: $ds-font-size-body-copy;
+    }
+  }
+}
+
 .article {
   @extend %content-wrapper;
 
