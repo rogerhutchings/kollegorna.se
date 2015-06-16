@@ -14,13 +14,12 @@ I Paradox Interactives kommande titel [Cities: Skylines](http://www.citiesskylin
 
 Vi har jobbat med Paradox Interactive sedan 2012 och tidigare gjort liknande lanseringar åt flertalet speltitlar som t.ex. [Wizard Wars](http://www.wizardwars.com), [War of the Roses](http://www.waroftherosesthegame.com/), [War of the Vikings](http://www.warofthevikings.com/), [Hearts of Iron IV](http://www.heartsofiron4.com) samt [Salem](/blogg/2013/02/salembeta/).
 
-#### Detaljer
+## Detaljer
+
 - Plattform: Ruby on Rails 4.1
 - Drift på [Heroku](http://www.heroku.com) med support av Redis, Postgresql, Cloudinary.
 - [Google Analytics](http://www.google.com/analytics) används för att analysera trafik och besökarnas beteenden.
 - Bevakning av applikationen sker med [New Relic](http://www.newrelic.com) och [Honeybadger](http://www.honeybadger.com).
 - Continous integration med [CircleCI](http://www.circleci.com).
-
-Ett stort grattis från oss till 1-åringen! Vi ser fram emot 2-årskalaset.
 
 [Besök Cities: Skylines och skriv på uppropet!](http://www.citiesskylines.com)
