@@ -9,7 +9,7 @@
 
     'use strict';
 
-    TweenMax.set($('.home__language'), { opacity: 0, rotationX: -60, transformOrigin: 'center 0', transformPerspective: 800 });
+    TweenMax.set($('.home__language'), { opacity: 0, rotationX: -60, marginTop: '-50px', transformOrigin: 'center 0', transformPerspective: 800 });
 
     var Kollegorna = {
 
@@ -73,9 +73,9 @@
     console.log('Language Not Swedish');
   }
 
-  TweenMax.to($('.home__language'), .25, { opacity: 1, rotationX: 30, delay: .5, ease:Power1.easeInOut });
-  TweenMax.to($('.home__language'), .25, { opacity: 1, rotationX: -15, delay: .75, ease:Power1.easeInOut });
-  TweenMax.to($('.home__language'), .25, { opacity: 1, rotationX: 7, delay: 1, ease:Power1.easeInOut });
-  TweenMax.to($('.home__language'), .25, { opacity: 1, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
-  TweenMax.to($('.home__language'), .25, { opacity: 1, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
+  TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 30, delay: .5, ease:Power1.easeInOut });
+  TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -15, delay: .75, ease:Power1.easeInOut });
+  TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 7, delay: 1, ease:Power1.easeInOut });
+  TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
+  TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
 }());

@@ -151,3 +151,6 @@ DEPENDENCIES
   middleman-sitemap
   middleman-syntax (~> 2.0.0)
   redcarpet (~> 3.2.3)
+
+BUNDLED WITH
+   1.10.3
