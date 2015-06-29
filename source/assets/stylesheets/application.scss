@@ -56,6 +56,26 @@ body {
 // Home
 // -----------------------------------------------------------------------------
 
+.home__language {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  margin-top: -50px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+
+  span {
+    display: block;
+    font-size: $ds-font-size-body-copy;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
 .home__intro,
 .home__projects,
 .home__labs,
