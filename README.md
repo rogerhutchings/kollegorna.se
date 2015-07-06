@@ -14,11 +14,11 @@ Runs bundle install and bower install
 	$ gulp install 
 
 Builds Middleman and create a BrowserSync server that watches all changes
-	
+
 	$ gulp serve
 
 Builds Middleman
-	
+
 	$ gulp build
 
 Builds Middleman and deploys with rsync
