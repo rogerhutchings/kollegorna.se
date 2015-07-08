@@ -11,7 +11,7 @@ This is [our website](https://www.kollegorna.se).
 
 Runs bundle install and bower install
 
-	$ gulp install 
+	$ gulp install
 
 Builds Middleman and create a BrowserSync server that watches all changes
 
@@ -29,4 +29,4 @@ Builds Middleman and deploys with rsync
 
     $ middleman article NAME
 
-Will generate a file in source/posts. 
+Will generate a file in source/posts.
