@@ -73,6 +73,10 @@ body {
     font-size: $ds-font-size-body-copy;
     line-height: 50px;
     text-align: center;
+
+    @media screen and (max-width: 400px) {
+      font-size: $ds-font-size-small;
+    }
   }
 }
 
