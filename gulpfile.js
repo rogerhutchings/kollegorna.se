@@ -8,9 +8,13 @@ var messages = {
   build:  'Building Middleman...'
 };
 
+gulp.task('copyfonts', ['middleman-build'], function() {
+  return gulp.src('vendor/assets/bower_components/kollegorna-design-system/fonts/**/**/*.*')
+      .pipe(gulp.dest('build/assets/fonts/'));
+});
 gulp.task('middleman-build', function(done) {
   browserSync.notify(messages.build);
-  cp.spawn('bundle', ['exec', 'middleman', 'build'], { stdio: 'inherit' }).on('close', done);
+  return cp.spawn('bundle', ['exec', 'middleman', 'build'], { stdio: 'inherit' }).on('close', done);
 });
 
 gulp.task('browser-reload', ['middleman-build'], function() {
@@ -18,7 +22,7 @@ gulp.task('browser-reload', ['middleman-build'], function() {
   browserSync.reload();
 });
 
-gulp.task('browser-sync', ['middleman-build'], function() {
+gulp.task('browser-sync', ['copyfonts'], function() {
   browserSync({
     server: {
       baseDir: 'build'
@@ -31,7 +35,7 @@ gulp.task('watch', function() {
   gulp.watch('source/**/*.*', ['browser-reload']);
 });
 
-gulp.task('rsync', ['middleman-build'], function() {
+gulp.task('rsync', ['copyfonts'], function() {
   rsync({
     ssh: true,
     src: './build/',
@@ -46,7 +50,7 @@ gulp.task('rsync', ['middleman-build'], function() {
 });
 
 gulp.task('serve', ['browser-sync', 'watch']);
-gulp.task('build', ['middleman-build']);
+gulp.task('build', ['copyfonts']);
 gulp.task('deploy', ['rsync']);
 gulp.task('install-bower', function(done) {
   cp.spawn('bower', ['install'], { stdio: 'inherit' }).on('close', done);
