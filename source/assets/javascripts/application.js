@@ -1,7 +1,7 @@
 //= require "jquery"
 //= require "fitvids"
 //= require "gsap"
-//= require "isotope/isotope.pkgd.min.js"
+//= require "isotope/dist/isotope.pkgd.min.js"
 
 /*!
  * kollegorna.se js
@@ -79,4 +79,7 @@
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 7, delay: 1, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
+
+
+
 }());
