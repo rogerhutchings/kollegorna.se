@@ -1,6 +1,7 @@
 //= require "jquery"
 //= require "fitvids"
 //= require "gsap"
+//= require "isotope/isotope.pkgd.min.js"
 
 /*!
  * kollegorna.se js

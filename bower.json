@@ -2,10 +2,11 @@
   "name": "kollegorna-se",
   "version": "1.0.0",
   "dependencies": {
-    "modernizr": "~2.8.3",
+    "fitvids": "~1.1.0",
+    "gsap": "~1.17.0",
+    "isotope": "~2.2.2",
     "jquery": "~2.1.4",
     "kollegorna-design-system": "kollegorna/design-system",
-    "fitvids": "~1.1.0",
-    "gsap": "~1.17.0"
+    "modernizr": "~2.8.3"
   }
 }
