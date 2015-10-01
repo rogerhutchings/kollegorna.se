@@ -1,7 +1,8 @@
 //= require "jquery"
 //= require "fitvids"
 //= require "gsap"
-//= require "isotope/dist/isotope.pkgd.min.js"
+//= require "packery/dist/packery.pkgd.min.js"
+//= require "imagesloaded/imagesloaded.pkgd.min.js"
 
 /*!
  * kollegorna.se js
@@ -19,10 +20,12 @@
         this.labsRssFeed();
 
         this.fitvids();
+
+        this.caseMedia();
       },
 
       labsRssFeed: function () {
-        if($('.home__labs').length) {
+        if ($('.home__labs').length) {
           $.ajax({
             url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://labs.kollegorna.se/feed.xml'),
             dataType : 'json',
@@ -60,7 +63,19 @@
 
       fitvids: function () {
         $('.article__body').fitVids();
-      }
+      },
+
+      caseMedia: function() {
+        if ($('.case__media').length) {
+          $('.case__media').fitVids();
+          var $case_media = $('.case__media').imagesLoaded( function() {
+            $case_media.packery({
+              itemSelector: '.case__media__item',
+              gutter: 0
+            });
+          });
+        }
+      },
     };
 
     document.addEventListener("DOMContentLoaded", function(event) {
@@ -79,7 +94,4 @@
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 7, delay: 1, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
-
-
-
 }());
