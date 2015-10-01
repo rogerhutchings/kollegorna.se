@@ -277,6 +277,11 @@ body {
   }
 }
 
+.home__projects__cta {
+  padding-top: 30px;
+}
+
+.home__projects__cta,
 .home__labs__cta,
 .home__blog__cta {
   text-align: center;
@@ -382,11 +387,20 @@ body {
 }
 
 // -----------------------------------------------------------------------------
-// Case studies
+// Case studies landing page / listing
+// -----------------------------------------------------------------------------
+
+.case-studies__intro {
+  margin-bottom: 50px;
+}
+
+// -----------------------------------------------------------------------------
+// Case study
+// Example: /case/bgplay
 // -----------------------------------------------------------------------------
 
 .case {
-  padding: 0 10px;
+  padding: 0 10px 120px;
 }
 
 .case__header {
