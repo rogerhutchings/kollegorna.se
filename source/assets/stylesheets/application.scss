@@ -506,9 +506,14 @@ body {
   }
 }
 
-.case__media__tweet {
-  padding: 10px;
+.case__media__tweet,
+.case__media__stats {
+  background: rgba(black, 0.05);
+  border-radius: 2px;
+  padding: 17px;
+}
 
+.case__media__tweet {
   blockquote {
     @extend %ds-t-meta;
     border: 0;
@@ -530,5 +535,22 @@ body {
 
   &__content {
     margin-left: 75px;
+  }
+}
+
+.case__media__stats {
+  text-align: center;
+
+  hr {
+    margin: 0 auto 1rem;
+  }
+
+  &__figure {
+    font-size: 6rem;
+  }
+
+  &__caption {
+    @extend %ds-t-meta;
+    @extend %ds-t-small;
   }
 }
