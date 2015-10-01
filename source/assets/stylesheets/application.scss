@@ -569,3 +569,19 @@ body {
     @extend %ds-t-small;
   }
 }
+
+body .pretty-embed {
+  img {
+    float: none;
+  }
+
+  &:after,
+  &:after:hover {
+    background-image: image-url('video-play.svg') !important;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    opacity: 0.8;
+    width: 100px;
+  }
+}

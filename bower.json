@@ -8,6 +8,7 @@
     "kollegorna-design-system": "kollegorna/design-system",
     "modernizr": "~2.8.3",
     "packery": "~1.4.3",
-    "imagesloaded": "~3.1.8"
+    "imagesloaded": "~3.1.8",
+    "pretty-embed": "~1.2.1"
   }
 }

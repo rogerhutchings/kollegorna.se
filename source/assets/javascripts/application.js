@@ -1,5 +1,7 @@
 //= require "jquery"
 //= require "fitvids"
+//= require "waitForImages/dist/jquery.waitforimages.min.js"
+//= require "pretty-embed/jquery.prettyembed.min.js"
 //= require "gsap"
 //= require "packery/dist/packery.pkgd.min.js"
 //= require "imagesloaded/imagesloaded.pkgd.min.js"
@@ -19,7 +21,7 @@
         // get labs RSS feed
         this.labsRssFeed();
 
-        this.fitvids();
+        this.video();
 
         this.caseMedia();
       },
@@ -61,13 +63,14 @@
         }
       },
 
-      fitvids: function () {
+      video: function () {
         $('.article__body').fitVids();
       },
 
       caseMedia: function() {
         if ($('.case__media').length) {
           $('.case__media').fitVids();
+          $().prettyEmbed({ useFitVids: true });
 
           $('.case__media__tweet').each(function(i) {
             var tweet = $(this);
