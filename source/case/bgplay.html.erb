@@ -1,6 +1,6 @@
 ---
-title: BG Play | Kollegorna
-description: ""
+title: BG Play – case study | Kollegorna
+description: "Plattform för webb-TV inom juridik. På BG Play ger Sveriges främsta experter dig aktuella nyheter och vidareutbildning för olika områden inom juridiken."
 ---
 
 <article role="main" class="case">
@@ -18,10 +18,10 @@ description: ""
     <div class="case__description">
       <p>En en playtjänst för juridik från Blendow Group för webb-TV och utbildningsprogram som de själva producerar. Tjänsten består av publikt innehåll som Veckans Juridik samt Blendow Lexnova Expertnyheter som kräver en betald prenumeration. Vem som helst kan är välkommen registrera ett konto på tjänsten. Som ny användare får du tillgång till ett begränsat utbud av Blendow Lexnova Expertnyheter under en begränsad tid. För att få tillgång till det du behöver finns olika paket uppdelat på olika rättsområden.</p>
 
-      <h2>Favoriter, historik och sektionsindelning</h2>
+      <h3>Favoriter, historik och sektionsindelning</h3>
       <p>Som inloggad användare kan du spara videor som favoriter. Dessutom håller tjänsten koll på hur långt du sett i varje video. Till längre videos finns i vissa fall även en sektionsuppdelning där användaren enkelt kan välja att se de delar som är relevanta.</p>
 
-      <h2>Tester för professionell vidareutbildning</h2>
+      <h3>Tester för professionell vidareutbildning</h3>
       <p>Som advokat kan man i samband med vissa av videoklippen från Blendow Lexnova Expertnyheter genomgå ett test. Om testet klaras av kan en viss summa tid tillgodoräknas till den årliga professionella vidareutbildningen för advokater (https://www.advokatsamfundet.se/Advokatnatet/Advokatverksamheten/Professionell-vidareutbildning/).</p>
     </div>
 
@@ -42,7 +42,7 @@ description: ""
       </div>
 
       <div class="box-gradient-border">
-        <h5 class="box-gradient-border__title">Tjänster och verktyg</h5>
+        <h5 class="box-gradient-border__title">Tjänster</h5>
         <ul>
           <li>Heroku</li>
           <li>Mailchimp</li>
@@ -61,14 +61,18 @@ description: ""
       <div class="case__media__object">
         <figure class="polaroid">
           <img src="http://placekitten.com/g/1200/600">
-          <figcaption>Sveriges Kommuner och Landsting (SKL) ville ta fram ett digitalt verktyg som stöder förändringsarbete inom vården.  Metoden är sprunget ur Breakthrough Series från Institute for Healthcare Improvement. </figcaption>
         </figure>
       </div>
     </div>
 
     <div class="case__media__item case__media__item--large">
       <div class="case__media__object">
-        <figure class="polaroid"><img src="http://placekitten.com/g/1200/900"></figure>
+        <figure class="polaroid">
+          <img src="http://placekitten.com/g/1200/900">
+          <figcaption>
+            Användarna kan spara favoriter.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
@@ -104,15 +108,25 @@ description: ""
       </div>
     </div>
 
-    <div class="case__media__item">
+    <div class="case__media__item case__media__item--large">
       <div class="case__media__object">
-        <figure class="polaroid"><img src="http://placekitten.com/g/1200/900"></figure>
+        <figure class="polaroid">
+          <img src="http://placekitten.com/g/1200/900">
+          <figcaption>
+            Långa avsnitt är indelade i sektioner så att videon ska startas där det är relevant för användaren.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
-    <div class="case__media__item">
+    <div class="case__media__item case__media__item--large">
       <div class="case__media__object">
-        <figure class="polaroid"><img src="http://placekitten.com/g/1200/900"></figure>
+        <figure class="polaroid">
+          <img src="http://placekitten.com/g/1200/900">
+          <figcaption>
+            Tjänsten håller koll på hur långt en tittat på en video.
+          </figcaption>
+        </figure>
       </div>
     </div>
 
@@ -154,9 +168,15 @@ description: ""
       </div>
     </div>
 
-    <div class="case__media__item">
+    <div class="case__media__item case__media__item--medium">
       <div class="case__media__object">
-        <figure class="polaroid"><img src="http://placekitten.com/g/1200/900"></figure>
+        <figure class="polaroid">
+          <img src="http://placekitten.com/g/1200/900">
+
+          <figcaption>
+            Mixpanel används för att analyseras hur tjänsten används.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -164,13 +184,4 @@ description: ""
 </article>
 <!-- / .case -->
 
-<section class="page">
-  <h2>
-    <span class="gradient-border">
-      Utvalda case
-    </span>
-  </h2>
-
-  <%= partial "case_studies_featured" %>
-  <%= partial "case_studies" %>
-</section>
+<%= partial 'case_footer' %>
