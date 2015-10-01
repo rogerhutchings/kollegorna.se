@@ -40,6 +40,10 @@ activate :syntax
 set :markdown, fenced_code_blocks: true
 set :markdown_engine, :redcarpet
 
+configure :development do
+  set :debug_assets, true
+end
+
 # Minimize css/js and fix assets for Build
 configure :build do
   activate :gzip
