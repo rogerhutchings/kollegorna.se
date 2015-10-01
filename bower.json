@@ -4,9 +4,10 @@
   "dependencies": {
     "fitvids": "~1.1.0",
     "gsap": "~1.17.0",
-    "isotope": "~2.2.2",
     "jquery": "~2.1.4",
     "kollegorna-design-system": "kollegorna/design-system",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "packery": "~1.4.3",
+    "imagesloaded": "~3.1.8"
   }
 }
