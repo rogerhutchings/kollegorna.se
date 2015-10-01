@@ -385,6 +385,10 @@ body {
 // Case studies
 // -----------------------------------------------------------------------------
 
+.case {
+  padding: 0 10px;
+}
+
 .case__header {
   margin-bottom: 40px;
   padding-top: 20px;
@@ -406,7 +410,7 @@ body {
     padding: 40px 0;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     padding: 50px 0;
   }
 
@@ -436,15 +440,14 @@ body {
     margin-bottom: 0.1rem;
   }
 
-  ul,
-  p {
-    @extend .t-list-inline;
-    @extend %ds-t-meta;
-    font-size: 1rem;
+  ul {
+    @extend %t-list-inline;
   }
 
-  li {
-    margin-right: 0.7rem; // @TODO: Move to design system
+  ul,
+  p {
+    @extend %ds-t-meta;
+    @extend %ds-t-small;
   }
 }
 
@@ -460,7 +463,7 @@ body {
     width: 50%;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     width: 25%;
   }
 
@@ -469,7 +472,7 @@ body {
       width: 50%;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       width: 33.333%;
     }
   }
@@ -479,7 +482,7 @@ body {
       width: 50%;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       width: 50%;
     }
   }
@@ -489,7 +492,7 @@ body {
       width: 100%;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
       width: 100%;
     }
   }
@@ -498,9 +501,34 @@ body {
 .case__media__object {
   margin: 10px;
 
-  figcaption { // @TODO: Move to design system
+  figcaption {
+    max-width: 600px;
+  }
+}
+
+.case__media__tweet {
+  padding: 10px;
+
+  blockquote {
     @extend %ds-t-meta;
+    border: 0;
     font-size: 1rem;
-    padding-top: 0.6rem;
+    font-style: normal;
+    margin: 0 0 1rem;
+    padding: 0;
+
+    p {
+      color: $ds-color-text;
+    }
+  }
+
+  &__image {
+    float: left;
+    padding: 3px;
+    width: 60px;
+  }
+
+  &__content {
+    margin-left: 75px;
   }
 }
