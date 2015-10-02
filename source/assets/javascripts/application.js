@@ -83,12 +83,19 @@
             });
           });
 
-          var $case_media = $('.case__media').imagesLoaded( function() {
-            $case_media.packery({
-              itemSelector: '.case__media__item',
-              gutter: 0
-            });
-          });
+          setTimeout(function () {
+              $('.case__media').fadeIn('medium');
+
+              var $case_media = $('.case__media').imagesLoaded( function() {
+                $case_media.packery({
+                  itemSelector: '.case__media__item',
+                  gutter: 0
+                });
+              });
+
+          }, 1300);
+
+
         }
       },
 

@@ -469,6 +469,10 @@ body {
 .case__media {
   margin: 0 auto;
   max-width: 1600px;
+
+  .js & {
+    display: none;
+  }
 }
 
 .case__media__item {
