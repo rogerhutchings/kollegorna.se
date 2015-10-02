@@ -277,6 +277,11 @@ body {
   }
 }
 
+.home__projects__cta {
+  padding-top: 30px;
+}
+
+.home__projects__cta,
 .home__labs__cta,
 .home__blog__cta {
   text-align: center;
@@ -378,5 +383,205 @@ body {
   img,
   .fluid-width-video-wrapper iframe {
     @extend .polaroid;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Case studies landing page / listing
+// -----------------------------------------------------------------------------
+
+.case-studies__intro {
+  margin-bottom: 50px;
+}
+
+// -----------------------------------------------------------------------------
+// Case study
+// Example: /case/bgplay
+// -----------------------------------------------------------------------------
+
+.case {
+  padding: 0 10px 120px;
+}
+
+.case__header {
+  margin-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.case__cta {
+  margin-top: 4rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.case__content {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px 10px;
+
+  @media (min-width: 1024px) {
+    max-width: 1280px;
+    padding: 40px 40px 0;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 50px 40px 0;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.case__description {
+  @media (min-width: 1024px) {
+    float: left;
+    padding: 0 10px;
+    width: 60%;
+  }
+}
+
+.case__facts {
+  @media (min-width: 1024px) {
+    float: right;
+    padding: 10px 10px 0;
+    width: 30%;
+  }
+
+  h5 {
+    margin-bottom: 0.1rem;
+  }
+
+  ul {
+    @extend %t-list-inline;
+  }
+
+  ul,
+  p {
+    @extend %ds-t-meta;
+    @extend %ds-t-small;
+  }
+}
+
+.case__media {
+  margin: 0 auto;
+  max-width: 1600px;
+
+  .js & {
+    display: none;
+  }
+}
+
+.case__media__item {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 25%;
+  }
+
+  &--medium {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: 33.333%;
+    }
+  }
+
+  &--large {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: 50%;
+    }
+  }
+
+  &--full {
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+
+    @media (min-width: 1280px) {
+      width: 100%;
+    }
+  }
+}
+
+.case__media__object {
+  margin: 10px;
+}
+
+.case__media__tweet,
+.case__media__stats {
+  background: rgba(black, 0.05);
+  border-radius: 2px;
+  padding: 17px;
+}
+
+.case__media__tweet {
+  blockquote {
+    @extend %ds-t-meta;
+    border: 0;
+    font-size: 1rem;
+    font-style: normal;
+    margin: 0 0 1rem;
+    padding: 0;
+
+    p {
+      color: $ds-color-text;
+    }
+  }
+
+  &__image {
+    float: left;
+    padding: 3px;
+    width: 60px;
+  }
+
+  &__content {
+    margin-left: 75px;
+  }
+}
+
+.case__media__stats {
+  text-align: center;
+
+  hr {
+    margin: 0 auto 1rem;
+  }
+
+  &__figure {
+    font-size: 6rem;
+  }
+
+  &__caption {
+    @extend %ds-t-meta;
+    @extend %ds-t-small;
+  }
+}
+
+body .pretty-embed {
+  img {
+    float: none;
+  }
+
+  &:after,
+  &:after:hover {
+    background-image: image-url('video-play.svg') !important;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    opacity: 0.8;
+    width: 100px;
   }
 }

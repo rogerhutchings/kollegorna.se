@@ -1,6 +1,10 @@
 //= require "jquery"
 //= require "fitvids"
+//= require "waitForImages/dist/jquery.waitforimages.min.js"
+//= require "pretty-embed/jquery.prettyembed.min.js"
 //= require "gsap"
+//= require "packery/dist/packery.pkgd.min.js"
+//= require "imagesloaded/imagesloaded.pkgd.min.js"
 
 /*!
  * kollegorna.se js
@@ -17,11 +21,13 @@
         // get labs RSS feed
         this.labsRssFeed();
 
-        this.fitvids();
+        this.video();
+
+        this.caseMedia();
       },
 
       labsRssFeed: function () {
-        if($('.home__labs').length) {
+        if ($('.home__labs').length) {
           $.ajax({
             url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('https://labs.kollegorna.se/feed.xml'),
             dataType : 'json',
@@ -57,9 +63,57 @@
         }
       },
 
-      fitvids: function () {
+      video: function () {
         $('.article__body').fitVids();
-      }
+      },
+
+      caseMedia: function() {
+        if ($('.case__media').length) {
+          $('.case__media').fitVids();
+          $().prettyEmbed({ useFitVids: true });
+
+          $('.case__media__tweet').each(function(i) {
+            var tweet = $(this);
+            $.ajax({
+              url: "https://api.twitter.com/1/statuses/oembed.json?url="+tweet.attr('data-tweet'),
+              dataType: "jsonp",
+              success: function(data){
+                tweet.html(Kollegorna.caseMediaTweet(data));
+              }
+            });
+          });
+
+          setTimeout(function () {
+              $('.case__media').fadeIn('medium');
+
+              var $case_media = $('.case__media').imagesLoaded( function() {
+                $case_media.packery({
+                  itemSelector: '.case__media__item',
+                  gutter: 0
+                });
+              });
+
+          }, 1300);
+
+
+        }
+      },
+
+      // Make tweets look nice. Remove Twitter widget script and add profile
+      // image from avatars.io.
+      caseMediaTweet: function(data) {
+        var html = $(data.html.bold());
+        html.find('script').remove();
+
+        var twitter_handle = (data.author_url.match(/https?:\/\/(www\.)?twitter\.com\/(#!\/)?@?([^\/]*)/)[3]);
+
+        var twitter_profile_image = '<figure class="case__media__tweet__image polaroid polaroid--circle"><img src="//avatars.io/twitter/' + twitter_handle + '?size=large"></figure>';
+
+        html = '<div class="case__media__tweet__content">' + html.html() + '</div>';
+        html = twitter_profile_image + html;
+
+        return html;
+      },
     };
 
     document.addEventListener("DOMContentLoaded", function(event) {
