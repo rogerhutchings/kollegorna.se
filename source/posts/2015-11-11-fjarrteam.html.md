@@ -3,7 +3,7 @@ title: Så får vi fjärrteam att fungera
 date: 2015-11-11 10:13:04 UTC
 author: per
 description: "Sedan ett par år tillbaka så arbetar vi med fjärrteam som sitter utspridda över hela jorden. Vi ville ge alla möjligheten att kunna jobba varifrån man ville samt öppna upp oss för fler medarbetare än de som kan ta sig in till kontoret i Stockholm och sitta där 9-17."
-image: 
+share_image: /images/posts/2015/manual.jpg
 disable_comments: false
 ---
 
