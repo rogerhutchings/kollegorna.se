@@ -21,7 +21,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<%= current_page.data.title || "Kollegorna" %>">
   <meta name="twitter:description" content="<%= current_page.data.description || "Vi är ett team passionerade utvecklare och designers som bygger förstklassiga webbplatser och webbapplikationer." %>">
-  <meta name="twitter:image" content="https://www.kollegorna.se<%= image_path 'twitter-image.jpg' %>">
+  <meta name="twitter:image" content="https://www.kollegorna.se<%= current_page.data.share_image || image_path('og-image.jpg') %>">
+  <meta name="twitter:site" content="@kollegorna">
+  <meta name="twitter:creator" content="@kollegorna">
 
   <link rel="apple-touch-icon" sizes="57x57" href="<%= image_path 'browser-icons/apple-touch-icon-57x57.png' %>">
   <link rel="apple-touch-icon" sizes="60x60" href="<%= image_path 'browser-icons/apple-touch-icon-60x60.png' %>">
