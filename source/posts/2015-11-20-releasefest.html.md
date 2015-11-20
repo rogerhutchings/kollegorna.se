@@ -1,6 +1,6 @@
 ---
 title: Releasefest
-date: 2015-11-18 15:44:09 UTC
+date: 2015-11-20 08:53:09 UTC
 author: henrik
 description: "Vi har länge tyckt att det har saknats en samlingsplats för alla de grymma tjänster, webbplatser och produkter som byggs av svenska företag."
 share_image:
