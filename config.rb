@@ -50,6 +50,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  activate :asset_hash
+  activate :asset_hash, :ignore => [/^images*/]
   activate :sitemap, :hostname => "https://www.kollegorna.se"
 end
