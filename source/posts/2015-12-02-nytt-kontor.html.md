@@ -3,7 +3,7 @@ title: "Nytt kontor och ny sambo: Under"
 date: 2015-12-02 13:02:53 UTC
 author: per
 description: "I måndags gick flytten från Wallingatan till vårt nya kontor på Karlbergsvägen 52. I samband med detta så flyttar vi ihop med design- och varumärkesbyrån Under."
-image:
+share_image: /images/posts/2015/k52-port.jpg
 disable_comments: false
 ---
 
