@@ -603,3 +603,95 @@ body .pretty-embed {
     width: 100px;
   }
 }
+
+// -----------------------------------------------------------------------------
+// General stuff
+// -----------------------------------------------------------------------------
+
+.xmas-greeting {
+  padding: 0 20px;
+
+  .header,
+  .footer {
+    display: none; // SHAME :)
+  }
+
+  &__header {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h1 {
+      margin: 0;
+      padding: 40px 0;
+
+      @media (min-width: 500px) {
+        padding: 60px 0;
+      }
+
+      @media (min-width: 800px) {
+        padding: 100px 0;
+      }
+    }
+  }
+
+  &__logo--large {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  &__logo--small {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__colleagues {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 60px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+
+    li {
+      display: inline-block;
+      padding: 0 8px 5px;
+      width: 48%;
+
+      @media (min-width: 500px) {
+        width: 31.5%;
+      }
+
+      @media (min-width: 768px) {
+        width: 24%;
+      }
+
+      img {
+        @media (max-width: 600px) {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  &__content {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__gift {
+    padding: 30px 0;
+  }
+
+  &__footer {
+    padding: 40px 0 200px;
+    text-align: center;
+    img {
+      max-width: 100px;
+    }
+  }
+}
