@@ -1,0 +1,75 @@
+---
+title: God Jul!
+description: "…önskar vi på Kollegorna. Istället för vanliga julklappar har vi år valt att ge 10 000 kr till UNHCR."
+permalink: /godjul/index.html
+body_classes: xmas-greeting
+---
+
+<!-- TODO TEMP -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,600,700,700italic' rel='stylesheet' type='text/css'>
+
+<article role="main">
+  <header class="xmas-greeting__header">
+    <h1 class="t-center">
+      <%= image_tag '2015/xmas-heading.svg', alt: 'God Jul!', class: 'xmas-greeting__logo--large' %>
+
+      <%= image_tag '2015/xmas-heading--small.svg', alt: 'God Jul!', class: 'xmas-greeting__logo--small' %>
+    </h1>
+
+    <ul class="xmas-greeting__colleagues">
+      <li>
+        <%= image_tag '2015/xmas-henrik.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-eduardo.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-ivan.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-per.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-raymall.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-dennis.jpg', class: 'polaroid' %>
+      </li>
+      <li>
+        <%= image_tag '2015/xmas-samuel.jpg', class: 'polaroid' %>
+      </li>
+    </ul>
+  </header>
+
+  <div class="xmas-greeting__content">
+    <hr class="hr-gradient hr-gradient--small">
+
+    <p class="t-lead">
+      <strong>Tack för i år!</strong><br> Vi ser fram emot mer spännande saker att göra under 2016.
+    </p>
+
+    <p>
+      Detta år har vi istället för vanliga julklappar skänkt 10 000 kr till UNHCR.
+    </p>
+
+    <p>
+      <a href="https://sverigeforunhcr.se/"><%= image_tag '2015/xmas-gift.svg', alt: 'UNHCR julgåva', class: 'xmas-greeting__gift' %></a>
+    </p>
+
+    <p>
+      Ha en riktigt skön jul- och nyårshelg!
+    </p>
+
+    <p>
+      / Henrik, Eduardo, Ivan, Per, Raymall, Dennis och Samuel
+    </p>
+  </div>
+
+  <footer class="xmas-greeting__footer">
+    <a href="/"><%= image_tag 'kollegorna-k.svg' %></a>
+  </footer>
+
+  <embed src="<%= image_path '2015/xmas-greeting.mid' %>" autostart="true" loop="true"
+width="1" height="0">
+</embed>
+</article>
