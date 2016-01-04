@@ -136,6 +136,14 @@
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
   
   //Colleagues Map
+  $('.map__logo').hover(
+    function() {
+      TweenMax.to($('.map__logo'), 1, { scale: 1.2, repeat: -1, yoyo: true, ease:Power1.easeInOut });
+    }, function() {
+      TweenMax.to($('.map__logo'), .5, { scale: 1, ease: Back.easeOut.config(1.7) });
+    }
+  );
+  
   L.mapbox.accessToken = 'pk.eyJ1Ijoia29sbGVnb3JuYSIsImEiOiJvWk5VR3FjIn0.1zlsFncPm_sHrDcmmpzudg';
   var map = L.mapbox.map('map', 'kollegorna.map-rbr6h31m')
     .setView([40, -74.50], 5);
