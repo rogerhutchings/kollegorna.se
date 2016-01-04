@@ -161,7 +161,7 @@
       properties: {
         title: 'Kollegorna HQ',
         description: 'This is a description.',
-        profileImage: 'http://www.myfreewallpapers.net/comics/wallpapers/superfriends-hall-of-justice.jpg',
+        profileID: 'kollegorna-hq',
         twitterUrl: 'https://twitter.com'
       }
     },
@@ -174,7 +174,7 @@
       properties: {
         title: 'Raymall Pérez',
         description: 'This is a description.',
-        profileImage: 'http://static.comicvine.com/uploads/original/11118/111183530/4164391-8467850456-JL_Ba.jpg',
+        profileID: 'raymall',
         twitterUrl: 'https://twitter.com'
       }
     },
@@ -187,7 +187,7 @@
       properties: {
         title: 'Samuel Carlsson',
         description: 'This is a description.',
-        profileImage: 'http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/char_111.jpg',
+        profileID: 'samuel',
         twitterUrl: 'https://twitter.com'
       }
     },
@@ -200,7 +200,7 @@
       properties: {
         title: 'Eduardo Nunes',
         description: 'This is a description.',
-        profileImage: 'http://img1.wikia.nocookie.net/__cb20080218205841/marvel_dc/images/8/86/Robin_-_Super_Friends_01.jpg',
+        profileID: 'eduardo',
         twitterUrl: 'https://twitter.com'
       }
     },
@@ -213,7 +213,7 @@
       properties: {
         title: 'Ivan Novosad',
         description: 'This is a description.',
-        profileImage: 'http://cdn.inquisitr.com/wp-content/uploads/2012/07/Aquaman-was-voiced-by-Norman-Alden.png',
+        profileID: 'ivan',
         twitterUrl: 'https://twitter.com'
       }
     }]
@@ -234,7 +234,7 @@
     }));
 
     // Create custom popup content
-    var popupContent = '<div class="popup map__popup" style="background-image: url('+feature.properties.profileImage+')">' +
+    var popupContent = '<div class="popup map__popup" id="'+feature.properties.profileID+'">' +
                        '<h2>'+feature.properties.title+'</h2>' +
                        '</div>';
 
@@ -255,8 +255,20 @@
     e.layer.openPopup();
   });
   
-  $('#raymall').on('click', function(e) {
-    map.setView([$(this).attr('data-latitude'), $(this).attr('data-longitude')], 9);
+  $('.map__profile').hover(
+    function() {
+      TweenMax.to($(this), .25, { scale: 1.1, ease: Power0.easeInOut });
+    }, function() {
+      TweenMax.to($(this), .25, { scale: 1, ease: Power0.easeInOut });
+    }
+  );
+  
+  $('.map__profile').on('click', function(e) {
+    var profile = $(this);
+    TweenMax.to($(this), .2, { scale: .8, repeat: 1, yoyo: true, ease: Power0.easeInOut });
+    setTimeout(function() {
+      map.setView([profile.attr('data-latitude'), profile.attr('data-longitude')], 9);
+    }, 400);
   });
   
   var pulseAni = new TimelineMax({repeat: -1, repeatDelay: 1 });

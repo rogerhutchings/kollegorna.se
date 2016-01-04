@@ -736,12 +736,21 @@ body .pretty-embed {
     margin: auto;
     opacity: .8;
   }
-  .map__profile {
+  .map__profiles {
+    position: absolute;
     position: absolute;
     top: 20px;
     right: 20px;
     width: 50px;
+    height: 420px;
+  }
+  .map__profile {
+    position: relative;
+//    top: 20px;
+//    right: 20px;
+    width: 50px;
     height: 50px;
+    margin-bottom: 10px;
     border-radius: 100%;
     border: 2px solid rgba($ds-color-orange, .7);
     background-position: center center;
@@ -749,7 +758,15 @@ body .pretty-embed {
     background-size: cover;
     background-color: rgba(0,0,0,.5);
   }
-  #raymall { background-image: url(http://static.comicvine.com/uploads/original/11118/111183530/4164391-8467850456-JL_Ba.jpg); }
+  #raymall { background-image: image-url('avatars/raymall.jpg'); }
+  #per     { background-image: image-url('avatars/per.jpg'); }
+  #henrik  { background-image: image-url('avatars/henrik.jpg'); }
+  #samuel  { background-image: image-url('avatars/samuel.jpg'); }
+  #ivan    { background-image: image-url('avatars/ivan.jpg'); }
+  #dennis  { background-image: image-url('avatars/dennis.jpg'); }
+  #eduardo { background-image: image-url('avatars/eduardo.jpg'); }
+  #kollegorna-hq { background-image: url(http://www.myfreewallpapers.net/comics/wallpapers/superfriends-hall-of-justice.jpg); }
+  
   .map__container {
     display: block;
     position: absolute;
