@@ -3,6 +3,7 @@
 //= require "waitForImages/dist/jquery.waitforimages.min.js"
 //= require "pretty-embed/jquery.prettyembed.min.js"
 //= require "gsap"
+//= require "mapbox.js/mapbox.js"
 //= require "packery/dist/packery.pkgd.min.js"
 //= require "imagesloaded/imagesloaded.pkgd.min.js"
 
@@ -120,6 +121,7 @@
         Kollegorna.init();
     });
 
+  //Language Message
   var DEFAULT_VALUE = 'en';
   var PREFERRED_LANGUAGE = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || DEFAULT_VALUE;
   console.log(PREFERRED_LANGUAGE);
@@ -132,4 +134,124 @@
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 7, delay: 1, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
+  
+  //Colleagues Map
+  L.mapbox.accessToken = 'pk.eyJ1Ijoia29sbGVnb3JuYSIsImEiOiJvWk5VR3FjIn0.1zlsFncPm_sHrDcmmpzudg';
+  var map = L.mapbox.map('map', 'kollegorna.map-rbr6h31m')
+    .setView([40, -74.50], 5);
+  
+  var myLayer = L.mapbox.featureLayer().addTo(map);
+  
+  var geoJson = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [18.071309, 59.340776]
+      },
+      properties: {
+        title: 'Kollegorna HQ',
+        description: 'This is a description.',
+        profileImage: 'http://www.myfreewallpapers.net/comics/wallpapers/superfriends-hall-of-justice.jpg',
+        twitterUrl: 'https://twitter.com'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-69.85965728759766, 18.48937737263002]
+      },
+      properties: {
+        title: 'Raymall Pérez',
+        description: 'This is a description.',
+        profileImage: 'http://static.comicvine.com/uploads/original/11118/111183530/4164391-8467850456-JL_Ba.jpg',
+        twitterUrl: 'https://twitter.com'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [127.634045, 36.062109]
+      },
+      properties: {
+        title: 'Samuel Carlsson',
+        description: 'This is a description.',
+        profileImage: 'http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/char_111.jpg',
+        twitterUrl: 'https://twitter.com'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-9.141324, 38.719770]
+      },
+      properties: {
+        title: 'Eduardo Nunes',
+        description: 'This is a description.',
+        profileImage: 'http://img1.wikia.nocookie.net/__cb20080218205841/marvel_dc/images/8/86/Robin_-_Super_Friends_01.jpg',
+        twitterUrl: 'https://twitter.com'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [17.588915, 48.380779]
+      },
+      properties: {
+        title: 'Ivan Novosad',
+        description: 'This is a description.',
+        profileImage: 'http://cdn.inquisitr.com/wp-content/uploads/2012/07/Aquaman-was-voiced-by-Norman-Alden.png',
+        twitterUrl: 'https://twitter.com'
+      }
+    }]
+  };
+  
+  // Set a custom icon on each marker based on feature properties.
+  myLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+
+  // This is where the magic happens...
+    marker.setIcon(L.divIcon({
+      className: 'map__marker', // Make sure you set an icon class here, otherwise default styles will be set by Mapbox's CSS
+      html: '<div class="marker__pulse">'+
+            '<div class="marker__pulse--expand"></div'+
+            '</div>', // The content of your HTML marker, you can build a string based on the marker properties by using 'feature.properties.your_property'
+      iconSize: [20, 20] // The bounds for your icon
+    }));
+
+    // Create custom popup content
+    var popupContent = '<div class="popup map__popup" style="background-image: url('+feature.properties.profileImage+')">' +
+                       '<h2>'+feature.properties.title+'</h2>' +
+                       '</div>';
+
+    // http://leafletjs.com/reference.html#popup
+    marker.bindPopup(popupContent, {
+        closeButton: true,
+        minWidth: 150
+    });
+  });
+  
+  // Add features to the map.
+  myLayer.setGeoJSON(geoJson);
+  // featureLayer.getBounds() returns the corners of the furthest-out markers,
+  // and map.fitBounds() makes sure that the map contains these.
+  map.fitBounds(myLayer.getBounds());
+  
+  myLayer.on('click', function(e) {
+    e.layer.openPopup();
+  });
+  
+  $('#raymall').on('click', function(e) {
+    map.setView([$(this).attr('data-latitude'), $(this).attr('data-longitude')], 9);
+  });
+  
+  var pulseAni = new TimelineMax({repeat: -1, repeatDelay: 1 });
+  pulseAni.to($('.marker__pulse'), .5, { opacity: .8, scale: 1.5, ease: Power0.easeNone });
+  pulseAni.to($('.marker__pulse'), .5, { opacity: 0, scale: 2, ease: Power0.easeNone });
 }());
