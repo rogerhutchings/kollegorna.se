@@ -156,7 +156,7 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [18.071309, 59.340776]
+        coordinates: [18.0360443, 59.3427392]
       },
       properties: {
         title: 'Kollegorna HQ',
@@ -195,12 +195,25 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-9.141324, 38.719770]
+        coordinates: [-8.410257, 40.203314]
       },
       properties: {
         title: 'Eduardo Nunes',
         description: 'This is a description.',
         profileID: 'eduardo',
+        twitterUrl: 'https://twitter.com'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [12.695092, 56.051548]
+      },
+      properties: {
+        title: 'Dennis Carlsson',
+        description: 'This is a description.',
+        profileID: 'dennis',
         twitterUrl: 'https://twitter.com'
       }
     },
@@ -234,8 +247,9 @@
     }));
 
     // Create custom popup content
-    var popupContent = '<div class="popup map__popup" id="'+feature.properties.profileID+'">' +
-                       '<h2>'+feature.properties.title+'</h2>' +
+    var popupContent = '<div class="popup map__popup">' +
+                         '<div class="map__popup--image" id="'+feature.properties.profileID+'"></div>' +
+                         '<h2>'+feature.properties.title+'</h2>' +
                        '</div>';
 
     // http://leafletjs.com/reference.html#popup
