@@ -787,7 +787,7 @@ body .pretty-embed {
   }
   .map__popup {
     width: 150px;
-    height: 200px;
+    height: auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -803,9 +803,28 @@ body .pretty-embed {
       background-size: cover;
     }
     
+    .map__popup--pin {
+      display: inline-block;
+      width: 8px;
+      height: 12px;
+      background-image: image-url('icon-map-pin.svg') !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
     h2 {
       margin-top: 5px;
+      margin-bottom: 2px;
       font-weight: $ds-font-weight;
+      text-align: center;
+      color: $ds-color-clay;
+    }
+    
+    p {
+      margin-top: 5px;
+      font-weight: $ds-font-weight;
+      font-size: $ds-font-size-small;
       text-align: center;
       color: $ds-color-mud;
     }

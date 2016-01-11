@@ -161,6 +161,7 @@
       properties: {
         title: 'Kollegorna HQ',
         description: 'This is a description.',
+        location: 'Stockholm, Sweden',
         profileID: 'kollegorna-hq',
         twitterUrl: 'https://twitter.com'
       }
@@ -174,6 +175,7 @@
       properties: {
         title: 'Raymall Pérez',
         description: 'This is a description.',
+        location: 'Santo Domingo, Dominican Republic',
         profileID: 'raymall',
         twitterUrl: 'https://twitter.com'
       }
@@ -187,6 +189,7 @@
       properties: {
         title: 'Samuel Carlsson',
         description: 'This is a description.',
+        location: 'South Korea',
         profileID: 'samuel',
         twitterUrl: 'https://twitter.com'
       }
@@ -200,6 +203,7 @@
       properties: {
         title: 'Eduardo Nunes',
         description: 'This is a description.',
+        location: 'Coimbra, Portugal',
         profileID: 'eduardo',
         twitterUrl: 'https://twitter.com'
       }
@@ -208,11 +212,12 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [12.695092, 56.051548]
+        coordinates: [12.701701, 56.038150]
       },
       properties: {
         title: 'Dennis Carlsson',
         description: 'This is a description.',
+        location: 'Helsingborg, Sweden',
         profileID: 'dennis',
         twitterUrl: 'https://twitter.com'
       }
@@ -221,11 +226,12 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [17.588915, 48.380779]
+        coordinates: [17.5961403, 48.395168]
       },
       properties: {
         title: 'Ivan Novosad',
         description: 'This is a description.',
+        location: 'Trnava, Slovakia',
         profileID: 'ivan',
         twitterUrl: 'https://twitter.com'
       }
@@ -250,6 +256,7 @@
     var popupContent = '<div class="popup map__popup">' +
                          '<div class="map__popup--image" id="'+feature.properties.profileID+'"></div>' +
                          '<h2>'+feature.properties.title+'</h2>' +
+                         '<p><span class="map__popup--pin"></span> '+feature.properties.location+'</p>' +
                        '</div>';
 
     // http://leafletjs.com/reference.html#popup
