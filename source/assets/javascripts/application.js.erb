@@ -134,7 +134,7 @@
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 7, delay: 1, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: -3, delay: 1.25, ease:Power1.easeInOut });
   TweenMax.to($('.home__language'), .25, { opacity: 1, marginTop: 0, rotationX: 0, delay: 1.5, ease:Power1.easeInOut });
-  
+
   //Colleagues Map
   $('.map__logo').hover(
     function() {
@@ -143,13 +143,13 @@
       TweenMax.to($('.map__logo'), .5, { scale: 1, ease: Back.easeOut.config(1.7) });
     }
   );
-  
+
   L.mapbox.accessToken = 'pk.eyJ1Ijoia29sbGVnb3JuYSIsImEiOiJvWk5VR3FjIn0.1zlsFncPm_sHrDcmmpzudg';
   var map = L.mapbox.map('map', 'kollegorna.map-rbr6h31m')
     .setView([40, -74.50], 5);
-  
+
   var myLayer = L.mapbox.featureLayer().addTo(map);
-  
+
   var geoJson = {
     type: 'FeatureCollection',
     features: [{
@@ -184,12 +184,12 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [127.634045, 36.062109]
+        coordinates: [126.9779692, 37.566535]
       },
       properties: {
         title: 'Samuel Carlsson',
         description: 'This is a description.',
-        location: 'South Korea',
+        location: 'Seoul, South Korea',
         profileID: 'samuel',
         twitterUrl: 'https://twitter.com'
       }
@@ -237,7 +237,7 @@
       }
     }]
   };
-  
+
   // Set a custom icon on each marker based on feature properties.
   myLayer.on('layeradd', function(e) {
     var marker = e.layer,
@@ -265,17 +265,17 @@
         minWidth: 150
     });
   });
-  
+
   // Add features to the map.
   myLayer.setGeoJSON(geoJson);
   // featureLayer.getBounds() returns the corners of the furthest-out markers,
   // and map.fitBounds() makes sure that the map contains these.
   map.fitBounds(myLayer.getBounds());
-  
+
   myLayer.on('click', function(e) {
     e.layer.openPopup();
   });
-  
+
   $('.map__profile').hover(
     function() {
       TweenMax.to($(this), .25, { scale: 1.1, ease: Power0.easeInOut });
@@ -283,7 +283,7 @@
       TweenMax.to($(this), .25, { scale: 1, ease: Power0.easeInOut });
     }
   );
-  
+
   $('.map__profile').on('click', function(e) {
     var profile = $(this);
     TweenMax.to($(this), .2, { scale: .8, repeat: 1, yoyo: true, ease: Power0.easeInOut });
@@ -291,7 +291,7 @@
       map.setView([profile.attr('data-latitude'), profile.attr('data-longitude')], 9);
     }, 400);
   });
-  
+
   var pulseAni = new TimelineMax({repeat: -1, repeatDelay: 1 });
   pulseAni.to($('.marker__pulse'), .5, { opacity: .8, scale: 1.5, ease: Power0.easeNone });
   pulseAni.to($('.marker__pulse'), .5, { opacity: 0, scale: 2, ease: Power0.easeNone });
