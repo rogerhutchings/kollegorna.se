@@ -4,6 +4,7 @@
   "dependencies": {
     "fitvids": "~1.1.0",
     "gsap": "~1.17.0",
+    "mapbox.js": "~2.2.1",
     "jquery": "~2.1.4",
     "kollegorna-design-system": "kollegorna/design-system",
     "modernizr": "~2.8.3",
