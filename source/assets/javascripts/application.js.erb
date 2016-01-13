@@ -145,8 +145,16 @@
   );
   
   L.mapbox.accessToken = 'pk.eyJ1Ijoia29sbGVnb3JuYSIsImEiOiJvWk5VR3FjIn0.1zlsFncPm_sHrDcmmpzudg';
-  var map = L.mapbox.map('map', 'kollegorna.map-rbr6h31m')
-    .setView([40, -74.50], 5);
+  
+  var southWest = L.latLng(-34.210374, -122.220146),
+      northEast = L.latLng(60.901899, 140.397026),
+      bounds = L.latLngBounds(southWest, northEast);
+  
+  var map = L.mapbox.map('map', 'kollegorna.map-rbr6h31m', {
+    maxBounds: bounds,
+    minZoom: 2,
+    maxZoom: 15,
+  }).setView([40, -74.50], 5);
   
   var myLayer = L.mapbox.featureLayer().addTo(map);
   
@@ -226,7 +234,7 @@
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [17.5961403, 48.395168]
+        coordinates: [17.5869143, 48.37995]
       },
       properties: {
         title: 'Ivan Novosad',
@@ -270,7 +278,15 @@
   myLayer.setGeoJSON(geoJson);
   // featureLayer.getBounds() returns the corners of the furthest-out markers,
   // and map.fitBounds() makes sure that the map contains these.
-  map.fitBounds(myLayer.getBounds());
+//  map.fitBounds(myLayer.getBounds());
+    map.fitBounds(bounds);
+//    map.fitBounds([[
+//        59.3427392,
+//        18.0360443
+//    ], [
+//        59.3427392,
+//        18.0360443
+//    ]]);
   
   myLayer.on('click', function(e) {
     e.layer.openPopup();
