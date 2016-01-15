@@ -7,7 +7,7 @@ date: 2013-02-18 00:00:00 UTC
 author: per
 meta_title: "Kampanjsajt för spelet Salem"
 description: "Salem Beta är en kampanjsajt för den pågående betatestningen av spelet Salem som vi har byggt åt Paradox Interactive."
-image: /images/projects/salembeta.jpg
+image: /images/posts/2013/02/salembeta.jpg
 image_alt: "Screenshot från kampanjsajten Salem Beta"
 ---
 
@@ -16,7 +16,7 @@ image_alt: "Screenshot från kampanjsajten Salem Beta"
 <p>För att få vara med och provköra spelet behöver man en kod. Sajten delar ut 200 stycken nya koder var 12:e timme (kl 13 och 01 svensk tid). När klockan är slagen visas antalet koder som finns kvar i det aktuella släppet och en "Sign up"-knapp som leder till ett formulär där man får fylla i sina uppgifter. När man har bekräftat sin e-postadress så får man koden direkt.</p>
 
 <figure>
-  <img src="/images/projects/salembeta-invites-remaining.jpg" alt="Utskick av invite-koder">
+  <img src="/images/posts/2013/02/salembeta-invites-remaining.jpg" alt="Utskick av invite-koder">
 </figure>
 
 <p>Antalet kvarvarande koder räknar ned i realtid och när den sista koden har gått åt försvinner knappen automatiskt och ersätts av en klocka som räknar ned till nästa släpp. När klockan räknat ned till noll visas "Sign up"-knappen och återstående koder igen. Cykeln nedräkning -> släpp -> nedräkning går alltså helt automatiskt varv efter varv i webbläsaren.</p>
