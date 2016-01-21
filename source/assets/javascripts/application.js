@@ -8,3 +8,4 @@
 //= require "imagesloaded/imagesloaded.pkgd.min.js"
 //= require "app/app"
 //= require "app/map"
+//= require "app/releasefest-logos"
