@@ -1,0 +1,34 @@
+// Releasefest animated logos
+
+.releasefest-logo {
+  height: 110px;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.releasefest-logo__sq {
+  background-color: #000;
+  float: left;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 10px;
+
+  &.transparent { background-color: transparent; }
+  &.red         { background-color: #FB3640; }
+  &.light_blue  { background-color: #77D5D7; }
+  &.gray        { background-color: #605F5E; }
+  &.blue        { background-color: #005293; }
+  &.yellow      { background-color: #FECC05; }
+
+  &.border_top_left_5px { border-radius: 5px 0 0 0; }
+  &.border_top_left_10px { border-radius: 10px 0 0 0; }
+  &.border_top_right_5px { border-radius: 0 5px 0 0; }
+  &.border_top_right_10px { border-radius: 0 10px 0 0; }
+  &.border_bottom_left_5px { border-radius: 0 0 0 5px; }
+  &.border_bottom_left_10px { border-radius: 0 0 0 10px; }
+  &.border_bottom_right_5px { border-radius: 0 0 5px 0; }
+  &.border_bottom_right_10px { border-radius: 0 0 10px 0; }
+  &.border_circle { border-radius: 100%; }
+}
