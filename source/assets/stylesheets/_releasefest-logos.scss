@@ -32,3 +32,17 @@
   &.border_bottom_right_10px { border-radius: 0 0 10px 0; }
   &.border_circle { border-radius: 100%; }
 }
+
+// Logo in case listing
+
+.relasefest-case-listing {
+  .releasefest-logo {
+    margin-bottom: 10px;
+
+    @media (min-width: 480px) {
+      float: right;
+      margin: 0 0 0 15px;
+    }
+
+  }
+}
