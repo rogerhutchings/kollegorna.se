@@ -19,3 +19,7 @@ För att detta ska kunna gå från ett proof of concept till en riktig tjänst b
 
 [Läs mer i vår artikel på Medium](https://medium.com/@persand/let-s-make-twitter-a-better-place-by-ridding-it-of-trolls-6439e682d50a) om vad som krävs för att projektet ska bli verklighet.
 
+Här är en kort video som beskriver tjänsten:
+
+<iframe src="https://player.vimeo.com/video/158609085" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
