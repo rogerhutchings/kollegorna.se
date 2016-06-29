@@ -720,9 +720,10 @@ body .pretty-embed {
   height: 100%;
 
   .leaflet-control-zoom-in,
-  .leaflet-control-zoom-out {
+  .leaflet-control-zoom-out,
+  .leaflet-popup-close-button {
 //    background-image: url(images/icons-000000@2x.png);
-//    background-image: image-url(asset-path('/assets/images/mapbox.js/images/icons-000000@2x.png'));
+    background-image: image-url('icons-000000@2x.png');
   }
 
   .header,
