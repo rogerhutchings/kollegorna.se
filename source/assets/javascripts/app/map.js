@@ -38,6 +38,20 @@
         type: 'Feature',
         geometry: {
           type: 'Point',
+          coordinates: [17.836610, 59.410802]
+        },
+        properties: {
+          title: 'Henrik',
+          description: 'This is a description.',
+          location: 'Järfälla, Sweden',
+          profileID: 'henrik',
+          twitterUrl: 'https://twitter.com'
+        }
+      },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
           coordinates: [-69.85965728759766, 18.48937737263002]
         },
         properties: {
@@ -103,7 +117,23 @@
           profileID: 'ivan',
           twitterUrl: 'https://twitter.com'
         }
-      }]
+      }
+//      ,
+//      {
+//        type: 'Feature',
+//        geometry: {
+//          type: 'Point',
+//          coordinates: [18.0360443, 59.3427392]
+//        },
+//        properties: {
+//          title: 'Filippos Vasilakis',
+//          description: 'This is a description.',
+//          location: 'Stockholm, Sweden',
+//          profileID: 'filippos',
+//          twitterUrl: 'https://twitter.com'
+//        }
+//      }
+      ]
     };
 
     // Set a custom icon on each marker based on feature properties.

@@ -720,9 +720,10 @@ body .pretty-embed {
   height: 100%;
 
   .leaflet-control-zoom-in,
-  .leaflet-control-zoom-out {
+  .leaflet-control-zoom-out,
+  .leaflet-popup-close-button {
 //    background-image: url(images/icons-000000@2x.png);
-//    background-image: image-url(asset-path('/assets/images/mapbox.js/images/icons-000000@2x.png'));
+    background-image: image-url('icons-000000@2x.png');
   }
 
   .header,
@@ -767,9 +768,11 @@ body .pretty-embed {
   #per     { background-image: image-url('avatars/per.jpg'); }
   #henrik  { background-image: image-url('avatars/henrik.jpg'); }
   #samuel  { background-image: image-url('avatars/samuel.jpg'); }
+  #bindiya  { background-image: image-url('avatars/bindiya.jpg'); }
   #ivan    { background-image: image-url('avatars/ivan.jpg'); }
   #dennis  { background-image: image-url('avatars/dennis.jpg'); }
   #eduardo { background-image: image-url('avatars/eduardo.jpg'); }
+  #filippos { background-image: image-url('avatars/filippos.jpg'); }
   #kollegorna-hq { background-image: image-url('hq.jpg'); }
 
   .map__container {
